@@ -1,5 +1,6 @@
 import React from "react";
 import PETnav from "../assets/PETnav.png";
+import { Link, useParams } from "react-router-dom";
 import { FaFacebookSquare, FaInstagram, FaTiktok } from "react-icons/fa";
 
 const Footer = () => {
@@ -16,9 +17,24 @@ const Footer = () => {
         <div>
           <div className="flex justify-center w-[287px] md:w-[236px] flex-col-reverse md:flex-row">
             <div className="flex justify-between md:w-[75%] my-6">
-              <FaInstagram size={30} />
-              <FaTiktok size={30} />
-              <FaFacebookSquare size={30} />
+              <a href="https://www.instagram.com/pet.id.rs/" target="_blank">
+                <span className="cursor-pointer">
+                  <FaInstagram size={30} />
+                </span>
+              </a>
+              <a href="https://www.tiktok.com/@petid.rs" target="_blank">
+                <span className="cursor-pointer">
+                  <FaTiktok size={30} />
+                </span>
+              </a>
+              <a
+                href="https://www.facebook.com/profile.php?id=100086578725019"
+                target="_blank"
+              >
+                <span className="cursor-pointer">
+                  <FaFacebookSquare size={30} />
+                </span>
+              </a>
             </div>
           </div>
         </div>
