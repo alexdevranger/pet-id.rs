@@ -1,11 +1,12 @@
-@font-face {
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&family=Itim&family=Mali:wght@400;500;600;700&family=Pangolin&family=Patrick+Hand&display=swap');
+/* @font-face {
   font-family: "Indie"; 
   src: local("IndieFlower-Regular"),
     url("./fonts/IndieFlower-Regular.ttf") format("truetype");
-}
+} */
 
 h1, h2 {
-  font-family: 'IndieFlower-Regular', cursive;
+  font-family: 'Patrick Hand', cursive;
 }
 p {
     font-size: 20px;

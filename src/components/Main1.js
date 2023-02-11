@@ -93,7 +93,7 @@ const Main1 = () => {
               effect="blur"
               alt="Pet"
               src={Pet}
-              className="mt-12 sm:mt-0 lg:mt-[-77px] lg:w-full m-auto hidden sm:block 2xl:pl-48"
+              className="mt-12 sm:mt-0 lg:mt-[-77px] lg:w-full m-auto sm:block 2xl:pl-48"
             />
           </div>
         </div>
