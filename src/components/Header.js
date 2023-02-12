@@ -62,27 +62,27 @@ const Header = () => {
                 : "absolute top-0 left-0 w-full h-screen bg-[#FF553E] flex flex-col justify-center items-center z-20"
             }
           >
-            <li className="py-12 text-4xl text-white font-bold">
+            <li className="py-6 min-[330px]:py-12 text-4xl text-white font-bold pt-32 min-[330px]:pt-0">
               <Link onClick={handleNav} to="/">
                 Početna
               </Link>
             </li>
-            <li className="py-12 text-4xl text-white font-bold">
+            <li className="py-6 min-[330px]:py-12 text-4xl text-white font-bold">
               <Link onClick={handleNav} to="/proizvodi">
                 Proizvodi
               </Link>
             </li>
-            <li className="py-12 text-4xl text-white font-bold">
+            <li className="py-6 min-[330px]:py-12 text-4xl text-white font-bold">
               <Link onClick={handleNav} to="/kontakt">
                 Kontakt
               </Link>
             </li>
-            <li className="py-12 text-4xl text-white font-bold">
+            <li className="py-6 min-[330px]:py-12 text-4xl text-white font-bold">
               <Link onClick={handleNav} to="/uputstvo">
                 Uputstvo
               </Link>
             </li>
-            <li className="py-12 text-4xl text-white font-bold">
+            <li className="py-6 min-[330px]:py-12 text-4xl text-white font-bold">
               <Link onClick={handleNav} to="/moj-ljubimac">
                 <img src={Avatar} alt="avatar" height="65px" width="48px" />
               </Link>

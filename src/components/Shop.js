@@ -37,7 +37,7 @@ const Shop = () => {
       }}
     >
       {/* Gornje slike */}
-      <div className="w-full flex items-center absolute justify-between mt-10 min-[410px]:mt-3 sm:mt-3 md:mt-6 lg:mt-12 xl:mt-0 2xl:-mt-12">
+      <div className="w-full flex items-center absolute justify-between mt-32 min-[410px]:mt-12 sm:mt-8 md:mt-6 lg:mt-12 xl:mt-0 2xl:-mt-12">
         <div className="imgIzaberiHolder flex justify-start w-1/2 sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4">
           <LazyLoadImage
             effect="blur"
@@ -310,6 +310,7 @@ const Shop = () => {
                   padding: "16px",
                   color: "red",
                   width: "300px",
+                  background: "white",
                 },
               }}
             />

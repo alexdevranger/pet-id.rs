@@ -19,7 +19,7 @@ function Uputstvo() {
         }}
       >
         <div className="text-center mt-12 sm:mt-28">
-          <h1 className="text-2xl sm:text-4xl font-bold text-[#3BC77E] pb-[25px]">
+          <h1 className="text-5xl sm:text-6xl font-bold text-[#3BC77E] pb-[25px]">
             Uputstvo
           </h1>
           <p className="text-[18px] sm:text-xl mt-7 w-[75%] min-[730px]:w-[50%] m-auto">

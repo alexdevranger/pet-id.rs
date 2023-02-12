@@ -100,6 +100,13 @@ const Korak2 = () => {
   const narudzba = useRef(Math.floor(1000000 + Math.random() * 9000000));
   const ErrorEmptyFields = () =>
     toast.error("Sva polja su obavezna sem napomene.");
+
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, []);
   useEffect(() => {
     setValue("brojPorudzbine", narudzba.current);
     console.log(narudzba.current);
@@ -245,18 +252,18 @@ const Korak2 = () => {
   return (
     <div>
       <form>
-        <input
+        {/* <input
           type="text"
           autoFocus={true}
           className="opacity-0 cursor-default"
-        />
+        /> */}
 
         {/* SRCE */}
         {step === 1 && params.id === "srce" && (
           <>
-            <div className="w-full mt-3 min-[516px]:mt-14 relative">
-              <h1 className="text-3xl lg:text-4xl px-3 font-bold text-center w-full pb-14">
-                Korak 2 - Izaberite boju priveska i unesite podatke
+            <div className="w-full flex items-center justify-center mb-32 min-[410px]:mb-36 min-[496px]:mb-48 min-[600px]:mb-48 sm:mb-52 md:mb-36 lg:mb-56 mt-8 sm:mt-12 md:mt-12">
+              <h1 className="text-3xl lg:text-4xl font-bold text-center lg:mt-7 px-4">
+                KORAK 2 <br /> Izaberite boju priveska i unesite podatke{" "}
               </h1>
             </div>
             <div className="flex w-full lg:w-[90%] flex-col md:flex-row">
@@ -1539,11 +1546,12 @@ const Korak2 = () => {
                       padding: "16px",
                       color: "red",
                       width: "300px",
+                      background: "white",
                     },
                   }}
                 />
               </button>
-              <div className="absolute top-[164px] md:top-[124px] lg:top-[124px] md:w-[150px] right-0 w-[100px] lg:w-[210px]">
+              <div className="absolute top-[194px] md:top-[124px] lg:top-[124px] md:w-[150px] right-0 w-[100px] lg:w-[210px]">
                 <LazyLoadImage
                   effect="blur"
                   src={koktel}
@@ -1560,9 +1568,9 @@ const Korak2 = () => {
         {step === 2 && (
           <>
             <div>
-              <div className="w-full md:mt-14">
-                <h1 className="text-3xl lg:text-4xl px-3 font-bold text-center w-full pb-14">
-                  Korak 3 - Unesite podatke za dostavu Pet ID priveska
+              <div className="w-full flex items-center justify-center mb-32 min-[410px]:mb-36 min-[496px]:mb-48 min-[600px]:mb-48 sm:mb-52 md:mb-36 lg:mb-56 mt-8 sm:mt-12 md:mt-12">
+                <h1 className="text-3xl lg:text-4xl font-bold text-center lg:mt-7 px-4">
+                  KORAK 3 <br /> Unesite podatke za dostavu Pet ID priveska{" "}
                 </h1>
               </div>
 
@@ -1813,7 +1821,7 @@ const Korak2 = () => {
                   </div>
                 </div>
               </div>
-              <div className="absolute right-0 top-[150px] md:top-[120px] w-[100px] min-[410px]:w-[130px] min-[450px]:w-[170px] min-[450px]:top-[150px] sm:w-[200px] md:w-[130px] lg:w-[190px] lg:top-[190px] min-[896px]:w-[180px] min-[896px]:top-[150px] xl:w-[220px] xl:top-[150px] 2xl:w-[250px]">
+              <div className="absolute right-0 top-[250px] md:top-[120px] w-[100px] min-[410px]:w-[120px] min-[450px]:w-[170px] min-[450px]:top-[230px] sm:w-[200px] md:w-[130px] lg:w-[190px] lg:top-[190px] min-[896px]:w-[180px] min-[896px]:top-[150px] xl:w-[220px] xl:top-[150px] 2xl:w-[250px]">
                 <LazyLoadImage
                   effect="blur"
                   src={pethero}
@@ -1822,7 +1830,7 @@ const Korak2 = () => {
                   decoding="async"
                 />
               </div>
-              <div className="top-[160px] md:top-[140px] w-[100px] min-[410px]:w-[150px] min-[450px]:w-[190px] min-[450px]:top-[170px] sm:w-[200px] md:w-[120px] absolute lg:w-[200px] lg:top-[210px] min-[896px]:w-[210px] xl:w-[550px] xl:top-[150px]">
+              <div className="top-[260px] md:top-[140px] w-[100px] min-[410px]:w-[140px] min-[450px]:w-[190px] min-[450px]:top-[230px] sm:w-[200px] md:w-[120px] absolute lg:w-[200px] lg:top-[210px] min-[896px]:w-[210px] xl:w-[550px] xl:top-[150px]">
                 <LazyLoadImage
                   effect="blur"
                   src={fleka}
@@ -1970,6 +1978,7 @@ const Korak2 = () => {
                             padding: "16px",
                             color: "red",
                             width: "300px",
+                            background: "white",
                           },
                         }}
                       />
@@ -1990,7 +1999,7 @@ const Korak2 = () => {
       {step === 3 && (
         <div className="bg-white">
           <div className="text-center mt-12 sm:mt-28">
-            <h1 className="text-2xl sm:text-4xl font-bold text-[#3BC77E]">
+            <h1 className="text-4xl font-bold text-[#3BC77E]">
               Hvala Vam na poverenju!
             </h1>
             <h2 className="text-xl sm:text-3xl mt-2">

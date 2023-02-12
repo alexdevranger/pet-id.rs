@@ -320,6 +320,7 @@ const ContactUs = () => {
                                 padding: "16px",
                                 color: "red",
                                 width: "300px",
+                                background: "white",
                               },
                             }}
                           />
