@@ -14,7 +14,7 @@ const Header = () => {
       <div className="px-4 flex items-center h-full">
         <div className="w-full flex items-center">
           <div className="w-[120px]">
-            <img className="logo" src={PETnav} />
+            <img className="logo" src={PETnav} alt="PETnav" />
           </div>
           <div className="hidden md:flex md:justify-end w-full">
             <ul className="flex text-white items-center">

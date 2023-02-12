@@ -3,10 +3,6 @@ import { Link } from "react-router-dom";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
 import Pet from "../assets/girl-main.webp";
-// import Pet1 from "../assets/glavnaProba.png";
-// import Pet2 from "../assets/glavnaProba1.png";
-// import Pet3 from "../assets/glavnaProba2.png";
-// import Pet5 from "../assets/utisciPozadina.png";
 import PetXL from "../assets/glavnaProbaXLred1.png";
 import bg from "../assets/bg.webp";
 import Vektor from "../assets/Vector.png";
@@ -19,8 +15,8 @@ import Gift from "../assets/gift-vet-image.webp";
 import Poruci from "../assets/poruci.webp";
 import Utisci from "../assets/new-1.webp";
 import MackaUpitnik from "../assets/mackaUpitnik.webp";
-import Mobile from "../assets/mobile.png";
-import Boby from "../assets/boby.png";
+import Mobile from "../assets/mobile.webp";
+import Boby from "../assets/boby.webp";
 import { FaHeart } from "react-icons/fa";
 
 const Main1 = () => {
@@ -30,22 +26,7 @@ const Main1 = () => {
       <div className="w-full">
         {/* Glavna */}
 
-        <div
-          className="flex pt-12 sm:pt-28 flex-col sm:flex-row"
-          // style={{
-          //   backgroundImage: `url(${bg})`,
-          //   backgroundRepeat: "repeat",
-          // }}
-        >
-          {/* <div className="mb-6">
-            <LazyLoadImage
-              effect="blur"
-              alt="Pet"
-              src={Pet2}
-              className="sm:hidden px-3"
-            />
-          </div> */}
-
+        <div className="flex pt-12 sm:pt-28 flex-col sm:flex-row">
           <div className="lg:ml-16 xl:pl-22 sm:w-[80%] lg:w-[70%]">
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-center sm:text-left px-3 sm:pl-6 md:pl-6 md:mt-6 lg:mt-9 xl:mt-12 2xl:pb-12">
               Želiš svog ljubimca nazad ako se izgubi?
@@ -101,14 +82,13 @@ const Main1 = () => {
         {/* Utisci */}
 
         <div
-          className="flex 2xl:justify-center pt-20 xl:pt-18 pb-10 w-full sm:flex-row items-center flex-col"
+          className="flex 2xl:justify-center pt-20 xl:pt-18 pb-10 w-full sm:flex-row items-center flex-col-reverse"
           style={{
             backgroundImage: `url(${bg})`,
             backgroundRepeat: "no repeat",
             backgroundSize: "100%",
           }}
         >
-          <div></div>
           <div className="w-full xl:pr-12">
             <LazyLoadImage
               effect="blur"
@@ -470,18 +450,9 @@ const Main1 = () => {
                         />
                       </div>
                     </div>
-                    {/* <img src={Mobile} alt="Mobile" />
-                    <img src={Boby} alt="Boby" /> */}
                   </div>
                   {/*footer*/}
                   <div className="flex items-center justify-end p-6 border-t border-solid border-slate-200 rounded-b">
-                    {/* <button
-                      className="text-red-500 background-transparent font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
-                      type="button"
-                      onClick={() => setShowModal(false)}
-                    >
-                      Close
-                    </button> */}
                     <button
                       className="bg-emerald-500 text-white active:bg-emerald-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
                       type="button"
@@ -498,61 +469,6 @@ const Main1 = () => {
             <div className="opacity-25 fixed inset-0 z-40 bg-black"></div>
           </>
         ) : null}
-        {/* <div className="flex items-center justify-center h-full">
-          <button
-            className="py-2 px-4 bg-blue-500 text-white rounded hover:bg-blue-700"
-            onClick={toggleModal}
-          >
-            Show Modal
-          </button>
-        </div>
-        <div
-          className="fixed z-10 overflow-y-auto top-0 w-full left-0 hidden"
-          id="modal"
-        >
-          <div className="flex items-center justify-center min-height-100vh pt-4 px-4 pb-20 text-center sm:block sm:p-0">
-            <div className="fixed inset-0 transition-opacity">
-              <div className="absolute inset-0 bg-gray-900 opacity-75" />
-            </div>
-            <span className="hidden sm:inline-block sm:align-middle sm:h-screen">
-              &#8203;
-            </span>
-            <div
-              className="inline-block align-center bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full"
-              role="dialog"
-              aria-modal="true"
-              aria-labelledby="modal-headline"
-            >
-              <div className="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
-                <label>Name</label>
-                <input
-                  type="text"
-                  className="w-full bg-gray-100 p-2 mt-2 mb-3"
-                />
-                <label>Url</label>
-                <input
-                  type="text"
-                  className="w-full bg-gray-100 p-2 mt-2 mb-3"
-                />
-              </div>
-              <div className="bg-gray-200 px-4 py-3 text-right">
-                <button
-                  type="button"
-                  className="py-2 px-4 bg-gray-500 text-white rounded hover:bg-gray-700 mr-2"
-                  onClick={toggleModal}
-                >
-                  <i className="fas fa-times"></i> Cancel
-                </button>
-                <button
-                  type="button"
-                  className="py-2 px-4 bg-blue-500 text-white rounded hover:bg-blue-700 mr-2"
-                >
-                  <i className="fas fa-plus"></i> Create
-                </button>
-              </div>
-            </div> 
-          </div>
-        </div>*/}
 
         {/* Garancija */}
         <div
