@@ -1,12 +1,9 @@
 import React, { useState, useEffect, useRef } from "react";
 import { useForm } from "react-hook-form";
-import { Link, useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
 import axios from "axios";
-import KoskicaZl from "../assets/koskica.png";
-import SrceRo from "../assets/srceRo.png";
-import KrugPl from "../assets/krug.png";
 import bg from "../assets/bg.webp";
 import s6 from "../assets/s6.webp";
 import s7 from "../assets/s7.webp";
@@ -773,7 +770,8 @@ const MojLjubimac = () => {
 
             <div className="flex flex-col items-center sm:flex-row sm:justify-evenly mt-9 md:mt-20 w-full mb-6">
               <button
-                onClick={() => {
+                onClick={(e) => {
+                  e.preventDefault();
                   const brTelefonaVlasnikaEmptyLjubimac =
                     form1.watch("brTelefonaVlasnika");
                   const brDrugiVlasnikaEmpty = form1.watch("brDrugiVlasnika");

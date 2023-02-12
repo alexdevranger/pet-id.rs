@@ -1,6 +1,6 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import { useForm } from "react-hook-form";
-import { Link, useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 import axios from "axios";
 import KontaktSlika from "../assets/group.webp";
 import bg from "../assets/bg.webp";

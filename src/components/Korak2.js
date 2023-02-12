@@ -37,7 +37,6 @@ import toast, { Toaster } from "react-hot-toast";
 
 const Korak2 = () => {
   const params = useParams();
-  console.log(params.id);
   const [captcha, setCaptcha] = useState(Math.floor(Math.random() * 10000));
   const [valueCaptcha, setValueCaptcha] = useState("");
   const [isValid, setIsValid] = useState(false);
@@ -96,7 +95,7 @@ const Korak2 = () => {
   const [activeThumbKoskica, setActiveThumbKoskica] = useState(KoskicaZl);
   const [activeThumbSrce, setActiveThumbSrce] = useState(SrceRo);
   const [activeThumbKrug, setActiveThumbKrug] = useState(KrugPl);
-  const [formSubmited, setFormSubmited] = useState(false);
+  const [order, setOrder] = useState(false);
   const [disabledState, setDisabledState] = React.useState(false);
   const narudzba = useRef(Math.floor(1000000 + Math.random() * 9000000));
   const ErrorEmptyFields = () =>
@@ -147,9 +146,6 @@ const Korak2 = () => {
     }
   }, [errors, setFocus]);
 
-  const singleObject = form.watch("tag");
-  console.log(singleObject);
-
   useEffect(() => {
     const checkActiveThumb = () => {
       if (params.id === "srce" && activeThumbSrce === SrceRo) {
@@ -164,7 +160,6 @@ const Korak2 = () => {
   }, []);
 
   let brTelefonaVlasnikaEmpty1 = form.watch("brTelefonaVlasnika");
-  console.log(brTelefonaVlasnikaEmpty1);
   let brDrugiVlasnikaEmpty1 = form.watch("brDrugiVlasnika");
   let emailVlasnikaEmpty1 = form.watch("emailVlasnika");
   let tagEmpty = form.watch("tag");
@@ -174,7 +169,6 @@ const Korak2 = () => {
   let polEmpty = form.watch("pol");
   let imeVlasnikaEmpty = form.watch("imeVlasnika");
   let secretWordEmpty = form.watch("secretWord");
-  console.log("brTelefonaVlasnikaEmpty1");
   useEffect(() => {
     const ifErrors = () => {
       if (
@@ -213,6 +207,32 @@ const Korak2 = () => {
     imeVlasnikaEmpty,
     secretWordEmpty,
   ]);
+  const imePrimaoca = form.watch("imePrimaoca");
+  const brojPrimaoca = form.watch("brojPrimaoca");
+  const zip = form.watch("zip");
+  const adresaPrimaoca = form.watch("adresaPrimaoca");
+  const grad = form.watch("grad");
+  const drzava = form.watch("drzava");
+  useEffect(() => {
+    const ifDostavaErrors = () => {
+      if (
+        imePrimaoca === "" ||
+        brojPrimaoca === "" ||
+        zip === "" ||
+        adresaPrimaoca === "" ||
+        grad === "" ||
+        drzava === "" ||
+        isValid === false
+      ) {
+        console.log("1", order);
+        setOrder(false);
+      } else {
+        console.log("2", order);
+        setOrder(true);
+      }
+    };
+    ifDostavaErrors();
+  }, [imePrimaoca, brojPrimaoca, zip, adresaPrimaoca, grad, drzava, isValid]);
   const handleChange = (event) => {
     setValueCaptcha(event.target.value);
     setIsValid(parseInt(event.target.value) === captcha);
@@ -222,7 +242,6 @@ const Korak2 = () => {
     setIsValid(false);
     setValueCaptcha("");
   };
-  console.log(disabledState);
   return (
     <div>
       <form>
@@ -236,7 +255,7 @@ const Korak2 = () => {
         {step === 1 && params.id === "srce" && (
           <>
             <div className="w-full mt-3 min-[516px]:mt-14 relative">
-              <h1 className="text-xl lg:text-3xl px-3 font-bold text-center w-full pb-14">
+              <h1 className="text-3xl lg:text-4xl px-3 font-bold text-center w-full pb-14">
                 Korak 2 - Izaberite boju priveska i unesite podatke
               </h1>
             </div>
@@ -473,7 +492,7 @@ const Korak2 = () => {
         {step === 1 && params.id === "koskica" && (
           <>
             <div className="w-full relative text-xl">
-              <h1 className="text-xl mt-3 min-[516px]:mt-14 font-bold text-center w-full pb-14">
+              <h1 className="text-3xl lg:text-4xl px-3 font-bold text-center w-full pb-14">
                 Korak 2 - Izaberite boju priveska i unesite podatke
               </h1>
             </div>
@@ -678,7 +697,7 @@ const Korak2 = () => {
         {step === 1 && params.id === "krug" && (
           <>
             <div className="w-full relative">
-              <h1 className="mt-3 min-[516px]:mt-14 text-xl lg:text-3xl px-3 font-bold text-center w-full pb-14">
+              <h1 className="text-3xl lg:text-4xl px-3 font-bold text-center w-full pb-14">
                 Korak 2 - Izaberite boju priveska i unesite podatke
               </h1>
             </div>
@@ -1486,7 +1505,8 @@ const Korak2 = () => {
                 </div>
               </Link>
               <button
-                onClick={() => {
+                onClick={(e) => {
+                  e.preventDefault();
                   const brTelefonaVlasnikaEmpty =
                     form.watch("brTelefonaVlasnika");
                   const brDrugiVlasnikaEmpty = form.watch("brDrugiVlasnika");
@@ -1541,7 +1561,7 @@ const Korak2 = () => {
           <>
             <div>
               <div className="w-full md:mt-14">
-                <h1 className="text-xl lg:text-3xl px-3 font-bold text-center w-full pb-1">
+                <h1 className="text-3xl lg:text-4xl px-3 font-bold text-center w-full pb-14">
                   Korak 3 - Unesite podatke za dostavu Pet ID priveska
                 </h1>
               </div>
@@ -1911,14 +1931,13 @@ const Korak2 = () => {
                   <div className="cursor-pointer flex items-center justify-center text-white bg-[#3BC77E] w-[300px] h-[64px] rounded-lg duration-500 hover:bg-[#FF553E] md:ml-[20px]">
                     <button
                       type="button"
-                      className="text-3xl"
-                      onClick={() => {
-                        const imePrimaoca = form.watch("imePrimaoca");
-                        const brojPrimaoca = form.watch("brojPrimaoca");
-                        const zip = form.watch("zip");
-                        const adresaPrimaoca = form.watch("adresaPrimaoca");
-                        const grad = form.watch("grad");
-                        const drzava = form.watch("drzava");
+                      className={`
+                      ${
+                        order === false ? "opacity-50 mt-8 sm:mt-0" : ""
+                      } text-3xl`}
+                      onClick={(e) => {
+                        e.preventDefault();
+
                         if (
                           imePrimaoca === "" ||
                           brojPrimaoca === "" ||
