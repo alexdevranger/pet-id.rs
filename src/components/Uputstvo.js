@@ -18,7 +18,7 @@ function Uputstvo() {
           backgroundSize: "100%",
         }}
       >
-        <div className="text-center mt-12 sm:mt-28">
+        <div className="text-center mt-12">
           <h1 className="text-5xl sm:text-6xl font-bold text-[#3BC77E] pb-[25px]">
             Uputstvo
           </h1>
