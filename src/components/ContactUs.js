@@ -2,12 +2,12 @@ import React, { useState, useEffect } from "react";
 import { useForm } from "react-hook-form";
 import { Link } from "react-router-dom";
 import axios from "axios";
-import KontaktSlika from "../assets/group.webp";
+import KontaktSlika from "../assets/group_optimized.webp";
 import bg from "../assets/bg.webp";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
 import toast, { Toaster } from "react-hot-toast";
-import HvalaSlika from "../assets/hvala.png";
+import HvalaSlika from "../assets/hvala_optimized.webp";
 
 const ContactUs = () => {
   const [captcha, setCaptcha] = useState(Math.floor(Math.random() * 10000));

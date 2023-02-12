@@ -11,7 +11,7 @@ import cutedog from "../assets/cutedog.jpg";
 import Kitty from "../assets/balloon_optimized.webp";
 import cutecat from "../assets/cutecat.jpg";
 import koktel from "../assets/koktel_optimized.webp";
-import HvalaSlika from "../assets/hvala.png";
+import HvalaSlika from "../assets/hvala_optimized.webp";
 import "react-lazy-load-image-component/src/effects/blur.css";
 import toast, { Toaster } from "react-hot-toast";
 

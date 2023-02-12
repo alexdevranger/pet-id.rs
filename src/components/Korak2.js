@@ -5,32 +5,32 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
 import axios from "axios";
 import KoskicaZl from "../assets/koskica_optimized.webp";
-import KoskicaCr from "../assets/koskicaCr.png";
-import koskicaPl from "../assets/koskicaPL.png";
-import koskicaRo from "../assets/koskicaRo.png";
-import SrcePl from "../assets/srceBlue.png";
+import KoskicaCr from "../assets/koskicaCr_optimized.webp";
+import koskicaPl from "../assets/koskicaPL_optimized.webp";
+import koskicaRo from "../assets/koskicaRo_optimized.webp";
+import SrcePl from "../assets/srceBlue_optimized.webp";
 import SrceRo from "../assets/srceRo_optimized.webp";
-import Srce from "../assets/srce.png";
-import SrceBlue from "../assets/srcePl.png";
-import SrceZl from "../assets/srceZl.png";
-import KrugPl from "../assets/krug.png";
-import KrugRo from "../assets/krugRo.png";
-import KrugOr from "../assets/krugOr.png";
-import KrugBlue from "../assets/krugBlue.png";
-import KrugZl from "../assets/krugZl.png";
+import Srce from "../assets/srce_optimized.webp";
+import SrceBlue from "../assets/srcePl_optimized.webp";
+import SrceZl from "../assets/srceZl_optimized.webp";
+import KrugPl from "../assets/krug_optimized.webp";
+import KrugRo from "../assets/krugRo_optimized.webp";
+import KrugOr from "../assets/krugOr_optimized.webp";
+import KrugBlue from "../assets/krugBlue_optimized.webp";
+import KrugZl from "../assets/krugZl_optimized.webp";
 import bg from "../assets/bg.webp";
 import s5 from "../assets/s5.webp";
 import s6 from "../assets/s6.webp";
 import s7 from "../assets/s7.webp";
 import cutedog from "../assets/cutedog.jpg";
 import cutecat from "../assets/cutecat.jpg";
-import pethero from "../assets/pet-hero.webp";
-import fleka from "../assets/fleka.png";
-import phone from "../assets/phone.webp";
-import par from "../assets/par.webp";
+import pethero from "../assets/pet-hero_optimized.webp";
+import fleka from "../assets/fleka_optimized.webp";
+import phone from "../assets/phone_optimized.webp";
+import par from "../assets/par_optimized.webp";
 import koktel from "../assets/koktel_optimized.webp";
-import HvalaSlika from "../assets/hvala.png";
-import kitty from "../assets/kitty1.png";
+import HvalaSlika from "../assets/hvala_optimized.webp";
+import kitty from "../assets/kitty1_optimized.webp";
 import "react-lazy-load-image-component/src/effects/blur.css";
 
 import toast, { Toaster } from "react-hot-toast";
@@ -1839,7 +1839,7 @@ const Korak2 = () => {
                   decoding="async"
                 />
               </div>
-              <div className="absolute w-[100px] sm:w-[200px] min-[450px]:w-[120px] min-[450px]:top-[540px] sm:top-[540px] top-[384px] hidden min-[410px]:block md:top-[840px] md:w-[250px] 2xl:w-[450px]">
+              <div className="hidden md:block absolute w-[100px] sm:w-[200px] min-[450px]:w-[120px] min-[450px]:top-[540px] sm:top-[540px] top-[384px] md:top-[840px] md:w-[250px] 2xl:w-[450px]">
                 <LazyLoadImage
                   effect="blur"
                   src={phone}
@@ -1848,7 +1848,7 @@ const Korak2 = () => {
                   decoding="async"
                 />
               </div>
-              <div className="absolute w-[100px] sm:w-[200px] sm:top-[540px] min-[410px]:w-[120px] min-[450px]:w-[130px] min-[450px]:top-[540px] hidden min-[410px]:block top-[384px] right-0 md:top-[840px] md:w-[250px] 2xl:w-[450px]">
+              <div className="absolute w-[100px] sm:w-[200px] sm:top-[540px] min-[410px]:w-[120px] min-[450px]:w-[130px] min-[450px]:top-[540px] hidden md:block top-[384px] right-0 md:top-[840px] md:w-[250px] 2xl:w-[450px]">
                 <LazyLoadImage
                   effect="blur"
                   src={par}

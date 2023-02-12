@@ -8,6 +8,8 @@ import Korak2 from "./components/Korak2";
 import ContactUs from "./components/ContactUs";
 import MojLjubimac from "./components/MojLjubimac";
 import Uputstvo from "./components/Uputstvo";
+import UsloviKoriscenja from "./components/UsloviKoriscenja";
+import PolitikaPrivatnosti from "./components/PolitikaPrivatnosti";
 import "./App.css";
 import "./fonts/IndieFlower-Regular.ttf";
 
@@ -23,6 +25,16 @@ function App() {
           <Route exact path="/kontakt" element={<ContactUs />} />
           <Route exact path="/moj-ljubimac" element={<MojLjubimac />} />
           <Route exact path="/uputstvo" element={<Uputstvo />} />
+          <Route
+            exact
+            path="/politika-privatnosti"
+            element={<PolitikaPrivatnosti />}
+          />
+          <Route
+            exact
+            path="/uslovi-koriscenja"
+            element={<UsloviKoriscenja />}
+          />
         </Routes>
         <Footer />
       </Router>

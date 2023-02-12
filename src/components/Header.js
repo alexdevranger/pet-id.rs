@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import PETnav from "../assets/PETnav.png";
+import PETnav from "../assets/PETnav_optimized.png";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
-import Avatar from "../assets/pets.png";
+import Avatar from "../assets/pets_optimized.png";
 
 const Header = () => {
   const [nav, setNav] = useState(false);

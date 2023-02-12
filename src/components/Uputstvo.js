@@ -1,10 +1,10 @@
 import React from "react";
-import HvalaSlika from "../assets/love.webp";
+import HvalaSlika from "../assets/love_optimized.webp";
 import { Link } from "react-router-dom";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
 import Vektor from "../assets/Vector.png";
-import Avatar from "../assets/pets.png";
+import Avatar from "../assets/pets_optimized.png";
 import bg from "../assets/bg.webp";
 
 function Uputstvo() {
