@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import PETnav from "../assets/PETnav_optimized.png";
 import { FaFacebookSquare, FaInstagram, FaTiktok } from "react-icons/fa";
 
@@ -10,18 +10,18 @@ const Footer = () => {
         <img src={PETnav} alt="logo" />
       </div>
 
-      <div className="w-[95%] flex items-center">
-        <div className="flex justify-center w-full flex-row items-end">
-          <p className="text-[18px] min-[315px]:text-[18px]">
+      <div className="w-[95%] flex items-center flex-col-reverse md:flex-row">
+        <div className="flex justify-center w-full flex-col items-center">
+          <p className="text-[16px] min-[315px]:text-[18px]">
             All right reserved © 2023 Pet ID
           </p>
           <div className="px-6 flex flex-row pt-2">
-            <p className="text-[18px] min-[315px]:text-[18px] md:text-[18px] mt-2">
+            <p className="text-[14px] min-[315px]:text-[18px] md:text-[18px] mt-2">
               <Link to="/politika-privatnosti" target="_blank" rel="noreferrer">
                 Politika privatnosti
               </Link>
             </p>
-            <p className="text-[18px] min-[315px]:text-[18px] md:text-[18px] mt-2 pl-6">
+            <p className="text-[14px] min-[315px]:text-[18px] md:text-[18px] mt-2 pl-6">
               <Link to="/uslovi-koriscenja" target="_blank" rel="noreferrer">
                 Uslovi korišćenja
               </Link>
