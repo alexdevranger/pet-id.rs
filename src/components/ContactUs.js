@@ -311,20 +311,20 @@ const ContactUs = () => {
                           type="button"
                         >
                           Pošalji
-                          <Toaster
-                            position="top-center"
-                            toastOptions={{
-                              className: "",
-                              style: {
-                                border: "1px solid red",
-                                padding: "16px",
-                                color: "red",
-                                width: "300px",
-                                background: "white",
-                              },
-                            }}
-                          />
                         </button>
+                        <Toaster
+                          position="top-center"
+                          toastOptions={{
+                            className: "",
+                            style: {
+                              border: "1px solid red",
+                              padding: "16px",
+                              color: "red",
+                              width: "300px",
+                              background: "white",
+                            },
+                          }}
+                        />
                       </div>
                     </div>
                   </div>

@@ -1537,20 +1537,20 @@ const Korak2 = () => {
                   cursor-pointer flex items-center justify-center text-white bg-[#3BC77E] hover:bg-[#FF553E] w-[280px] sm:w-[270px] h-[64px] rounded-lg duration-500 ml-0 md:ml-[20px] mt-8 sm:mt-0`}
               >
                 <h2 className="text-3xl">Sledeći korak</h2>
-                <Toaster
-                  position="top-center"
-                  toastOptions={{
-                    className: "",
-                    style: {
-                      border: "1px solid red",
-                      padding: "16px",
-                      color: "red",
-                      width: "300px",
-                      background: "white",
-                    },
-                  }}
-                />
               </button>
+              <Toaster
+                position="top-center"
+                toastOptions={{
+                  className: "",
+                  style: {
+                    border: "1px solid red",
+                    padding: "16px",
+                    color: "red",
+                    width: "300px",
+                    background: "#fff",
+                  },
+                }}
+              />
               <div className="absolute top-[194px] md:top-[124px] lg:top-[124px] md:w-[150px] right-0 w-[100px] lg:w-[210px]">
                 <LazyLoadImage
                   effect="blur"
@@ -1969,20 +1969,20 @@ const Korak2 = () => {
                       }}
                     >
                       Naruči
-                      <Toaster
-                        position="top-center"
-                        toastOptions={{
-                          className: "",
-                          style: {
-                            border: "1px solid red",
-                            padding: "16px",
-                            color: "red",
-                            width: "300px",
-                            background: "white",
-                          },
-                        }}
-                      />
                     </button>
+                    <Toaster
+                      position="top-center"
+                      toastOptions={{
+                        className: "",
+                        style: {
+                          border: "1px solid red",
+                          padding: "16px",
+                          color: "red",
+                          width: "300px",
+                          background: "white",
+                        },
+                      }}
+                    />
                   </div>
                 </div>
               </div>

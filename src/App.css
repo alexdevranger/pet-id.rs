@@ -340,3 +340,6 @@ hr:after {
 ::-webkit-scrollbar-thumb:hover {
   background: #525252; 
 }
+.toaster-bg {
+  background: #fff!important;
+}
