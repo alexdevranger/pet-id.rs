@@ -4,12 +4,12 @@ import { Link, useParams } from "react-router-dom";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
 import axios from "axios";
-import KoskicaZl from "../assets/koskica.png";
+import KoskicaZl from "../assets/koskica_optimized.webp";
 import KoskicaCr from "../assets/koskicaCr.png";
 import koskicaPl from "../assets/koskicaPL.png";
 import koskicaRo from "../assets/koskicaRo.png";
 import SrcePl from "../assets/srceBlue.png";
-import SrceRo from "../assets/srceRo.png";
+import SrceRo from "../assets/srceRo_optimized.webp";
 import Srce from "../assets/srce.png";
 import SrceBlue from "../assets/srcePl.png";
 import SrceZl from "../assets/srceZl.png";
@@ -28,7 +28,7 @@ import pethero from "../assets/pet-hero.webp";
 import fleka from "../assets/fleka.png";
 import phone from "../assets/phone.webp";
 import par from "../assets/par.webp";
-import koktel from "../assets/koktel.png";
+import koktel from "../assets/koktel_optimized.webp";
 import HvalaSlika from "../assets/hvala.png";
 import kitty from "../assets/kitty1.png";
 import "react-lazy-load-image-component/src/effects/blur.css";
@@ -1048,7 +1048,7 @@ const Korak2 = () => {
                       },
                     })}
                     placeholder="Stela ( 3-50 karaktera)"
-                    className="peer h-10 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 font-thin outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400"
+                    className="peer h-10 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 font-normal outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400"
                   />
                   {errors.imeLjubimca && (
                     <small className="text-red-400 pl-[3px]">
@@ -1155,7 +1155,7 @@ const Korak2 = () => {
                       },
                     })}
                     placeholder="Pudlica"
-                    className="peer h-10 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 font-thin outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400"
+                    className="peer h-10 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 font-normal outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400"
                   />
                   {errors.rasa && (
                     <small className="text-red-400">
@@ -1184,7 +1184,7 @@ const Korak2 = () => {
                       },
                     })}
                     placeholder="1 godina ili 5 meseci"
-                    className="peer h-10 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 font-thin outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400"
+                    className="peer h-10 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 font-normal outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400"
                   />
                   {errors.starost && (
                     <small className="text-red-400">
@@ -1246,7 +1246,7 @@ const Korak2 = () => {
                   <div className="box border rounded flex flex-col shadow bg-white">
                     <textarea
                       placeholder="Npr. Mnogo voli decu, voli sve da jede, nije agresivna"
-                      className="peer h-20 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 font-thin outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400"
+                      className="peer h-20 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 font-normal outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400"
                       id="napomena"
                       {...register("napomena", {
                         pattern: {
@@ -1323,7 +1323,7 @@ const Korak2 = () => {
                     })}
                     placeholder=" Aleksandra Nikolic"
                     pattern="[a-zA-Z0-9]{3,30}"
-                    className="peer h-10 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 font-thin outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400"
+                    className="peer h-10 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 font-normal outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400"
                   />
                   {errors.imeVlasnika && (
                     <small className="text-red-400 pl-[3px]">
@@ -1351,7 +1351,7 @@ const Korak2 = () => {
                       },
                     })}
                     placeholder="061/1234-567"
-                    className="peer h-10 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 font-thin outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400"
+                    className="peer h-10 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 font-normal outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400"
                   />
                   {errors.brTelefonaVlasnika && (
                     <small className="text-red-400 pl-[3px]">
@@ -1379,7 +1379,7 @@ const Korak2 = () => {
                       },
                     })}
                     placeholder="061/234-56-78"
-                    className="peer h-10 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 font-thin outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400"
+                    className="peer h-10 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 font-normal outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400"
                   />
                   {errors.brDrugiVlasnika && (
                     <small className="text-red-400 pl-[3px]">
@@ -1408,7 +1408,7 @@ const Korak2 = () => {
                     })}
                     placeholder="sara2365@gmail.com"
                     // pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-                    className="peer h-10 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 font-thin outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400"
+                    className="peer h-10 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 font-normal outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400"
                   />
                   {errors.emailVlasnika && (
                     <small className="text-red-400 pl-[3px]">
@@ -1437,7 +1437,7 @@ const Korak2 = () => {
                       },
                     })}
                     placeholder="Karaburma"
-                    className="peer h-10 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 font-thin outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400"
+                    className="peer h-10 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 font-normal outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400"
                   />
                   {errors.adresaVlasnika && (
                     <small className="text-red-400 pl-[3px]">
@@ -1470,7 +1470,7 @@ const Korak2 = () => {
                       },
                     })}
                     placeholder="npr. Snežana_Nakić-Sneža-2004/478"
-                    className="peer h-10 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 font-thin outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400"
+                    className="peer h-10 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 font-normal outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400"
                   />
                   {errors.secretWord && (
                     <small className="text-red-400 pl-[3px]">
@@ -1627,7 +1627,7 @@ const Korak2 = () => {
                         },
                       })}
                       placeholder=" Aleksandra Nikolic"
-                      className="peer h-10 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 font-thin outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400"
+                      className="peer h-10 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 font-normal outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400"
                     />
                     {errors.imePrimaoca && (
                       <small className="text-red-400 pl-[3px]">
@@ -1655,7 +1655,7 @@ const Korak2 = () => {
                         },
                       })}
                       placeholder="060/123-4567"
-                      className="peer h-10 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 font-thin outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400"
+                      className="peer h-10 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 font-normal outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400"
                     />
                     {errors.brojPrimaoca && (
                       <small className="text-red-400 pl-[3px]">
@@ -1688,7 +1688,7 @@ const Korak2 = () => {
                         },
                       })}
                       placeholder="Dunavska bb"
-                      className="peer h-10 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 font-thin outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400"
+                      className="peer h-10 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 font-normal outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400"
                     />
                     {errors.adresaPrimaoca && (
                       <small className="text-red-400 pl-[3px]">
@@ -1719,7 +1719,7 @@ const Korak2 = () => {
                         },
                       })}
                       placeholder="11120"
-                      className="peer h-10 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 font-thin outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400"
+                      className="peer h-10 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 font-normal outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400"
                     />
                     {errors.zip && (
                       <small className="text-red-400 pl-[3px]">
@@ -1751,7 +1751,7 @@ const Korak2 = () => {
                         },
                       })}
                       placeholder="Beograd"
-                      className="peer h-10 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 font-thin outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400"
+                      className="peer h-10 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 font-normal outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400"
                     />
                     {errors.grad && (
                       <small className="text-red-400 pl-[3px]">
@@ -1783,7 +1783,7 @@ const Korak2 = () => {
                         },
                       })}
                       placeholder="Srbija"
-                      className="peer h-10 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 font-thin outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400"
+                      className="peer h-10 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 font-normal outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400"
                     />
                     {errors.drzava && (
                       <small className="text-red-400 pl-[3px]">
@@ -1811,7 +1811,7 @@ const Korak2 = () => {
                         },
                       })}
                       placeholder="Prići sa donje strane zgrade"
-                      className="peer h-10 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 font-thin outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400"
+                      className="peer h-10 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 font-normal outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400"
                     />
                     {errors.posebnaNapomena && (
                       <small className="text-red-400 pl-[3px]">

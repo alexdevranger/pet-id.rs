@@ -8,9 +8,9 @@ import bg from "../assets/bg.webp";
 import s6 from "../assets/s6.webp";
 import s7 from "../assets/s7.webp";
 import cutedog from "../assets/cutedog.jpg";
-import Kitty from "../assets/kitty.png";
+import Kitty from "../assets/balloon_optimized.webp";
 import cutecat from "../assets/cutecat.jpg";
-import koktel from "../assets/koktel.png";
+import koktel from "../assets/koktel_optimized.webp";
 import HvalaSlika from "../assets/hvala.png";
 import "react-lazy-load-image-component/src/effects/blur.css";
 import toast, { Toaster } from "react-hot-toast";
@@ -192,7 +192,7 @@ const MojLjubimac = () => {
                   },
                 })}
                 placeholder="https://qr.pet-id.digital/Pk7298MlMs/8Ws3KLLN7b"
-                className="peer h-10 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 font-thin outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400"
+                className="peer h-10 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 font-normal outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400"
               />
               {errors.linkPetId && (
                 <small className="text-red-400 pl-[3px]">
@@ -201,7 +201,7 @@ const MojLjubimac = () => {
               )}
             </div>
 
-            <div className="flex flex-col items-center lg:flex-row justify-center lg:justify-evenly mt-12 min-[450px]:pt-12 md:mt-0 md:pt-64 px-4">
+            <div className="flex flex-col items-center lg:flex-row justify-center lg:justify-evenly mt-12 min-[450px]:pt-12 md:mt-0 md:pt-64 px-4 lg:pt-12 xl:pt-24">
               <div
                 className="bs w-[300px] min-[450px]:w-[430px] sm:w-[600px] lg:w-[350px] xl:w-[550px] mt-14 pb-20 flex flex-col relative"
                 style={{
@@ -312,7 +312,7 @@ const MojLjubimac = () => {
                       }
                     )}
                     placeholder="Stela ( 3-50 karaktera)"
-                    className="peer h-10 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 font-thin outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400"
+                    className="peer h-10 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 font-normal outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400"
                   />
                   {errors.imeLjubimca && (
                     <small className="text-red-400 pl-[3px]">
@@ -418,7 +418,7 @@ const MojLjubimac = () => {
                       },
                     })}
                     placeholder="Pudlica"
-                    className="peer h-10 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 font-thin outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400"
+                    className="peer h-10 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 font-normal outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400"
                   />
                   {errors.rasa && (
                     <small className="text-red-400">
@@ -446,7 +446,7 @@ const MojLjubimac = () => {
                       },
                     })}
                     placeholder="1 godina ili 5 meseci"
-                    className="peer h-10 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 font-thin outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400"
+                    className="peer h-10 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 font-normal outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400"
                   />
                   {errors.starost && (
                     <small className="text-red-400">
@@ -508,7 +508,7 @@ const MojLjubimac = () => {
                   <div className="box border rounded flex flex-col shadow bg-white">
                     <textarea
                       placeholder="Npr. Mnogo voli decu, voli sve da jede, nije agresivna"
-                      className="peer h-20 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 font-thin outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400"
+                      className="peer h-20 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 font-normal outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400"
                       id="napomena"
                       {...register("napomena", {
                         pattern: {
@@ -583,7 +583,7 @@ const MojLjubimac = () => {
                     })}
                     placeholder=" Aleksandra Nikolic"
                     pattern="[a-zA-Z0-9]{3,30}"
-                    className="peer h-10 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 font-thin outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400"
+                    className="peer h-10 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 font-normal outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400"
                   />
                   {errors.imeVlasnika && (
                     <small className="text-red-400 pl-[3px]">
@@ -611,7 +611,7 @@ const MojLjubimac = () => {
                       },
                     })}
                     placeholder="061/1234-567"
-                    className="peer h-10 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 font-thin outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400"
+                    className="peer h-10 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 font-normal outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400"
                   />
                   {errors.brTelefonaVlasnika && (
                     <small className="text-red-400 pl-[3px]">
@@ -639,7 +639,7 @@ const MojLjubimac = () => {
                       },
                     })}
                     placeholder="061/234-56-78"
-                    className="peer h-10 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 font-thin outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400"
+                    className="peer h-10 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 font-normal outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400"
                   />
                   {errors.brDrugiVlasnika && (
                     <small className="text-red-400 pl-[3px]">
@@ -668,7 +668,7 @@ const MojLjubimac = () => {
                     })}
                     placeholder="sara2365@gmail.com"
                     // pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-                    className="peer h-10 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 font-thin outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400"
+                    className="peer h-10 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 font-normal outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400"
                   />
                   {errors.emailVlasnika && (
                     <small className="text-red-400 pl-[3px]">
@@ -696,7 +696,7 @@ const MojLjubimac = () => {
                       },
                     })}
                     placeholder="Karaburma"
-                    className="peer h-10 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 font-thin outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400"
+                    className="peer h-10 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 font-normal outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400"
                   />
                   {errors.adresaVlasnika && (
                     <small className="text-red-400 pl-[3px]">
@@ -728,7 +728,7 @@ const MojLjubimac = () => {
                       },
                     })}
                     placeholder="npr. Snežana_Nakić-Sneža-2004/478"
-                    className="peer h-10 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 font-thin outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400"
+                    className="peer h-10 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 font-normal outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400"
                   />
                   {errors.secretWord1 && (
                     <small className="text-red-400 pl-[3px]">
@@ -791,21 +791,21 @@ const MojLjubimac = () => {
                   cursor-pointer flex items-center justify-center text-white bg-[#3BC77E] hover:bg-[#FF553E] w-[280px] sm:w-[270px] h-[64px] rounded-lg duration-500 ml-0 md:ml-[20px] mt-8 sm:mt-0`}
               >
                 <h2 className="text-3xl">Posalji</h2>
-                <Toaster
-                  position="top-center"
-                  toastOptions={{
-                    className: "",
-                    style: {
-                      border: "1px solid red",
-                      padding: "16px",
-                      color: "red",
-                      width: "300px",
-                      background: "white",
-                    },
-                  }}
-                />
               </button>
-              <div className="absolute top-[164px] md:top-[104px] md:w-[150px] lg:top-[64px] right-0 w-[100px] xl:w-[300px]">
+              <Toaster
+                position="top-center"
+                toastOptions={{
+                  className: "",
+                  style: {
+                    border: "1px solid red",
+                    padding: "16px",
+                    color: "red",
+                    width: "300px",
+                    background: "white",
+                  },
+                }}
+              />
+              <div className="absolute top-[164px] md:top-[134px] md:w-[150px] lg:top-[154px] lg:w-[220px] right-0 w-[100px] xl:w-[250px] xl:top-[85px]">
                 <LazyLoadImage
                   effect="blur"
                   src={koktel}
@@ -814,11 +814,11 @@ const MojLjubimac = () => {
                   decoding="async"
                 />
               </div>
-              <div className="absolute top-[164px] md:top-[104px] md:w-[150px] lg:top-[64px] left-0 w-[100px] xl:w-[300px]">
+              <div className="absolute top-[214px] md:top-[184px] min-[450px]:w-[185px] md:w-[220px] min-[450px]:top-[180px] lg:top-[250px] lg:w-[250px] left-0 w-[140px] xl:w-[300px] xl:top-[180px]">
                 <LazyLoadImage
                   effect="blur"
                   src={Kitty}
-                  alt="koktel"
+                  alt="Kitty"
                   loading="lazy"
                   decoding="async"
                 />

@@ -156,7 +156,7 @@ const ContactUs = () => {
                               "Može sadržati samo slova, brojeve i razmak i min. 2 karaktera",
                           },
                         })}
-                        className="peer h-10 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 font-thin outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400"
+                        className="peer h-10 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 font-normal outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400"
                       />
                       {errors.imeKontakt && (
                         <small className="text-red-400 pl-[3px]">
@@ -187,7 +187,7 @@ const ContactUs = () => {
                             message: "Mora biti odgovarajući format za email.",
                           },
                         })}
-                        className="peer h-10 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 font-thin outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400"
+                        className="peer h-10 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 font-normal outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400"
                       />
                       {errors.emailKontakt && (
                         <small className="text-red-400 pl-[3px]">

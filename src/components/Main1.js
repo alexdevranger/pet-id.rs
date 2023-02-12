@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
-import Pet from "../assets/girl-main.webp";
+import Pet from "../assets/girl-main_optimized.webp";
 import PetXL from "../assets/glavnaProbaXLred1.png";
 import bg from "../assets/bg.webp";
 import Vektor from "../assets/Vector.png";
@@ -10,13 +10,13 @@ import Map from "../assets/map1.webp";
 import Tags from "../assets/tags-image.webp";
 import Sig from "../assets/sig1.webp";
 import Zvr from "../assets/Zvrrr.png";
-import Cezar from "../assets/garancija1.png";
-import Gift from "../assets/gift-vet-image.webp";
+import Cezar from "../assets/garancija_optimized.webp";
+import Gift from "../assets/gift-vet-image_optimized.webp";
 import Poruci from "../assets/poruci.webp";
-import Utisci from "../assets/new-1.webp";
+import Utisci from "../assets/new-1_optimized.webp";
 import MackaUpitnik from "../assets/mackaUpitnik.webp";
 import Mobile from "../assets/mobile.webp";
-import Boby from "../assets/boby.webp";
+import Boby from "../assets/boby_optimized.webp";
 import { FaHeart } from "react-icons/fa";
 
 const Main1 = () => {
@@ -444,7 +444,7 @@ const Main1 = () => {
                           effect="blur"
                           loading="lazy"
                           decoding="async"
-                          alt="Boby"
+                          alt="Boby_O"
                           src={Boby}
                           className="rounded-lg"
                         />
