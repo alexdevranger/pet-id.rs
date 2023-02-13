@@ -28,7 +28,7 @@ const Main1 = () => {
 
         <div className="flex pt-12 sm:pt-28 flex-col sm:flex-row">
           <div className="lg:ml-16 xl:pl-22 sm:w-[80%] lg:w-[70%]">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-center sm:text-left px-3 sm:pl-6 md:pl-6 md:mt-6 lg:mt-9 xl:mt-12 2xl:pb-12">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-center sm:text-left px-3 sm:pl-6 md:pl-6 md:mt-6 lg:mt-9 xl:mt-12 2xl:pb-8">
               Želiš svog ljubimca nazad ako se izgubi?
             </h1>
             <div className="px-6 md:px-8">
@@ -38,21 +38,21 @@ const Main1 = () => {
               </h4>
             </div>
             <div className="px-6">
-              <div className="pt-12 flex items-center lg:mb-8 lg:mt-3 xl:mb-0 2xl:mb-8">
+              <div className="pt-4 flex items-center lg:mb-8 lg:mt-3 xl:mb-0">
                 <img className="pr-5" src={Vektor} alt="Vektor" />
                 <p className="text-black text-[18px] md:text-lg lg:text-xl font-semibold">
                   Veoma lako se uočava sa razdaljine od 10 metara, i lako se
                   očitava pomoću mobilnog koji ima svaki pronalazač.
                 </p>
               </div>
-              <div className="pt-6 flex items-center lg:mb-8 xl:mb-0 2xl:mb-8">
+              <div className="pt-6 flex items-center lg:mb-8 xl:mb-0">
                 <img className="pr-5" src={Vektor} alt="Vektor" />
                 <p className="text-black text-[18px] md:text-lg lg:text-xl font-semibold">
                   Ne smeta vašem ljubimcu kada se igra, spava ili kupa, jer je
                   mali, savitljiv i vodootporan.
                 </p>
               </div>
-              <div className="pt-6 flex items-center lg:mb-8 xl:mb-0 2xl:mb-12">
+              <div className="pt-6 flex items-center lg:mb-8 xl:mb-0">
                 <img className="pr-5" src={Vektor} alt="Vektor" />
                 <p className="text-black text-[18px] md:text-lg lg:text-xl font-semibold">
                   Specijalno dizajniran sastav materijala od koga je izrađen Pet
@@ -419,13 +419,6 @@ const Main1 = () => {
                   </div>
                   {/*body*/}
                   <div className="relative p-6 flex flex-col min-[450px]:flex-row">
-                    {/* <p className="my-4 text-slate-500 text-lg leading-relaxed">
-                      I always felt like I could do anything. That’s the main
-                      thing people are controlled by! Thoughts- their perception
-                      of themselves! They're slowed down by their perception of
-                      themselves. If you're taught you can’t do anything, you
-                      won’t do anything. I was taught I could do everything.
-                    </p> */}
                     <div className="w-full sm:block pr-7 pl-1">
                       <div className="flex md:justify-center">
                         <LazyLoadImage

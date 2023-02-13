@@ -70,33 +70,7 @@ const ContactUs = () => {
       setFocus(firstError);
     }
   }, [errors, setFocus]);
-  // useEffect(() => {
 
-  //   // const ifErrorsInputs = () => {
-  //   if (imeKontakt === "") {
-  //     console.log("imeKontakt");
-  //     setDisabledButton(false);
-  //     setActive(true);
-  //   } else if (emailKontakt === "") {
-  //     console.log("emailKontakt");
-  //     setDisabledButton(false);
-  //     setActive(true);
-  //   } else if (porukaKontakt === "") {
-  //     console.log("porukaKontakt");
-  //     setDisabledButton(false);
-  //     setActive(true);
-  //   } else if (isValid === false) {
-  //     console.log("isValid");
-  //     setDisabledButton(false);
-  //     setActive(true);
-  //   } else {
-  //     console.log("svi uslovi ispunjeni");
-  //     setDisabledButton(true);
-  //     setActive(false);
-  //   }
-  //   //ifErrorsInputs();
-  //   // };
-  // }, [imeKontakt, emailKontakt, porukaKontakt, isValid, active]);
   const handleChange = (event) => {
     setValueCaptcha(event.target.value);
     setIsValid(parseInt(event.target.value) === captcha);
@@ -291,12 +265,6 @@ const ContactUs = () => {
                             } else if (isValid === false) {
                               setShowMessage(true);
                             } else {
-                              // setStep(2);
-                              // window.scrollTo({
-                              //   top: 0,
-                              //   behavior: "smooth",
-                              // });
-                              //setActive(false);
                               handleSubmit(onSubmit)();
                             }
                           }}

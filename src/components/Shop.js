@@ -58,10 +58,14 @@ const Shop = () => {
         </div>
       </div>
 
-      <div className="w-full flex items-center justify-center mb-32 min-[410px]:mb-36 min-[496px]:mb-48 min-[600px]:mb-48 sm:mb-52 md:mb-36 lg:mb-56 mt-8 sm:mt-12 md:mt-12">
-        <h1 className="text-3xl lg:text-4xl font-bold text-center lg:mt-7 px-4">
+      <div className="w-full flex flex-col items-center justify-center mb-32 min-[410px]:mb-36 min-[496px]:mb-48 min-[600px]:mb-48 sm:mb-52 md:mb-36 lg:mb-56 mt-8 sm:mt-12 md:mt-12">
+        <h1 className="text-3xl lg:text-4xl font-bold text-center lg:mt-7 px-4 pb-4">
           KORAK 1 <br /> Izaberite oblik priveska za vašeg ljubimca{" "}
         </h1>
+        <p className="block">
+          Na ovoj stranici unosite podatke samo ako naručujete tag preko ovog
+          sajta
+        </p>
       </div>
 
       {/* Privesci */}

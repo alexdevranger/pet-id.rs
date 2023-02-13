@@ -252,12 +252,6 @@ const Korak2 = () => {
   return (
     <div>
       <form>
-        {/* <input
-          type="text"
-          autoFocus={true}
-          className="opacity-0 cursor-default"
-        /> */}
-
         {/* SRCE */}
         {step === 1 && params.id === "srce" && (
           <>
@@ -1464,12 +1458,12 @@ const Korak2 = () => {
                       },
                       pattern: {
                         value:
-                          /^[a-zA-Z0-9a-яА-ЯčćžšđљњђћџнјČĆŽŠĐЉЊЂЋЏНЈ\/_\-]{2,30}$/,
+                          /^[a-zA-Z0-9a-яА-ЯčćžšđљњђћџнјČĆŽŠĐЉЊЂЋЏНЈ\/_\-\s]{2,30}$/,
                         message:
-                          "Nema razmaka. Može sadržati samo slova, brojeve, kosu crtu, srednju crtu, donju crtu i min. 2 slova.",
+                          "Može sadržati samo slova, brojeve, razmak, kosu crtu, srednju crtu, donju crtu i min. 2 slova.",
                       },
                     })}
-                    placeholder="npr. Snežana_Nakić-Sneža-2004/478"
+                    placeholder="npr. Džeki"
                     className="peer h-10 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 font-normal outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400"
                   />
                   {errors.secretWord && (
@@ -1498,9 +1492,8 @@ const Korak2 = () => {
                   <br />
                   <br />* Sigurnosna reč: Ukoliko želite da promenite bilo koji
                   podatak, mi ćemo vas pitati za ovu reč, čime dokazujete da ste
-                  vlasnik. Ta reč može da bude bilo šta, samo je važno da bude
-                  JEDNA reč bez razmaka. Različite reči se mogu spajati crticom
-                  ili donjom crtom - npr. "mirko_23.78".
+                  vlasnik. Ta reč može da bude bilo šta, npr. ime vašeg prvog
+                  ljubimca, npr. "Džeki".
                 </h5>
               </div>
             </div>

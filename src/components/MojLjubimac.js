@@ -162,10 +162,14 @@ const MojLjubimac = () => {
       <form>
         {korak === 1 && (
           <>
-            <div className="w-full flex items-center justify-center mb-32 min-[410px]:mb-36 min-[496px]:mb-48 min-[600px]:mb-48 sm:mb-52 md:mb-36 lg:mb-36 mt-8 sm:mt-12 md:mt-12">
-              <h1 className="text-3xl lg:text-4xl font-bold text-center lg:mt-7 px-4">
+            <div className="w-full flex flex-col items-center justify-center mb-32 min-[410px]:mb-36 min-[496px]:mb-48 min-[600px]:mb-48 sm:mb-52 md:mb-36 lg:mb-36 mt-8 sm:mt-12 md:mt-12">
+              <h1 className="text-3xl lg:text-4xl font-bold text-center lg:mt-7 px-4 pb-4">
                 Ovi podaci će se videti kad se učita QR kod
               </h1>
+              <p className="block">
+                Na ovoj stranici unosite podatke samo ako ste već kupili Pet ID
+                tag{" "}
+              </p>
             </div>
 
             <div className="group relative w-52 min-[450px]:w-60 sm:w-72 md:w-[400px] m-auto pb-10 sm:pb-24 mt-7">
