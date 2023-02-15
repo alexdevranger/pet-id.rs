@@ -205,7 +205,7 @@ const MojLjubimac = () => {
               )}
             </div>
 
-            <div className="flex flex-col items-center lg:flex-row justify-center lg:justify-evenly mt-12 min-[450px]:pt-12 md:mt-0 md:pt-64 px-4 lg:pt-12 xl:pt-24">
+            <div className="flex flex-col items-center lg:flex-row justify-center lg:justify-evenly mt-12 min-[450px]:pt-12 md:mt-0 md:pt-64 px-4 lg:pt-12 xl:pt-24 lg:items-stretch">
               <div
                 className="bs w-[95%] min-[450px]:w-[420px] min-[550px]:w-[520px] sm:w-[600px] lg:w-[350px] xl:w-[550px] mt-14 pb-20 flex flex-col relative"
                 style={{
@@ -470,7 +470,7 @@ const MojLjubimac = () => {
                 </div>
 
                 {/* musko ili zensko */}
-                <div className="flex flex-col items-center min-[450px]:flex-row justify-center mb-7">
+                <div className="flex flex-col items-center min-[450px]:flex-row lg:flex-col xl:flex-row justify-center mb-7">
                   <label htmlFor="pasIliMacka">Vaš čupavi prijatelj je</label>
                   <div className="flex items-stretch min-[450px]:flex-row min-[450px]:justify-around min-[450px]:items-center">
                     <label className="rad pl-3">
