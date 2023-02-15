@@ -933,9 +933,9 @@ const Korak2 = () => {
         )}
         {step === 1 && (
           <>
-            <div className="flex flex-col items-center lg:flex-row justify-center lg:justify-evenly mt-12 pt-24 min-[450px]:pt-16 sm:pt-52 md:mt-0 md:pt-64 px-4">
+            <div className="flex flex-col items-center lg:flex-row justify-center lg:justify-evenly mt-12 pt-24 min-[450px]:pt-16 sm:pt-52 md:mt-0 md:pt-64 px-4 lg:items-stretch">
               <div
-                className="bs w-[290px] min-[450px]:w-[420px] min-[550px]:w-[520px] sm:w-[600px] lg:w-[350px] xl:w-[550px] mt-14 pb-20 flex flex-col relative"
+                className="bs w-[95%] min-[450px]:w-[420px] min-[550px]:w-[520px] sm:w-[600px] lg:w-[350px] xl:w-[550px] mt-14 pb-20 flex flex-col relative"
                 style={{
                   backgroundImage: `url(${bg})`,
                   repeat: "no-repeat",
@@ -943,7 +943,7 @@ const Korak2 = () => {
                   backgroundSize: "cover",
                 }}
               >
-                <div className="md:flex md:justify-center w-full md:w-full absolute top-[-120px]  min-[450px]:top-[-170px] min-[550px]:top-[-214px] sm:top-[-250px] md:top-[-247px] lg:top-[-145px] xl:top-[-223px]">
+                {/* <div className="md:flex md:justify-center w-full md:w-full absolute top-[-120px]  min-[450px]:top-[-170px] min-[550px]:top-[-214px] sm:top-[-250px] md:top-[-247px] lg:top-[-145px] xl:top-[-223px]">
                   <LazyLoadImage
                     effect="blur"
                     src={s7}
@@ -952,11 +952,21 @@ const Korak2 = () => {
                     decoding="async"
                     alt="s7"
                   />
-                </div>
+                </div> */}
 
                 {/* PODACI O LJUBIMCU */}
                 <div className="w-full mt-2 flex justify-around">
-                  <div className="items-center flex flex-col w-[240px] min-[450px]:w-[350px] sm:w-[350px] lg:w-[300px] xl:w-[350px]">
+                  <div className="items-center flex flex-col w-[240px] min-[450px]:w-[350px] sm:w-[350px] lg:w-[300px] xl:w-[350px] relative">
+                    <div className="md:flex md:justify-center w-full md:w-full absolute top-[-107px]  min-[450px]:top-[-157px] min-[550px]:top-[-153px] sm:top-[-153px] md:top-[-153px] lg:top-[-130px] xl:top-[-153px]">
+                      <LazyLoadImage
+                        effect="blur"
+                        src={s7}
+                        className="w-full"
+                        loading="lazy"
+                        decoding="async"
+                        alt="s7"
+                      />
+                    </div>
                     <h1 className="text-xl sm:text-3xl lg:text-xl xl:text-3xl font-bold text-left mt-10 border border-zinc-300 rounded-md p-7 bg-[#fff]">
                       Podaci o ljubimcu
                     </h1>
@@ -1041,7 +1051,7 @@ const Korak2 = () => {
                           "Može sadržati samo slova, brojeve i razmak i min. 2 karaktera",
                       },
                     })}
-                    placeholder="Stela ( 3-50 karaktera)"
+                    placeholder="Stela ( 2-30 karaktera)"
                     className="peer h-10 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 font-normal outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400"
                   />
                   {errors.imeLjubimca && (
@@ -1188,7 +1198,7 @@ const Korak2 = () => {
                 </div>
 
                 {/* musko ili zensko */}
-                <div className="flex flex-col items-center min-[450px]:flex-row justify-center mb-7">
+                <div className="flex flex-col items-center min-[450px]:flex-row lg:flex-col xl:flex-row justify-center mb-7">
                   <label htmlFor="pasIliMacka">Vaš čupavi prijatelj je</label>
                   <div className="flex items-stretch min-[450px]:flex-row min-[450px]:justify-around min-[450px]:items-center">
                     <label className="rad pl-3">
@@ -1265,7 +1275,7 @@ const Korak2 = () => {
 
               {/* podaci 2 kolona */}
               <div
-                className="bs w-[290px] min-[450px]:w-[420px] min-[550px]:w-[520px] sm:w-[600px] lg:w-[350px] xl:w-[550px] mt-24 pb-20 flex flex-col relative sm:mt-32 md:mt-24 lg:mt-12"
+                className="bs w-[95%] min-[450px]:w-[420px] min-[550px]:w-[520px] sm:w-[600px] lg:w-[350px] xl:w-[550px] mt-24 pb-20 flex flex-col relative sm:mt-32 md:mt-24 lg:mt-[55px]"
                 style={{
                   backgroundImage: `url(${bg})`,
                   repeat: "no-repeat",
@@ -1273,19 +1283,18 @@ const Korak2 = () => {
                   backgroundSize: "cover",
                 }}
               >
-                {/* Podaci o vlasniku */}
-                <div className="md:flex md:justify-center w-full absolute top-[-120px] min-[450px]:top-[-165px] min-[550px]:top-[-205px] sm:top-[-244px] md:top-[-247px] lg:top-[-145px] xl:top-[-223px]">
-                  <LazyLoadImage
-                    effect="blur"
-                    src={s6}
-                    className="w-full"
-                    loading="lazy"
-                    decoding="async"
-                    alt="s6"
-                  />
-                </div>
                 <div className="w-full mt-2 flex justify-around">
-                  <div className="items-center flex flex-col w-[240px] min-[450px]:w-[350px] sm:w-[350px] md:w-[500px] lg:w-[300px] xl:w-[350px]">
+                  <div className="items-center flex flex-col w-[240px] min-[450px]:w-[350px] sm:w-[350px] md:w-[500px] lg:w-[300px] xl:w-[350px] relative">
+                    <div className="md:flex md:justify-center w-full md:w-full absolute top-[-107px]  min-[450px]:top-[-157px] min-[550px]:top-[-153px] sm:top-[-153px] md:top-[-207px] lg:top-[-130px] xl:top-[-153px]">
+                      <LazyLoadImage
+                        effect="blur"
+                        src={s6}
+                        className="w-full"
+                        loading="lazy"
+                        decoding="async"
+                        alt="s6"
+                      />
+                    </div>
                     <h1 className="text-xl sm:text-3xl lg:text-xl xl:text-3xl font-bold text-left mt-10 border border-zinc-300 rounded-md p-7 bg-[#fff]">
                       Podaci o vlasniku
                     </h1>
@@ -1355,7 +1364,7 @@ const Korak2 = () => {
                 </div>
 
                 {/* Jos jedan broj */}
-                <div className="group relative w-[90%] xl:w-[60%] m-auto pb-10 pt-6">
+                <div className="group relative w-[90%] xl:w-[60%] m-auto pb-10 pt-6 lg:mb-2">
                   <label
                     htmlFor="brDrugiVlasnika"
                     className="block w-full pb-1 text-sm font-medium text-gray-500 transition-all duration-200 ease-in-out group-focus-within:text-green-400"
@@ -1859,13 +1868,13 @@ const Korak2 = () => {
                     pozovite nas na <br />
                     060/60-12-199. Klikom na "Naruči" prihvatate{" "}
                     <span className="underline text-[#e9ae62]">
-                      <Link to="/proizvodi/koskica/dostava">
-                        uslove kupovine
+                      <Link to="/uslovi-koriscenja" target="_blank">
+                        uslove korišćenja
                       </Link>
                     </span>{" "}
                     i{" "}
                     <span className="underline text-[#e9ae62]">
-                      <Link to="/proizvodi/koskica/dostava">
+                      <Link to="/politika-privatnosti" target="_blank">
                         politiku privatnosti
                       </Link>
                     </span>
@@ -1933,9 +1942,7 @@ const Korak2 = () => {
                     <button
                       type="button"
                       className={`
-                      ${
-                        order === false ? "opacity-50 mt-8 sm:mt-0" : ""
-                      } text-3xl`}
+                      ${order === false ? "opacity-50 sm:mt-0" : ""} text-3xl`}
                       onClick={(e) => {
                         e.preventDefault();
 
@@ -1961,7 +1968,7 @@ const Korak2 = () => {
                         }
                       }}
                     >
-                      Naruči
+                      <h2 className="text-3xl">Naruči</h2>
                     </button>
                     <Toaster
                       position="top-center"
@@ -1979,15 +1986,9 @@ const Korak2 = () => {
                   </div>
                 </div>
               </div>
-              {/* <div className="flex justify-center mt-20 w-full">
-                <div className="lem">
-                  <img src={lem} alt="lem" className="rounded-lg" />
-                </div>
-              </div> */}
             </div>
           </>
         )}
-        {/* <pre>{JSON.stringify(form.watch(), null, 2)}</pre> */}
       </form>
       {step === 3 && (
         <div className="bg-white">

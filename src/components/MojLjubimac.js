@@ -166,7 +166,7 @@ const MojLjubimac = () => {
               <h1 className="text-3xl lg:text-4xl font-bold text-center lg:mt-7 px-4 pb-4">
                 Ovi podaci će se videti kad se učita QR kod
               </h1>
-              <p className="block">
+              <p className="px-6 text-center text-[18px] md:text-lg">
                 Na ovoj stranici unosite podatke samo ako ste već kupili Pet ID
                 tag{" "}
               </p>
@@ -277,7 +277,7 @@ const MojLjubimac = () => {
                       onChange={handleFileChange}
                     />
                   </div>
-                  <div className="bg-transparent relative bg-gray-100 shadow-inset ml-3 rounded-lg pb-5">
+                  <div className="mb-6 relative bg-gray-100 shadow-inset ml-3 rounded-lg">
                     <div className="w-28 h-28">
                       <LazyLoadImage
                         effect="blur"
@@ -315,7 +315,7 @@ const MojLjubimac = () => {
                         },
                       }
                     )}
-                    placeholder="Stela ( 3-50 karaktera)"
+                    placeholder="Stela ( 2-30 karaktera)"
                     className="peer h-10 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 font-normal outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400"
                   />
                   {errors.imeLjubimca && (
@@ -809,7 +809,7 @@ const MojLjubimac = () => {
                   },
                 }}
               />
-              <div className="absolute top-[164px] md:top-[134px] md:w-[150px] lg:top-[154px] lg:w-[220px] right-0 w-[100px] xl:w-[250px] xl:top-[85px]">
+              <div className="absolute top-[280px] min-[330px]:top-[234px] md:top-[184px] md:w-[150px] lg:top-[154px] lg:w-[220px] right-0 w-[100px] xl:w-[250px] xl:top-[85px]">
                 <LazyLoadImage
                   effect="blur"
                   src={koktel}
@@ -818,7 +818,7 @@ const MojLjubimac = () => {
                   decoding="async"
                 />
               </div>
-              <div className="absolute top-[214px] md:top-[184px] min-[450px]:w-[185px] md:w-[220px] min-[450px]:top-[180px] lg:top-[250px] lg:w-[250px] left-0 w-[140px] xl:w-[300px] xl:top-[180px]">
+              <div className="absolute top-[320px] min-[330px]:top-[294px] md:top-[234px] min-[450px]:w-[185px] md:w-[220px] min-[450px]:top-[260px] lg:top-[250px] lg:w-[250px] left-0 w-[140px] xl:w-[300px] xl:top-[180px]">
                 <LazyLoadImage
                   effect="blur"
                   src={Kitty}

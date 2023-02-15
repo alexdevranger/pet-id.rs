@@ -10,6 +10,7 @@ import MojLjubimac from "./components/MojLjubimac";
 import Uputstvo from "./components/Uputstvo";
 import UsloviKoriscenja from "./components/UsloviKoriscenja";
 import PolitikaPrivatnosti from "./components/PolitikaPrivatnosti";
+import Galerija from "./components/Galerija";
 import "./App.css";
 import "./fonts/IndieFlower-Regular.ttf";
 
@@ -25,6 +26,7 @@ function App() {
           <Route exact path="/kontakt" element={<ContactUs />} />
           <Route exact path="/moj-ljubimac" element={<MojLjubimac />} />
           <Route exact path="/uputstvo" element={<Uputstvo />} />
+          {/* <Route exact path="/galerija" element={<Galerija />} /> */}
           <Route
             exact
             path="/politika-privatnosti"
