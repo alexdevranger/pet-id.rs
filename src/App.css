@@ -1,8 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');/* @font-face {
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+@font-face {
   font-family: "Indie"; 
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
   src: local("IndieFlower-Regular"),
     url("./fonts/IndieFlower-Regular.ttf") format("truetype");
-} */
+}
+ @font-face {
+  font-family: "Itim-Regular"; 
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Itim-Regular"),
+    url("./fonts/Itim-Regular.ttf") format("truetype");
+}
 * {
   -webkit-locale: auto;
   white-space: normal;
@@ -15,7 +27,10 @@
 }
 
 h1, h2 {
-  font-family: 'Itim', "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: 'Itim', "Itim-Regular", "Indie";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
 }
 p {
     font-size: 20px;

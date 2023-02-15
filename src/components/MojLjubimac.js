@@ -207,7 +207,7 @@ const MojLjubimac = () => {
 
             <div className="flex flex-col items-center lg:flex-row justify-center lg:justify-evenly mt-12 min-[450px]:pt-12 md:mt-0 md:pt-64 px-4 lg:pt-12 xl:pt-24">
               <div
-                className="bs w-[300px] min-[450px]:w-[430px] sm:w-[600px] lg:w-[350px] xl:w-[550px] mt-14 pb-20 flex flex-col relative"
+                className="bs w-[95%] min-[450px]:w-[420px] min-[550px]:w-[520px] sm:w-[600px] lg:w-[350px] xl:w-[550px] mt-14 pb-20 flex flex-col relative"
                 style={{
                   backgroundImage: `url(${bg})`,
                   repeat: "no-repeat",
@@ -215,7 +215,7 @@ const MojLjubimac = () => {
                   backgroundSize: "cover",
                 }}
               >
-                <div className="md:flex md:justify-center w-full absolute top-[-125px] min-[450px]:top-[-180px] sm:top-[-244px] md:top-[-247px] lg:top-[-145px] xl:top-[-223px]">
+                {/* <div className="md:flex md:justify-center w-full absolute top-[-125px] min-[450px]:top-[-180px] sm:top-[-244px] md:top-[-247px] lg:top-[-145px] xl:top-[-223px]">
                   <LazyLoadImage
                     effect="blur"
                     src={s7}
@@ -224,10 +224,20 @@ const MojLjubimac = () => {
                     decoding="async"
                     alt="s7"
                   />
-                </div>
+                </div> */}
                 {/* PODACI O LJUBIMCU */}
                 <div className="w-full mt-2 flex justify-around">
-                  <div className="items-center flex flex-col w-[240px] min-[450px]:w-[350px] sm:w-[350px] lg:w-[300px] xl:w-[350px]">
+                  <div className="items-center flex flex-col w-[240px] min-[450px]:w-[350px] sm:w-[350px] lg:w-[300px] xl:w-[350px] relative">
+                    <div className="md:flex md:justify-center w-full md:w-full absolute top-[-107px]  min-[450px]:top-[-157px] min-[550px]:top-[-153px] sm:top-[-153px] md:top-[-153px] lg:top-[-130px] xl:top-[-153px]">
+                      <LazyLoadImage
+                        effect="blur"
+                        src={s7}
+                        className="w-full"
+                        loading="lazy"
+                        decoding="async"
+                        alt="s7"
+                      />
+                    </div>
                     <h1 className="text-xl sm:text-3xl lg:text-xl xl:text-3xl font-bold text-left mt-10 border border-zinc-300 rounded-md p-7 bg-[#fff]">
                       Podaci o ljubimcu
                     </h1>
@@ -536,7 +546,7 @@ const MojLjubimac = () => {
 
               {/* podaci 2 kolona */}
               <div
-                className="bs w-[300px] min-[450px]:w-[430px] sm:w-[600px] md:w-[600px] lg:w-[350px] xl:w-[550px] mt-14 pb-20 flex flex-col relative"
+                className="bs w-[95%] min-[450px]:w-[420px] min-[550px]:w-[520px] sm:w-[600px] lg:w-[350px] xl:w-[550px] mt-24 pb-20 flex flex-col relative sm:mt-32 md:mt-24 lg:mt-[55px]"
                 style={{
                   backgroundImage: `url(${bg})`,
                   repeat: "no-repeat",
@@ -545,7 +555,7 @@ const MojLjubimac = () => {
                 }}
               >
                 {/* Podaci o vlasniku */}
-                <div className="md:flex md:justify-center w-full absolute top-[-120px] min-[450px]:top-[-165px] sm:top-[-244px] md:top-[-247px] lg:top-[-145px] xl:top-[-223px]">
+                {/* <div className="md:flex md:justify-center w-full absolute top-[-120px] min-[450px]:top-[-165px] sm:top-[-244px] md:top-[-247px] lg:top-[-145px] xl:top-[-223px]">
                   <LazyLoadImage
                     effect="blur"
                     src={s6}
@@ -554,9 +564,19 @@ const MojLjubimac = () => {
                     decoding="async"
                     alt="s6"
                   />
-                </div>
+                </div> */}
                 <div className="w-full mt-2 flex justify-around">
-                  <div className="items-center flex flex-col w-[240px] min-[450px]:w-[350px] sm:w-[350px] md:w-[500px] lg:w-[300px] xl:w-[350px]">
+                  <div className="items-center flex flex-col w-[240px] min-[450px]:w-[350px] sm:w-[350px] md:w-[500px] lg:w-[300px] xl:w-[350px] relative">
+                    <div className="md:flex md:justify-center w-full md:w-full absolute top-[-107px]  min-[450px]:top-[-157px] min-[550px]:top-[-153px] sm:top-[-153px] md:top-[-207px] lg:top-[-130px] xl:top-[-153px]">
+                      <LazyLoadImage
+                        effect="blur"
+                        src={s6}
+                        className="w-full"
+                        loading="lazy"
+                        decoding="async"
+                        alt="s6"
+                      />
+                    </div>
                     <h1 className="text-xl sm:text-3xl lg:text-xl xl:text-3xl font-bold text-left mt-10 border border-zinc-300 rounded-md p-7 bg-[#fff]">
                       Podaci o vlasniku
                     </h1>
