@@ -26,10 +26,14 @@
 }
 
 h1, h2 {
-  font-family: 'Itim', "Itim-Regular";
+  font-family: 'Itim';
   font-style: normal;
   font-weight: 700;
   font-display: swap;
+  letter-spacing: -1px;
+  font-feature-settings: "kern";
+  backface-visibility: hidden;
+  text-anchor: middle;
 }
 p {
     font-size: 20px;
