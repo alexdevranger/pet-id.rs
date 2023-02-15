@@ -1,16 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
-@font-face {
+/* @font-face {
   font-family: "Indie"; 
   font-style: normal;
   font-weight: 400;
   font-display: swap;
   src: local("IndieFlower-Regular"),
     url("./fonts/IndieFlower-Regular.ttf") format("truetype");
-}
+} */
  @font-face {
   font-family: "Itim-Regular"; 
   font-style: normal;
-  font-weight: 400;
+  font-weight: 700;
   font-display: swap;
   src: local("Itim-Regular"),
     url("./fonts/Itim-Regular.ttf") format("truetype");
@@ -27,9 +27,9 @@
 }
 
 h1, h2 {
-  font-family: 'Itim', "Itim-Regular", "Indie";
+  font-family: 'Itim', "Itim-Regular";
   font-style: normal;
-  font-weight: 400;
+  font-weight: 700;
   font-display: swap;
 }
 p {
