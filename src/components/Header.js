@@ -67,22 +67,22 @@ const Header = () => {
                 Početna
               </Link>
             </li>
-            <li className="pt-6 min-[390px]:py-12 text-4xl text-white font-bold">
+            <li className="pt-6 min-[390px]:py-12 text-4xl text-white font-bold leading-5">
               <Link onClick={handleNav} to="/proizvodi">
                 Proizvodi
               </Link>
             </li>
-            <li className="pt-6 min-[390px]:py-12 text-4xl text-white font-bold">
+            <li className="pt-6 min-[390px]:py-12 text-4xl text-white font-bold leading-5">
               <Link onClick={handleNav} to="/kontakt">
                 Kontakt
               </Link>
             </li>
-            <li className="pt-6 min-[390px]:py-12 text-4xl text-white font-bold">
+            <li className="pt-6 min-[390px]:py-12 text-4xl text-white font-bold leading-5">
               <Link onClick={handleNav} to="/uputstvo">
                 Uputstvo
               </Link>
             </li>
-            <li className="pt-6 min-[390px]:py-12 text-4xl text-white font-bold">
+            <li className="pt-6 min-[390px]:py-12 text-4xl text-white font-bold leading-5">
               <Link onClick={handleNav} to="/moj-ljubimac">
                 <img src={Avatar} alt="avatar" height="65px" width="48px" />
               </Link>
