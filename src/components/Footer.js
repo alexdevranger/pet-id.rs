@@ -1,5 +1,5 @@
 import React from "react";
-import PETnav from "../assets/PETnav.png";
+import PETnav from "../assets/PETnav.svg";
 import { FaFacebookSquare, FaInstagram, FaTiktok } from "react-icons/fa";
 
 const Footer = () => {
@@ -9,9 +9,27 @@ const Footer = () => {
         <img src={PETnav} className="w-1/2 md:w-1/2" alt="logo" />
       </div>
 
-      <div className="w-[95%] flex items-center flex-col-reverse md:flex-row ">
-        <div className="flex justify-center w-full">
-          <p className="text-[18px]">All right reserved © 2023 Pet ID</p>
+      <div className="w-[95%] flex items-center flex-col-reverse md:flex-row">
+        <div className="flex justify-center w-full flex-col items-center">
+          <p className="text-[16px] min-[315px]:text-[18px]">All right reserved © 2023 Pet ID</p>
+          <div className="px-6 flex flex-row pt-2">
+          <p className="text-[10px] min-[315px]:text-[11px] md:text-[13px] mt-2"> 
+            <a href="https://www.pet-id.rs/politika-privatnosti"
+              target="_blank"
+              rel="noreferrer"
+              >
+                Politika privatnosti
+            </a>
+          </p>
+          <p className="text-[10px] min-[315px]:text-[11px] md:text-[13px] mt-2 pl-6">
+            <a href="https://www.pet-id.rs/uslovi-koriscenja"
+              target="_blank"
+              rel="noreferrer"
+              >
+                Uslovi koriscenja
+            </a>
+          </p>
+          </div>
         </div>
         <div>
           <div className="flex justify-center w-[287px] md:w-[236px] flex-col-reverse md:flex-row">
