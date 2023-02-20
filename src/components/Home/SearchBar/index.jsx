@@ -16,7 +16,7 @@ const SearchBar = ({ formSubmit, value, handleSearchKey, clearSearch }) => (
             value={value}
             onChange={handleSearchKey}
           />
-          {value && <span onClick={clearSearch}>X</span>}
+          {/* {value && <span onClick={clearSearch}>X</span>} */}
           <button className="text-[#3BC77E] hover:text-white absolute right-2.5 bottom-2.5 bg-white hover:bg-[#3BC77E] focus:outline-none font-medium rounded-lg text-sm px-4 py-2 dark:bg-white dark:hover:bg-[#3BC77E]">Search</button>
         </div>
       </form>
