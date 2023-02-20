@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import PETnav from "../assets/PETnav_optimized.png";
+
+import PETnav from "../assets/PETnav.svg";
+
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import Avatar from "../assets/pets_optimized.png";
 
@@ -14,23 +16,31 @@ const Header = () => {
       <div className="px-4 flex items-center h-full">
         <div className="w-full flex items-center">
           <div className="w-[120px]">
-            <img className="logo" src={PETnav} alt="PETnav" />
+            <div>
+              <img className="logo" src={PETnav} alt="PETnav" />
+            </div>
           </div>
           <div className="hidden md:flex md:justify-end w-full">
             <ul className="flex text-white items-center">
-              <li className="md:p py-2 block hover:text-[#FF553E] px-4 text-xl">
+              <li className="md:p py-2 block transition-all duration-100 ease-in-out hover:font-bold px-4 text-xl">
                 <Link to="/">Početna</Link>
               </li>
-              <li className="md:p py-2 block hover:text-[#FF553E] px-4 text-xl">
+              <li className="md:p py-2 block transition-all duration-100 ease-in-out hover:font-bold px-4 text-xl">
                 <Link to="/proizvodi">Proizvodi</Link>
               </li>
-              <li className="md:p py-2 block hover:text-[#FF553E] px-4 text-xl">
+              {/* <li className="md:p py-2 block transition-all duration-100 ease-in-out hover:font-bold px-4 text-xl">
+                <Link to="/udomi">Udomi</Link>
+              </li> */}
+              <li className="md:p py-2 block transition-all duration-100 ease-in-out hover:font-bold px-4 text-xl">
+                <Link to="/blog">Blog</Link>
+              </li>
+              <li className="md:p py-2 block transition-all duration-100 ease-in-out hover:font-bold px-4 text-xl">
                 <Link to="/kontakt">Kontakt</Link>
               </li>
-              <li className="md:p py-2 block hover:text-[#FF553E] px-4 text-xl">
+              <li className="md:p py-2 block transition-all duration-100 ease-in-out hover:font-bold px-4 text-xl">
                 <Link to="/uputstvo">Uputstvo</Link>
               </li>
-              <li className="md:p py-2 block hover:text-[#FF553E] px-4 text-xl">
+              <li className="md:p py-2 block transition-all duration-100 ease-in-out hover:font-bold px-4 text-xl">
                 <Link to="/moj-ljubimac">
                   <img src={Avatar} alt="avatar" height="65px" width="48px" />
                 </Link>
@@ -62,6 +72,7 @@ const Header = () => {
                 : "absolute top-0 left-0 w-full h-screen bg-[#FF553E] flex flex-col justify-center items-center z-20"
             }
           >
+
             <li className="min-[390px]:py-12 text-4xl text-white font-bold pt-6 min-[390px]:pt-0">
               <Link onClick={handleNav} to="/">
                 Početna
@@ -72,6 +83,7 @@ const Header = () => {
                 Proizvodi
               </Link>
             </li>
+
             <li className="pt-6 min-[390px]:py-12 text-4xl text-white font-bold">
               <Link onClick={handleNav} to="/kontakt">
                 Kontakt

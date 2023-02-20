@@ -1,6 +1,9 @@
 import React from "react";
+
+import PETnav from "../assets/PETnav.svg";
+
 import { Link, useParams } from "react-router-dom";
-import PETnav from "../assets/PETnav_optimized.png";
+
 import { FaFacebookSquare, FaInstagram, FaTiktok } from "react-icons/fa";
 
 const Footer = () => {
@@ -12,6 +15,7 @@ const Footer = () => {
 
       <div className="w-[95%] flex items-center flex-col-reverse md:flex-row">
         <div className="flex justify-center w-full flex-col items-center">
+
           <p className="text-[16px] min-[315px]:text-[18px]">
             All right reserved © 2023 Pet ID
           </p>
@@ -26,6 +30,7 @@ const Footer = () => {
                 Uslovi korišćenja
               </Link>
             </p>
+
           </div>
         </div>
         <div>

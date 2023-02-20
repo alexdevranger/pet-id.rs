@@ -113,7 +113,7 @@ const Korak2 = () => {
   }, []);
   const ErrorContact = () =>
     toast.error("Stavite bar jedan način kako da vas kontaktira pronalazač.");
-  const onSubmit = (data) => {
+    const onSubmit = (data) => {
     const brTelefonaVlasnikaEmpty = form.watch("brTelefonaVlasnika");
     const brDrugiVlasnikaEmpty = form.watch("brDrugiVlasnika");
     const emailVlasnikaEmpty = form.watch("emailVlasnika");
