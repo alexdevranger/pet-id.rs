@@ -8,10 +8,10 @@ import bg from "../assets/bg.webp";
 import s6 from "../assets/s6.webp";
 import s7 from "../assets/s7.webp";
 import cutedog from "../assets/cutedog.jpg";
-import Kitty from "../assets/kitty.png";
+import Kitty from "../assets/balloon_optimized.webp";
 import cutecat from "../assets/cutecat.jpg";
-import koktel from "../assets/koktel.png";
-import HvalaSlika from "../assets/hvala.png";
+import koktel from "../assets/koktel_optimized.webp";
+import HvalaSlika from "../assets/hvala_optimized.webp";
 import "react-lazy-load-image-component/src/effects/blur.css";
 import toast, { Toaster } from "react-hot-toast";
 
@@ -162,10 +162,14 @@ const MojLjubimac = () => {
       <form>
         {korak === 1 && (
           <>
-            <div className="w-full mt-14 relative">
-              <h1 className="text-xl lg:text-3xl px-3 font-bold text-center w-full pb-14">
+            <div className="w-full flex flex-col items-center justify-center mb-32 min-[410px]:mb-36 min-[496px]:mb-48 min-[600px]:mb-48 sm:mb-52 md:mb-36 lg:mb-36 mt-8 sm:mt-12 md:mt-12">
+              <h1 className="text-3xl lg:text-4xl font-bold text-center lg:mt-7 px-4 pb-4">
                 Ovi podaci će se videti kad se učita QR kod
               </h1>
+              <p className="px-6 text-center text-[18px] md:text-lg">
+                Na ovoj stranici unosite podatke samo ako ste već kupili Pet ID
+                tag{" "}
+              </p>
             </div>
 
             <div className="group relative w-52 min-[450px]:w-60 sm:w-72 md:w-[400px] m-auto pb-10 sm:pb-24 mt-7">
@@ -192,7 +196,7 @@ const MojLjubimac = () => {
                   },
                 })}
                 placeholder="https://qr.pet-id.digital/Pk7298MlMs/8Ws3KLLN7b"
-                className="peer h-10 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 font-thin outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400"
+                className="peer h-10 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 font-normal outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400"
               />
               {errors.linkPetId && (
                 <small className="text-red-400 pl-[3px]">
@@ -201,9 +205,9 @@ const MojLjubimac = () => {
               )}
             </div>
 
-            <div className="flex flex-col items-center lg:flex-row justify-center lg:justify-evenly mt-12 min-[450px]:pt-12 md:mt-0 md:pt-64 px-4">
+            <div className="flex flex-col items-center lg:flex-row justify-center lg:justify-evenly mt-12 min-[450px]:pt-12 md:mt-0 md:pt-64 px-4 lg:pt-12 xl:pt-24 lg:items-stretch">
               <div
-                className="bs w-[300px] min-[450px]:w-[430px] sm:w-[600px] lg:w-[350px] xl:w-[550px] mt-14 pb-20 flex flex-col relative"
+                className="bs w-[95%] min-[450px]:w-[420px] min-[550px]:w-[520px] sm:w-[600px] lg:w-[350px] xl:w-[550px] mt-14 pb-20 flex flex-col relative"
                 style={{
                   backgroundImage: `url(${bg})`,
                   repeat: "no-repeat",
@@ -211,7 +215,7 @@ const MojLjubimac = () => {
                   backgroundSize: "cover",
                 }}
               >
-                <div className="md:flex md:justify-center w-full absolute top-[-125px] min-[450px]:top-[-180px] sm:top-[-244px] md:top-[-247px] lg:top-[-145px] xl:top-[-223px]">
+                {/* <div className="md:flex md:justify-center w-full absolute top-[-125px] min-[450px]:top-[-180px] sm:top-[-244px] md:top-[-247px] lg:top-[-145px] xl:top-[-223px]">
                   <LazyLoadImage
                     effect="blur"
                     src={s7}
@@ -220,10 +224,20 @@ const MojLjubimac = () => {
                     decoding="async"
                     alt="s7"
                   />
-                </div>
+                </div> */}
                 {/* PODACI O LJUBIMCU */}
                 <div className="w-full mt-2 flex justify-around">
-                  <div className="items-center flex flex-col w-[240px] min-[450px]:w-[350px] sm:w-[350px] lg:w-[300px] xl:w-[350px]">
+                  <div className="items-center flex flex-col w-[240px] min-[450px]:w-[350px] sm:w-[350px] lg:w-[300px] xl:w-[350px] relative">
+                    <div className="md:flex md:justify-center w-full md:w-full absolute top-[-107px]  min-[450px]:top-[-157px] min-[550px]:top-[-153px] sm:top-[-153px] md:top-[-153px] lg:top-[-130px] xl:top-[-153px]">
+                      <LazyLoadImage
+                        effect="blur"
+                        src={s7}
+                        className="w-full"
+                        loading="lazy"
+                        decoding="async"
+                        alt="s7"
+                      />
+                    </div>
                     <h1 className="text-xl sm:text-3xl lg:text-xl xl:text-3xl font-bold text-left mt-10 border border-zinc-300 rounded-md p-7 bg-[#fff]">
                       Podaci o ljubimcu
                     </h1>
@@ -273,7 +287,7 @@ const MojLjubimac = () => {
                       onChange={handleFileChange}
                     />
                   </div>
-                  <div className="bg-transparent relative bg-gray-100 shadow-inset ml-3 rounded-lg pb-5">
+                  <div className="mb-6 relative bg-gray-100 shadow-inset ml-3 rounded-lg">
                     <div className="w-28 h-28">
                       <LazyLoadImage
                         effect="blur"
@@ -311,8 +325,8 @@ const MojLjubimac = () => {
                         },
                       }
                     )}
-                    placeholder="Stela ( 3-50 karaktera)"
-                    className="peer h-10 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 font-thin outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400"
+                    placeholder="Stela ( 2-30 karaktera)"
+                    className="peer h-10 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 font-normal outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400"
                   />
                   {errors.imeLjubimca && (
                     <small className="text-red-400 pl-[3px]">
@@ -418,7 +432,7 @@ const MojLjubimac = () => {
                       },
                     })}
                     placeholder="Pudlica"
-                    className="peer h-10 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 font-thin outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400"
+                    className="peer h-10 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 font-normal outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400"
                   />
                   {errors.rasa && (
                     <small className="text-red-400">
@@ -446,7 +460,7 @@ const MojLjubimac = () => {
                       },
                     })}
                     placeholder="1 godina ili 5 meseci"
-                    className="peer h-10 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 font-thin outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400"
+                    className="peer h-10 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 font-normal outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400"
                   />
                   {errors.starost && (
                     <small className="text-red-400">
@@ -456,7 +470,7 @@ const MojLjubimac = () => {
                 </div>
 
                 {/* musko ili zensko */}
-                <div className="flex flex-col items-center min-[450px]:flex-row justify-center mb-7">
+                <div className="flex flex-col items-center min-[450px]:flex-row lg:flex-col xl:flex-row justify-center mb-7">
                   <label htmlFor="pasIliMacka">Vaš čupavi prijatelj je</label>
                   <div className="flex items-stretch min-[450px]:flex-row min-[450px]:justify-around min-[450px]:items-center">
                     <label className="rad pl-3">
@@ -508,7 +522,7 @@ const MojLjubimac = () => {
                   <div className="box border rounded flex flex-col shadow bg-white">
                     <textarea
                       placeholder="Npr. Mnogo voli decu, voli sve da jede, nije agresivna"
-                      className="peer h-20 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 font-thin outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400"
+                      className="peer h-20 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 font-normal outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400"
                       id="napomena"
                       {...register("napomena", {
                         pattern: {
@@ -532,7 +546,7 @@ const MojLjubimac = () => {
 
               {/* podaci 2 kolona */}
               <div
-                className="bs w-[300px] min-[450px]:w-[430px] sm:w-[600px] md:w-[600px] lg:w-[350px] xl:w-[550px] mt-14 pb-20 flex flex-col relative"
+                className="bs w-[95%] min-[450px]:w-[420px] min-[550px]:w-[520px] sm:w-[600px] lg:w-[350px] xl:w-[550px] mt-24 pb-20 flex flex-col relative sm:mt-32 md:mt-24 lg:mt-[55px]"
                 style={{
                   backgroundImage: `url(${bg})`,
                   repeat: "no-repeat",
@@ -541,7 +555,7 @@ const MojLjubimac = () => {
                 }}
               >
                 {/* Podaci o vlasniku */}
-                <div className="md:flex md:justify-center w-full absolute top-[-120px] min-[450px]:top-[-165px] sm:top-[-244px] md:top-[-247px] lg:top-[-145px] xl:top-[-223px]">
+                {/* <div className="md:flex md:justify-center w-full absolute top-[-120px] min-[450px]:top-[-165px] sm:top-[-244px] md:top-[-247px] lg:top-[-145px] xl:top-[-223px]">
                   <LazyLoadImage
                     effect="blur"
                     src={s6}
@@ -550,9 +564,19 @@ const MojLjubimac = () => {
                     decoding="async"
                     alt="s6"
                   />
-                </div>
+                </div> */}
                 <div className="w-full mt-2 flex justify-around">
-                  <div className="items-center flex flex-col w-[240px] min-[450px]:w-[350px] sm:w-[350px] md:w-[500px] lg:w-[300px] xl:w-[350px]">
+                  <div className="items-center flex flex-col w-[240px] min-[450px]:w-[350px] sm:w-[350px] md:w-[500px] lg:w-[300px] xl:w-[350px] relative">
+                    <div className="md:flex md:justify-center w-full md:w-full absolute top-[-107px]  min-[450px]:top-[-157px] min-[550px]:top-[-153px] sm:top-[-153px] md:top-[-207px] lg:top-[-130px] xl:top-[-153px]">
+                      <LazyLoadImage
+                        effect="blur"
+                        src={s6}
+                        className="w-full"
+                        loading="lazy"
+                        decoding="async"
+                        alt="s6"
+                      />
+                    </div>
                     <h1 className="text-xl sm:text-3xl lg:text-xl xl:text-3xl font-bold text-left mt-10 border border-zinc-300 rounded-md p-7 bg-[#fff]">
                       Podaci o vlasniku
                     </h1>
@@ -583,7 +607,7 @@ const MojLjubimac = () => {
                     })}
                     placeholder=" Aleksandra Nikolic"
                     pattern="[a-zA-Z0-9]{3,30}"
-                    className="peer h-10 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 font-thin outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400"
+                    className="peer h-10 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 font-normal outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400"
                   />
                   {errors.imeVlasnika && (
                     <small className="text-red-400 pl-[3px]">
@@ -611,7 +635,7 @@ const MojLjubimac = () => {
                       },
                     })}
                     placeholder="061/1234-567"
-                    className="peer h-10 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 font-thin outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400"
+                    className="peer h-10 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 font-normal outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400"
                   />
                   {errors.brTelefonaVlasnika && (
                     <small className="text-red-400 pl-[3px]">
@@ -639,7 +663,7 @@ const MojLjubimac = () => {
                       },
                     })}
                     placeholder="061/234-56-78"
-                    className="peer h-10 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 font-thin outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400"
+                    className="peer h-10 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 font-normal outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400"
                   />
                   {errors.brDrugiVlasnika && (
                     <small className="text-red-400 pl-[3px]">
@@ -668,7 +692,7 @@ const MojLjubimac = () => {
                     })}
                     placeholder="sara2365@gmail.com"
                     // pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-                    className="peer h-10 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 font-thin outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400"
+                    className="peer h-10 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 font-normal outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400"
                   />
                   {errors.emailVlasnika && (
                     <small className="text-red-400 pl-[3px]">
@@ -696,7 +720,7 @@ const MojLjubimac = () => {
                       },
                     })}
                     placeholder="Karaburma"
-                    className="peer h-10 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 font-thin outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400"
+                    className="peer h-10 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 font-normal outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400"
                   />
                   {errors.adresaVlasnika && (
                     <small className="text-red-400 pl-[3px]">
@@ -728,7 +752,7 @@ const MojLjubimac = () => {
                       },
                     })}
                     placeholder="npr. Snežana_Nakić-Sneža-2004/478"
-                    className="peer h-10 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 font-thin outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400"
+                    className="peer h-10 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 font-normal outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400"
                   />
                   {errors.secretWord1 && (
                     <small className="text-red-400 pl-[3px]">
@@ -791,20 +815,21 @@ const MojLjubimac = () => {
                   cursor-pointer flex items-center justify-center text-white bg-[#3BC77E] hover:bg-[#FF553E] w-[280px] sm:w-[270px] h-[64px] rounded-lg duration-500 ml-0 md:ml-[20px] mt-8 sm:mt-0`}
               >
                 <h2 className="text-3xl">Posalji</h2>
-                <Toaster
-                  position="top-center"
-                  toastOptions={{
-                    className: "",
-                    style: {
-                      border: "1px solid red",
-                      padding: "16px",
-                      color: "red",
-                      width: "300px",
-                    },
-                  }}
-                />
               </button>
-              <div className="absolute top-[164px] md:top-[104px] md:w-[150px] lg:top-[64px] right-0 w-[100px] xl:w-[300px]">
+              <Toaster
+                position="top-center"
+                toastOptions={{
+                  className: "",
+                  style: {
+                    border: "1px solid red",
+                    padding: "16px",
+                    color: "red",
+                    width: "300px",
+                    background: "white",
+                  },
+                }}
+              />
+              <div className="absolute top-[280px] min-[330px]:top-[234px] md:top-[184px] md:w-[150px] lg:top-[154px] lg:w-[220px] right-0 w-[100px] xl:w-[250px] xl:top-[85px]">
                 <LazyLoadImage
                   effect="blur"
                   src={koktel}
@@ -813,11 +838,11 @@ const MojLjubimac = () => {
                   decoding="async"
                 />
               </div>
-              <div className="absolute top-[164px] md:top-[104px] md:w-[150px] lg:top-[64px] left-0 w-[100px] xl:w-[300px]">
+              <div className="absolute top-[320px] min-[330px]:top-[294px] md:top-[234px] min-[450px]:w-[185px] md:w-[220px] min-[450px]:top-[260px] lg:top-[250px] lg:w-[250px] left-0 w-[140px] xl:w-[300px] xl:top-[180px]">
                 <LazyLoadImage
                   effect="blur"
                   src={Kitty}
-                  alt="koktel"
+                  alt="Kitty"
                   loading="lazy"
                   decoding="async"
                 />

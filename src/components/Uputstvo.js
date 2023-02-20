@@ -1,10 +1,10 @@
 import React from "react";
-import HvalaSlika from "../assets/love.webp";
+import HvalaSlika from "../assets/love_optimized.webp";
 import { Link } from "react-router-dom";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
 import Vektor from "../assets/Vector.png";
-import Avatar from "../assets/pets.png";
+import Avatar from "../assets/pets_optimized.png";
 import bg from "../assets/bg.webp";
 
 function Uputstvo() {
@@ -18,8 +18,8 @@ function Uputstvo() {
           backgroundSize: "100%",
         }}
       >
-        <div className="text-center mt-12 sm:mt-28">
-          <h1 className="text-2xl sm:text-4xl font-bold text-[#3BC77E] pb-[25px]">
+        <div className="text-center mt-12">
+          <h1 className="text-5xl sm:text-6xl font-bold text-[#3BC77E] pb-[25px]">
             Uputstvo
           </h1>
           <p className="text-[18px] sm:text-xl mt-7 w-[75%] min-[730px]:w-[50%] m-auto">

@@ -2,12 +2,12 @@ import React, { useState, useEffect } from "react";
 import { useForm } from "react-hook-form";
 import { Link } from "react-router-dom";
 import axios from "axios";
-import KontaktSlika from "../assets/group.webp";
+import KontaktSlika from "../assets/group_optimized.webp";
 import bg from "../assets/bg.webp";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
 import toast, { Toaster } from "react-hot-toast";
-import HvalaSlika from "../assets/hvala.png";
+import HvalaSlika from "../assets/hvala_optimized.webp";
 
 const ContactUs = () => {
   const [captcha, setCaptcha] = useState(Math.floor(Math.random() * 10000));
@@ -94,7 +94,7 @@ const ContactUs = () => {
         <div className="container px-5 pt-12 mx-auto">
           {korak === 1 && (
             <div className="flex flex-col text-center w-full mb-12">
-              <h1 className="text-2xl sm:text-5xl md:text-5xl lg:text-6xl xl:text-7xl font-bold pb-8 mt-12 sm:mt-0 text-center text-[#FF553E]">
+              <h1 className="text-5xl sm:text-6xl font-bold pb-8 mt-12 sm:mt-0 text-center text-[#FF553E]">
                 Kontaktirajte nas
               </h1>
               <p className="pt-8 font-bold text-xl sm:text-xl md:text-xl lg:text-xl text-center">
@@ -130,7 +130,7 @@ const ContactUs = () => {
                               "Može sadržati samo slova, brojeve i razmak i min. 2 karaktera",
                           },
                         })}
-                        className="peer h-10 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 font-thin outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400"
+                        className="peer h-10 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 font-normal outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400"
                       />
                       {errors.imeKontakt && (
                         <small className="text-red-400 pl-[3px]">
@@ -161,7 +161,7 @@ const ContactUs = () => {
                             message: "Mora biti odgovarajući format za email.",
                           },
                         })}
-                        className="peer h-10 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 font-thin outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400"
+                        className="peer h-10 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 font-normal outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400"
                       />
                       {errors.emailKontakt && (
                         <small className="text-red-400 pl-[3px]">
@@ -265,12 +265,6 @@ const ContactUs = () => {
                             } else if (isValid === false) {
                               setShowMessage(true);
                             } else {
-                              // setStep(2);
-                              // window.scrollTo({
-                              //   top: 0,
-                              //   behavior: "smooth",
-                              // });
-                              //setActive(false);
                               handleSubmit(onSubmit)();
                             }
                           }}
@@ -285,19 +279,20 @@ const ContactUs = () => {
                           type="button"
                         >
                           Pošalji
-                          <Toaster
-                            position="top-center"
-                            toastOptions={{
-                              className: "",
-                              style: {
-                                border: "1px solid red",
-                                padding: "16px",
-                                color: "red",
-                                width: "300px",
-                              },
-                            }}
-                          />
                         </button>
+                        <Toaster
+                          position="top-center"
+                          toastOptions={{
+                            className: "",
+                            style: {
+                              border: "1px solid red",
+                              padding: "16px",
+                              color: "red",
+                              width: "300px",
+                              background: "white",
+                            },
+                          }}
+                        />
                       </div>
                     </div>
                   </div>

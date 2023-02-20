@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+
 import PETnav from "../assets/PETnav.svg";
+
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
-import Avatar from "../assets/pets.png";
+import Avatar from "../assets/pets_optimized.png";
 
 const Header = () => {
   const [nav, setNav] = useState(false);
@@ -70,37 +72,29 @@ const Header = () => {
                 : "absolute top-0 left-0 w-full h-screen bg-[#FF553E] flex flex-col justify-center items-center z-20"
             }
           >
-            <li className="py-12 text-4xl text-white font-bold pt-32">
+
+            <li className="min-[390px]:py-12 text-4xl text-white font-bold pt-6 min-[390px]:pt-0">
               <Link onClick={handleNav} to="/">
                 Početna
               </Link>
             </li>
-            <li className="py-12 text-4xl text-white font-bold">
+            <li className="pt-6 min-[390px]:py-12 text-4xl text-white font-bold">
               <Link onClick={handleNav} to="/proizvodi">
                 Proizvodi
               </Link>
             </li>
-            {/* <li className="py-12 text-4xl text-white font-bold">
-              <Link onClick={handleNav} to="/udomi">
-                Udomi
-              </Link>
-            </li> */}
-            <li className="py-12 text-4xl text-white font-bold">
-              <Link onClick={handleNav} to="/blog">
-                Blog
-              </Link>
-            </li>
-            <li className="py-12 text-4xl text-white font-bold">
+
+            <li className="pt-6 min-[390px]:py-12 text-4xl text-white font-bold">
               <Link onClick={handleNav} to="/kontakt">
                 Kontakt
               </Link>
             </li>
-            <li className="py-12 text-4xl text-white font-bold">
+            <li className="pt-6 min-[390px]:py-12 text-4xl text-white font-bold">
               <Link onClick={handleNav} to="/uputstvo">
                 Uputstvo
               </Link>
             </li>
-            <li className="py-12 text-4xl text-white font-bold">
+            <li className="pt-6 min-[390px]:py-12 text-4xl text-white font-bold">
               <Link onClick={handleNav} to="/moj-ljubimac">
                 <img src={Avatar} alt="avatar" height="65px" width="48px" />
               </Link>

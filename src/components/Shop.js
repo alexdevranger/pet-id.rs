@@ -3,18 +3,18 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
-import Srce from "../assets/srce.png";
-import Koskica from "../assets/koskica.png";
-import Krug from "../assets/krug.png";
-import Korak1Slika from "../assets/lem.webp";
-import SrceORPersp from "../assets/006.png";
-import SrceORBack from "../assets/005.png";
-import KoskaZlPersp from "../assets/036.png";
-import KoskaZlBack from "../assets/035.png";
-import KrugPlPersp from "../assets/018.png";
-import KrugPllBack from "../assets/017.png";
-import Izaberi from "../assets/z-img.webp";
-import kindcat from "../assets/kindcat.webp";
+import Srce from "../assets/srce_optimized.webp";
+import Koskica from "../assets/koskica_optimized.webp";
+import Krug from "../assets/krug_optimized.webp";
+import Korak1Slika from "../assets/lem_optimized.webp";
+import SrceORPersp from "../assets/006_optimized.webp";
+import SrceORBack from "../assets/005_optimized.webp";
+import KoskaZlPersp from "../assets/036_optimized.webp";
+import KoskaZlBack from "../assets/035_optimized.webp";
+import KrugPlPersp from "../assets/018_optimized.webp";
+import KrugPllBack from "../assets/017_optimized.webp";
+import Izaberi from "../assets/z-img_optimized.webp";
+import kindcat from "../assets/kindcat_optimized.webp";
 import bg from "../assets/bg.webp";
 import toast, { Toaster } from "react-hot-toast";
 
@@ -37,7 +37,7 @@ const Shop = () => {
       }}
     >
       {/* Gornje slike */}
-      <div className="w-full flex items-center absolute justify-between mt-10 min-[410px]:mt-3 sm:mt-3 md:mt-6 lg:mt-12 xl:mt-0 2xl:-mt-12">
+      <div className="w-full flex items-center absolute justify-between mt-32 min-[410px]:mt-12 sm:mt-8 md:mt-6 lg:mt-12 xl:mt-0 2xl:-mt-12">
         <div className="imgIzaberiHolder flex justify-start w-1/2 sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4">
           <LazyLoadImage
             effect="blur"
@@ -58,10 +58,14 @@ const Shop = () => {
         </div>
       </div>
 
-      <div className="w-full flex items-center justify-center mb-32 min-[410px]:mb-36 min-[496px]:mb-48 min-[600px]:mb-48 sm:mb-52 md:mb-36 lg:mb-56 mt-8 sm:mt-12 md:mt-12">
-        <h1 className="text-3xl lg:text-4xl font-bold text-center lg:mt-7 px-4">
+      <div className="w-full flex flex-col items-center justify-center mb-32 min-[410px]:mb-36 min-[496px]:mb-48 min-[600px]:mb-48 sm:mb-52 md:mb-36 lg:mb-56 mt-8 sm:mt-12 md:mt-12">
+        <h1 className="text-3xl lg:text-4xl font-bold text-center lg:mt-7 px-4 pb-4">
           KORAK 1 <br /> Izaberite oblik priveska za vašeg ljubimca{" "}
         </h1>
+        <p className="block">
+          Na ovoj stranici unosite podatke samo ako naručujete tag preko ovog
+          sajta
+        </p>
       </div>
 
       {/* Privesci */}
@@ -310,6 +314,7 @@ const Shop = () => {
                   padding: "16px",
                   color: "red",
                   width: "300px",
+                  background: "white",
                 },
               }}
             />

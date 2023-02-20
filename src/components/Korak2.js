@@ -4,33 +4,33 @@ import { Link, useParams } from "react-router-dom";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
 import axios from "axios";
-import KoskicaZl from "../assets/koskica.png";
-import KoskicaCr from "../assets/koskicaCr.png";
-import koskicaPl from "../assets/koskicaPL.png";
-import koskicaRo from "../assets/koskicaRo.png";
-import SrcePl from "../assets/srceBlue.png";
-import SrceRo from "../assets/srceRo.png";
-import Srce from "../assets/srce.png";
-import SrceBlue from "../assets/srcePl.png";
-import SrceZl from "../assets/srceZl.png";
-import KrugPl from "../assets/krug.png";
-import KrugRo from "../assets/krugRo.png";
-import KrugOr from "../assets/krugOr.png";
-import KrugBlue from "../assets/krugBlue.png";
-import KrugZl from "../assets/krugZl.png";
+import KoskicaZl from "../assets/koskica_optimized.webp";
+import KoskicaCr from "../assets/koskicaCr_optimized.webp";
+import koskicaPl from "../assets/koskicaPL_optimized.webp";
+import koskicaRo from "../assets/koskicaRo_optimized.webp";
+import SrcePl from "../assets/srceBlue_optimized.webp";
+import SrceRo from "../assets/srceRo_optimized.webp";
+import Srce from "../assets/srce_optimized.webp";
+import SrceBlue from "../assets/srcePl_optimized.webp";
+import SrceZl from "../assets/srceZl_optimized.webp";
+import KrugPl from "../assets/krug_optimized.webp";
+import KrugRo from "../assets/krugRo_optimized.webp";
+import KrugOr from "../assets/krugOr_optimized.webp";
+import KrugBlue from "../assets/krugBlue_optimized.webp";
+import KrugZl from "../assets/krugZl_optimized.webp";
 import bg from "../assets/bg.webp";
 import s5 from "../assets/s5.webp";
 import s6 from "../assets/s6.webp";
 import s7 from "../assets/s7.webp";
 import cutedog from "../assets/cutedog.jpg";
 import cutecat from "../assets/cutecat.jpg";
-import pethero from "../assets/pet-hero.webp";
-import fleka from "../assets/fleka.png";
-import phone from "../assets/phone.webp";
-import par from "../assets/par.webp";
-import koktel from "../assets/koktel.png";
-import HvalaSlika from "../assets/hvala.png";
-import kitty from "../assets/kitty1.png";
+import pethero from "../assets/pet-hero_optimized.webp";
+import fleka from "../assets/fleka_optimized.webp";
+import phone from "../assets/phone_optimized.webp";
+import par from "../assets/par_optimized.webp";
+import koktel from "../assets/koktel_optimized.webp";
+import HvalaSlika from "../assets/hvala_optimized.webp";
+import kitty from "../assets/kitty1_optimized.webp";
 import "react-lazy-load-image-component/src/effects/blur.css";
 
 import toast, { Toaster } from "react-hot-toast";
@@ -100,6 +100,13 @@ const Korak2 = () => {
   const narudzba = useRef(Math.floor(1000000 + Math.random() * 9000000));
   const ErrorEmptyFields = () =>
     toast.error("Sva polja su obavezna sem napomene.");
+
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, []);
   useEffect(() => {
     setValue("brojPorudzbine", narudzba.current);
     console.log(narudzba.current);
@@ -245,18 +252,12 @@ const Korak2 = () => {
   return (
     <div>
       <form>
-        <input
-          type="text"
-          autoFocus={true}
-          className="opacity-0 cursor-default"
-        />
-
         {/* SRCE */}
         {step === 1 && params.id === "srce" && (
           <>
-            <div className="w-full mt-3 min-[516px]:mt-14 relative">
-              <h1 className="text-3xl lg:text-4xl px-3 font-bold text-center w-full pb-14">
-                Korak 2 - Izaberite boju priveska i unesite podatke
+            <div className="w-full flex items-center justify-center mb-32 min-[410px]:mb-36 min-[496px]:mb-48 min-[600px]:mb-48 sm:mb-52 md:mb-36 lg:mb-56 mt-8 sm:mt-12 md:mt-12">
+              <h1 className="text-3xl lg:text-4xl font-bold text-center lg:mt-7 px-4">
+                KORAK 2 <br /> Izaberite boju priveska i unesite podatke{" "}
               </h1>
             </div>
             <div className="flex w-full lg:w-[90%] flex-col md:flex-row">
@@ -932,9 +933,9 @@ const Korak2 = () => {
         )}
         {step === 1 && (
           <>
-            <div className="flex flex-col items-center lg:flex-row justify-center lg:justify-evenly mt-12 pt-24 min-[450px]:pt-16 sm:pt-52 md:mt-0 md:pt-64 px-4">
+            <div className="flex flex-col items-center lg:flex-row justify-center lg:justify-evenly mt-12 pt-24 min-[450px]:pt-16 sm:pt-52 md:mt-0 md:pt-64 px-4 lg:items-stretch">
               <div
-                className="bs w-[290px] min-[450px]:w-[420px] min-[550px]:w-[520px] sm:w-[600px] lg:w-[350px] xl:w-[550px] mt-14 pb-20 flex flex-col relative"
+                className="bs w-[95%] min-[450px]:w-[420px] min-[550px]:w-[520px] sm:w-[600px] lg:w-[350px] xl:w-[550px] mt-14 pb-20 flex flex-col relative"
                 style={{
                   backgroundImage: `url(${bg})`,
                   repeat: "no-repeat",
@@ -942,7 +943,7 @@ const Korak2 = () => {
                   backgroundSize: "cover",
                 }}
               >
-                <div className="md:flex md:justify-center w-full md:w-full absolute top-[-120px]  min-[450px]:top-[-170px] min-[550px]:top-[-214px] sm:top-[-250px] md:top-[-247px] lg:top-[-145px] xl:top-[-223px]">
+                {/* <div className="md:flex md:justify-center w-full md:w-full absolute top-[-120px]  min-[450px]:top-[-170px] min-[550px]:top-[-214px] sm:top-[-250px] md:top-[-247px] lg:top-[-145px] xl:top-[-223px]">
                   <LazyLoadImage
                     effect="blur"
                     src={s7}
@@ -951,11 +952,21 @@ const Korak2 = () => {
                     decoding="async"
                     alt="s7"
                   />
-                </div>
+                </div> */}
 
                 {/* PODACI O LJUBIMCU */}
                 <div className="w-full mt-2 flex justify-around">
-                  <div className="items-center flex flex-col w-[240px] min-[450px]:w-[350px] sm:w-[350px] lg:w-[300px] xl:w-[350px]">
+                  <div className="items-center flex flex-col w-[240px] min-[450px]:w-[350px] sm:w-[350px] lg:w-[300px] xl:w-[350px] relative">
+                    <div className="md:flex md:justify-center w-full md:w-full absolute top-[-107px]  min-[450px]:top-[-157px] min-[550px]:top-[-153px] sm:top-[-153px] md:top-[-153px] lg:top-[-130px] xl:top-[-153px]">
+                      <LazyLoadImage
+                        effect="blur"
+                        src={s7}
+                        className="w-full"
+                        loading="lazy"
+                        decoding="async"
+                        alt="s7"
+                      />
+                    </div>
                     <h1 className="text-xl sm:text-3xl lg:text-xl xl:text-3xl font-bold text-left mt-10 border border-zinc-300 rounded-md p-7 bg-[#fff]">
                       Podaci o ljubimcu
                     </h1>
@@ -1040,8 +1051,8 @@ const Korak2 = () => {
                           "Može sadržati samo slova, brojeve i razmak i min. 2 karaktera",
                       },
                     })}
-                    placeholder="Stela ( 3-50 karaktera)"
-                    className="peer h-10 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 font-thin outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400"
+                    placeholder="Stela ( 2-30 karaktera)"
+                    className="peer h-10 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 font-normal outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400"
                   />
                   {errors.imeLjubimca && (
                     <small className="text-red-400 pl-[3px]">
@@ -1148,7 +1159,7 @@ const Korak2 = () => {
                       },
                     })}
                     placeholder="Pudlica"
-                    className="peer h-10 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 font-thin outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400"
+                    className="peer h-10 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 font-normal outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400"
                   />
                   {errors.rasa && (
                     <small className="text-red-400">
@@ -1177,7 +1188,7 @@ const Korak2 = () => {
                       },
                     })}
                     placeholder="1 godina ili 5 meseci"
-                    className="peer h-10 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 font-thin outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400"
+                    className="peer h-10 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 font-normal outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400"
                   />
                   {errors.starost && (
                     <small className="text-red-400">
@@ -1187,7 +1198,7 @@ const Korak2 = () => {
                 </div>
 
                 {/* musko ili zensko */}
-                <div className="flex flex-col items-center min-[450px]:flex-row justify-center mb-7">
+                <div className="flex flex-col items-center min-[450px]:flex-row lg:flex-col xl:flex-row justify-center mb-7">
                   <label htmlFor="pasIliMacka">Vaš čupavi prijatelj je</label>
                   <div className="flex items-stretch min-[450px]:flex-row min-[450px]:justify-around min-[450px]:items-center">
                     <label className="rad pl-3">
@@ -1239,7 +1250,7 @@ const Korak2 = () => {
                   <div className="box border rounded flex flex-col shadow bg-white">
                     <textarea
                       placeholder="Npr. Mnogo voli decu, voli sve da jede, nije agresivna"
-                      className="peer h-20 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 font-thin outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400"
+                      className="peer h-20 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 font-normal outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400"
                       id="napomena"
                       {...register("napomena", {
                         pattern: {
@@ -1264,7 +1275,7 @@ const Korak2 = () => {
 
               {/* podaci 2 kolona */}
               <div
-                className="bs w-[290px] min-[450px]:w-[420px] min-[550px]:w-[520px] sm:w-[600px] lg:w-[350px] xl:w-[550px] mt-24 pb-20 flex flex-col relative sm:mt-32 md:mt-24 lg:mt-12"
+                className="bs w-[95%] min-[450px]:w-[420px] min-[550px]:w-[520px] sm:w-[600px] lg:w-[350px] xl:w-[550px] mt-24 pb-20 flex flex-col relative sm:mt-32 md:mt-24 lg:mt-[55px]"
                 style={{
                   backgroundImage: `url(${bg})`,
                   repeat: "no-repeat",
@@ -1272,19 +1283,18 @@ const Korak2 = () => {
                   backgroundSize: "cover",
                 }}
               >
-                {/* Podaci o vlasniku */}
-                <div className="md:flex md:justify-center w-full absolute top-[-120px] min-[450px]:top-[-165px] min-[550px]:top-[-205px] sm:top-[-244px] md:top-[-247px] lg:top-[-145px] xl:top-[-223px]">
-                  <LazyLoadImage
-                    effect="blur"
-                    src={s6}
-                    className="w-full"
-                    loading="lazy"
-                    decoding="async"
-                    alt="s6"
-                  />
-                </div>
                 <div className="w-full mt-2 flex justify-around">
-                  <div className="items-center flex flex-col w-[240px] min-[450px]:w-[350px] sm:w-[350px] md:w-[500px] lg:w-[300px] xl:w-[350px]">
+                  <div className="items-center flex flex-col w-[240px] min-[450px]:w-[350px] sm:w-[350px] md:w-[500px] lg:w-[300px] xl:w-[350px] relative">
+                    <div className="md:flex md:justify-center w-full md:w-full absolute top-[-107px]  min-[450px]:top-[-157px] min-[550px]:top-[-153px] sm:top-[-153px] md:top-[-207px] lg:top-[-130px] xl:top-[-153px]">
+                      <LazyLoadImage
+                        effect="blur"
+                        src={s6}
+                        className="w-full"
+                        loading="lazy"
+                        decoding="async"
+                        alt="s6"
+                      />
+                    </div>
                     <h1 className="text-xl sm:text-3xl lg:text-xl xl:text-3xl font-bold text-left mt-10 border border-zinc-300 rounded-md p-7 bg-[#fff]">
                       Podaci o vlasniku
                     </h1>
@@ -1316,7 +1326,7 @@ const Korak2 = () => {
                     })}
                     placeholder=" Aleksandra Nikolic"
                     pattern="[a-zA-Z0-9]{3,30}"
-                    className="peer h-10 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 font-thin outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400"
+                    className="peer h-10 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 font-normal outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400"
                   />
                   {errors.imeVlasnika && (
                     <small className="text-red-400 pl-[3px]">
@@ -1344,7 +1354,7 @@ const Korak2 = () => {
                       },
                     })}
                     placeholder="061/1234-567"
-                    className="peer h-10 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 font-thin outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400"
+                    className="peer h-10 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 font-normal outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400"
                   />
                   {errors.brTelefonaVlasnika && (
                     <small className="text-red-400 pl-[3px]">
@@ -1354,7 +1364,7 @@ const Korak2 = () => {
                 </div>
 
                 {/* Jos jedan broj */}
-                <div className="group relative w-[90%] xl:w-[60%] m-auto pb-10 pt-6">
+                <div className="group relative w-[90%] xl:w-[60%] m-auto pb-10 pt-6 lg:mb-2">
                   <label
                     htmlFor="brDrugiVlasnika"
                     className="block w-full pb-1 text-sm font-medium text-gray-500 transition-all duration-200 ease-in-out group-focus-within:text-green-400"
@@ -1372,7 +1382,7 @@ const Korak2 = () => {
                       },
                     })}
                     placeholder="061/234-56-78"
-                    className="peer h-10 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 font-thin outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400"
+                    className="peer h-10 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 font-normal outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400"
                   />
                   {errors.brDrugiVlasnika && (
                     <small className="text-red-400 pl-[3px]">
@@ -1401,7 +1411,7 @@ const Korak2 = () => {
                     })}
                     placeholder="sara2365@gmail.com"
                     // pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-                    className="peer h-10 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 font-thin outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400"
+                    className="peer h-10 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 font-normal outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400"
                   />
                   {errors.emailVlasnika && (
                     <small className="text-red-400 pl-[3px]">
@@ -1430,7 +1440,7 @@ const Korak2 = () => {
                       },
                     })}
                     placeholder="Karaburma"
-                    className="peer h-10 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 font-thin outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400"
+                    className="peer h-10 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 font-normal outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400"
                   />
                   {errors.adresaVlasnika && (
                     <small className="text-red-400 pl-[3px]">
@@ -1457,13 +1467,13 @@ const Korak2 = () => {
                       },
                       pattern: {
                         value:
-                          /^[a-zA-Z0-9a-яА-ЯčćžšđљњђћџнјČĆŽŠĐЉЊЂЋЏНЈ\/_\-]{2,30}$/,
+                          /^[a-zA-Z0-9a-яА-ЯčćžšđљњђћџнјČĆŽŠĐЉЊЂЋЏНЈ\/_\-\s]{2,30}$/,
                         message:
-                          "Nema razmaka. Može sadržati samo slova, brojeve, kosu crtu, srednju crtu, donju crtu i min. 2 slova.",
+                          "Može sadržati samo slova, brojeve, razmak, kosu crtu, srednju crtu, donju crtu i min. 2 slova.",
                       },
                     })}
-                    placeholder="npr. Snežana_Nakić-Sneža-2004/478"
-                    className="peer h-10 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 font-thin outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400"
+                    placeholder="npr. Džeki"
+                    className="peer h-10 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 font-normal outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400"
                   />
                   {errors.secretWord && (
                     <small className="text-red-400 pl-[3px]">
@@ -1491,9 +1501,8 @@ const Korak2 = () => {
                   <br />
                   <br />* Sigurnosna reč: Ukoliko želite da promenite bilo koji
                   podatak, mi ćemo vas pitati za ovu reč, čime dokazujete da ste
-                  vlasnik. Ta reč može da bude bilo šta, samo je važno da bude
-                  JEDNA reč bez razmaka. Različite reči se mogu spajati crticom
-                  ili donjom crtom - npr. "mirko_23.78".
+                  vlasnik. Ta reč može da bude bilo šta, npr. ime vašeg prvog
+                  ljubimca, npr. "Džeki".
                 </h5>
               </div>
             </div>
@@ -1530,20 +1539,21 @@ const Korak2 = () => {
                   cursor-pointer flex items-center justify-center text-white bg-[#3BC77E] hover:bg-[#FF553E] w-[280px] sm:w-[270px] h-[64px] rounded-lg duration-500 ml-0 md:ml-[20px] mt-8 sm:mt-0`}
               >
                 <h2 className="text-3xl">Sledeći korak</h2>
-                <Toaster
-                  position="top-center"
-                  toastOptions={{
-                    className: "",
-                    style: {
-                      border: "1px solid red",
-                      padding: "16px",
-                      color: "red",
-                      width: "300px",
-                    },
-                  }}
-                />
               </button>
-              <div className="absolute top-[164px] md:top-[124px] lg:top-[124px] md:w-[150px] right-0 w-[100px] lg:w-[210px]">
+              <Toaster
+                position="top-center"
+                toastOptions={{
+                  className: "",
+                  style: {
+                    border: "1px solid red",
+                    padding: "16px",
+                    color: "red",
+                    width: "300px",
+                    background: "#fff",
+                  },
+                }}
+              />
+              <div className="absolute top-[194px] md:top-[124px] lg:top-[124px] md:w-[150px] right-0 w-[100px] lg:w-[210px]">
                 <LazyLoadImage
                   effect="blur"
                   src={koktel}
@@ -1560,9 +1570,9 @@ const Korak2 = () => {
         {step === 2 && (
           <>
             <div>
-              <div className="w-full md:mt-14">
-                <h1 className="text-3xl lg:text-4xl px-3 font-bold text-center w-full pb-14">
-                  Korak 3 - Unesite podatke za dostavu Pet ID priveska
+              <div className="w-full flex items-center justify-center mb-32 min-[410px]:mb-36 min-[496px]:mb-48 min-[600px]:mb-48 sm:mb-52 md:mb-36 lg:mb-56 mt-8 sm:mt-12 md:mt-12">
+                <h1 className="text-3xl lg:text-4xl font-bold text-center lg:mt-7 px-4">
+                  KORAK 3 <br /> Unesite podatke za dostavu Pet ID priveska{" "}
                 </h1>
               </div>
 
@@ -1619,7 +1629,7 @@ const Korak2 = () => {
                         },
                       })}
                       placeholder=" Aleksandra Nikolic"
-                      className="peer h-10 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 font-thin outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400"
+                      className="peer h-10 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 font-normal outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400"
                     />
                     {errors.imePrimaoca && (
                       <small className="text-red-400 pl-[3px]">
@@ -1647,7 +1657,7 @@ const Korak2 = () => {
                         },
                       })}
                       placeholder="060/123-4567"
-                      className="peer h-10 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 font-thin outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400"
+                      className="peer h-10 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 font-normal outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400"
                     />
                     {errors.brojPrimaoca && (
                       <small className="text-red-400 pl-[3px]">
@@ -1680,7 +1690,7 @@ const Korak2 = () => {
                         },
                       })}
                       placeholder="Dunavska bb"
-                      className="peer h-10 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 font-thin outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400"
+                      className="peer h-10 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 font-normal outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400"
                     />
                     {errors.adresaPrimaoca && (
                       <small className="text-red-400 pl-[3px]">
@@ -1711,7 +1721,7 @@ const Korak2 = () => {
                         },
                       })}
                       placeholder="11120"
-                      className="peer h-10 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 font-thin outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400"
+                      className="peer h-10 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 font-normal outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400"
                     />
                     {errors.zip && (
                       <small className="text-red-400 pl-[3px]">
@@ -1743,7 +1753,7 @@ const Korak2 = () => {
                         },
                       })}
                       placeholder="Beograd"
-                      className="peer h-10 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 font-thin outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400"
+                      className="peer h-10 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 font-normal outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400"
                     />
                     {errors.grad && (
                       <small className="text-red-400 pl-[3px]">
@@ -1775,7 +1785,7 @@ const Korak2 = () => {
                         },
                       })}
                       placeholder="Srbija"
-                      className="peer h-10 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 font-thin outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400"
+                      className="peer h-10 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 font-normal outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400"
                     />
                     {errors.drzava && (
                       <small className="text-red-400 pl-[3px]">
@@ -1803,7 +1813,7 @@ const Korak2 = () => {
                         },
                       })}
                       placeholder="Prići sa donje strane zgrade"
-                      className="peer h-10 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 font-thin outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400"
+                      className="peer h-10 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 font-normal outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400"
                     />
                     {errors.posebnaNapomena && (
                       <small className="text-red-400 pl-[3px]">
@@ -1813,7 +1823,7 @@ const Korak2 = () => {
                   </div>
                 </div>
               </div>
-              <div className="absolute right-0 top-[150px] md:top-[120px] w-[100px] min-[410px]:w-[130px] min-[450px]:w-[170px] min-[450px]:top-[150px] sm:w-[200px] md:w-[130px] lg:w-[190px] lg:top-[190px] min-[896px]:w-[180px] min-[896px]:top-[150px] xl:w-[220px] xl:top-[150px] 2xl:w-[250px]">
+              <div className="absolute right-0 top-[250px] md:top-[120px] w-[100px] min-[410px]:w-[120px] min-[450px]:w-[170px] min-[450px]:top-[230px] sm:w-[200px] md:w-[130px] lg:w-[190px] lg:top-[190px] min-[896px]:w-[180px] min-[896px]:top-[150px] xl:w-[220px] xl:top-[150px] 2xl:w-[250px]">
                 <LazyLoadImage
                   effect="blur"
                   src={pethero}
@@ -1822,7 +1832,7 @@ const Korak2 = () => {
                   decoding="async"
                 />
               </div>
-              <div className="top-[160px] md:top-[140px] w-[100px] min-[410px]:w-[150px] min-[450px]:w-[190px] min-[450px]:top-[170px] sm:w-[200px] md:w-[120px] absolute lg:w-[200px] lg:top-[210px] min-[896px]:w-[210px] xl:w-[550px] xl:top-[150px]">
+              <div className="top-[260px] md:top-[140px] w-[100px] min-[410px]:w-[140px] min-[450px]:w-[190px] min-[450px]:top-[230px] sm:w-[200px] md:w-[120px] absolute lg:w-[200px] lg:top-[210px] min-[896px]:w-[210px] xl:w-[550px] xl:top-[150px]">
                 <LazyLoadImage
                   effect="blur"
                   src={fleka}
@@ -1831,7 +1841,7 @@ const Korak2 = () => {
                   decoding="async"
                 />
               </div>
-              <div className="absolute w-[100px] sm:w-[200px] min-[450px]:w-[120px] min-[450px]:top-[540px] sm:top-[540px] top-[384px] hidden min-[410px]:block md:top-[840px] md:w-[250px] 2xl:w-[450px]">
+              <div className="hidden md:block absolute w-[100px] sm:w-[200px] min-[450px]:w-[120px] min-[450px]:top-[540px] sm:top-[540px] top-[384px] md:top-[840px] md:w-[250px] 2xl:w-[450px]">
                 <LazyLoadImage
                   effect="blur"
                   src={phone}
@@ -1840,7 +1850,7 @@ const Korak2 = () => {
                   decoding="async"
                 />
               </div>
-              <div className="absolute w-[100px] sm:w-[200px] sm:top-[540px] min-[410px]:w-[120px] min-[450px]:w-[130px] min-[450px]:top-[540px] hidden min-[410px]:block top-[384px] right-0 md:top-[840px] md:w-[250px] 2xl:w-[450px]">
+              <div className="absolute w-[100px] sm:w-[200px] sm:top-[540px] min-[410px]:w-[120px] min-[450px]:w-[130px] min-[450px]:top-[540px] hidden md:block top-[384px] right-0 md:top-[840px] md:w-[250px] 2xl:w-[450px]">
                 <LazyLoadImage
                   effect="blur"
                   src={par}
@@ -1858,13 +1868,13 @@ const Korak2 = () => {
                     pozovite nas na <br />
                     060/60-12-199. Klikom na "Naruči" prihvatate{" "}
                     <span className="underline text-[#e9ae62]">
-                      <Link to="/proizvodi/koskica/dostava">
-                        uslove kupovine
+                      <Link to="/uslovi-koriscenja" target="_blank">
+                        uslove korišćenja
                       </Link>
                     </span>{" "}
                     i{" "}
                     <span className="underline text-[#e9ae62]">
-                      <Link to="/proizvodi/koskica/dostava">
+                      <Link to="/politika-privatnosti" target="_blank">
                         politiku privatnosti
                       </Link>
                     </span>
@@ -1932,9 +1942,7 @@ const Korak2 = () => {
                     <button
                       type="button"
                       className={`
-                      ${
-                        order === false ? "opacity-50 mt-8 sm:mt-0" : ""
-                      } text-3xl`}
+                      ${order === false ? "opacity-50 sm:mt-0" : ""} text-3xl`}
                       onClick={(e) => {
                         e.preventDefault();
 
@@ -1960,37 +1968,32 @@ const Korak2 = () => {
                         }
                       }}
                     >
-                      Naruči
-                      <Toaster
-                        position="top-center"
-                        toastOptions={{
-                          className: "",
-                          style: {
-                            border: "1px solid red",
-                            padding: "16px",
-                            color: "red",
-                            width: "300px",
-                          },
-                        }}
-                      />
+                      <h2 className="text-3xl">Naruči</h2>
                     </button>
+                    <Toaster
+                      position="top-center"
+                      toastOptions={{
+                        className: "",
+                        style: {
+                          border: "1px solid red",
+                          padding: "16px",
+                          color: "red",
+                          width: "300px",
+                          background: "white",
+                        },
+                      }}
+                    />
                   </div>
                 </div>
               </div>
-              {/* <div className="flex justify-center mt-20 w-full">
-                <div className="lem">
-                  <img src={lem} alt="lem" className="rounded-lg" />
-                </div>
-              </div> */}
             </div>
           </>
         )}
-        {/* <pre>{JSON.stringify(form.watch(), null, 2)}</pre> */}
       </form>
       {step === 3 && (
         <div className="bg-white">
           <div className="text-center mt-12 sm:mt-28">
-            <h1 className="text-2xl sm:text-4xl font-bold text-[#3BC77E]">
+            <h1 className="text-4xl font-bold text-[#3BC77E]">
               Hvala Vam na poverenju!
             </h1>
             <h2 className="text-xl sm:text-3xl mt-2">

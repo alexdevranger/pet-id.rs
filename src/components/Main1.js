@@ -2,21 +2,22 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
-import Pet from "../assets/girl-main.webp";
-import PetXL from "../assets/glavnaProbaXLred1.png";
+import Pet from "../assets/girl-main_optimized.webp";
+import PetXL from "../assets/glavnaProbaXLred1_optimized.webp";
 import bg from "../assets/bg.webp";
 import Vektor from "../assets/Vector.png";
-import Map from "../assets/map1.webp";
-import Tags from "../assets/tags-image.webp";
-import Sig from "../assets/sig1.webp";
+import Map from "../assets/map1_optimized.webp";
+import Tags from "../assets/tags-image_optimized.webp";
+import Sig from "../assets/sig1_optimized.webp";
 import Zvr from "../assets/Zvrrr.png";
-import Cezar from "../assets/garancija1.png";
-import Gift from "../assets/gift-vet-image.webp";
-import Poruci from "../assets/poruci.webp";
-import Utisci from "../assets/new-1.webp";
-import MackaUpitnik from "../assets/mackaUpitnik.webp";
-import Mobile from "../assets/mobile.webp";
-import Boby from "../assets/boby.webp";
+import Cezar from "../assets/garancija_optimized.webp";
+import Gift from "../assets/gift-vet-image_optimized.webp";
+import Poruci from "../assets/poruci_optimized.webp";
+import Utisci from "../assets/new-1_optimized.webp";
+import MackaUpitnik from "../assets/mackaUpitnik_optimized.webp";
+import Mobile from "../assets/mobile_optimized.webp";
+import Boby from "../assets/boby_optimized.webp";
+import Sapica from "../assets/sapica.png";
 import { FaHeart } from "react-icons/fa";
 
 const Main1 = () => {
@@ -28,7 +29,7 @@ const Main1 = () => {
 
         <div className="flex pt-12 sm:pt-28 flex-col sm:flex-row">
           <div className="lg:ml-16 xl:pl-22 sm:w-[80%] lg:w-[70%]">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-center sm:text-left px-3 sm:pl-6 md:pl-6 md:mt-6 lg:mt-9 xl:mt-12 2xl:pb-12">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-center sm:text-left px-3 sm:pl-6 md:pl-6 md:mt-6 lg:mt-9 xl:mt-12 2xl:pb-8">
               Želiš svog ljubimca nazad ako se izgubi?
             </h1>
             <div className="px-6 md:px-8">
@@ -38,21 +39,21 @@ const Main1 = () => {
               </h4>
             </div>
             <div className="px-6">
-              <div className="pt-12 flex items-center lg:mb-8 lg:mt-3 xl:mb-0 2xl:mb-8">
+              <div className="pt-4 flex items-center lg:mb-8 lg:mt-3 xl:mb-0">
                 <img className="pr-5" src={Vektor} alt="Vektor" />
                 <p className="text-black text-[18px] md:text-lg lg:text-xl font-semibold">
                   Veoma lako se uočava sa razdaljine od 10 metara, i lako se
                   očitava pomoću mobilnog koji ima svaki pronalazač.
                 </p>
               </div>
-              <div className="pt-6 flex items-center lg:mb-8 xl:mb-0 2xl:mb-8">
+              <div className="pt-6 flex items-center lg:mb-8 xl:mb-0">
                 <img className="pr-5" src={Vektor} alt="Vektor" />
                 <p className="text-black text-[18px] md:text-lg lg:text-xl font-semibold">
                   Ne smeta vašem ljubimcu kada se igra, spava ili kupa, jer je
                   mali, savitljiv i vodootporan.
                 </p>
               </div>
-              <div className="pt-6 flex items-center lg:mb-8 xl:mb-0 2xl:mb-12">
+              <div className="pt-6 flex items-center lg:mb-8 xl:mb-0">
                 <img className="pr-5" src={Vektor} alt="Vektor" />
                 <p className="text-black text-[18px] md:text-lg lg:text-xl font-semibold">
                   Specijalno dizajniran sastav materijala od koga je izrađen Pet
@@ -104,21 +105,25 @@ const Main1 = () => {
               Neki od utisaka...
             </h2>
             <div className="px-6 text-left 2xl:pr-24">
-              <p className="font-semibold text-black text-[18px] lg:text-xl sm:pr-6">
-                Jedan od najstrašnijih momenata u životu mi je bio kad sam se
-                okrenula oko sebe i shvatila da Paka nema nigde. Preplakala sam
-                popodne ali već istog dana zvao me je čovek i rekao - “Našao sam
-                vašeg psa, hajde da se nađemo da vam ga vratim”.
-              </p>
+              <blockquote>
+                <p className="font-semibold text-black text-[18px] lg:text-xl sm:pr-6">
+                  Jedan od najstrašnijih momenata u životu mi je bio kad sam se
+                  okrenula oko sebe i shvatila da Paka nema nigde. Preplakala
+                  sam popodne ali već istog dana zvao me je čovek i rekao -
+                  “Našao sam vašeg psa, hajde da se nađemo da vam ga vratim”.
+                </p>
+              </blockquote>
               <br />
-              <p className="font-semibold text-black text-[18px] lg:text-xl sm:pr-6">
-                Moja Milica ne izlazi nigde, ona je tipična kućna maca, i ne
-                znam šta joj je bilo da pobegne, ali srećom, posle užasne
-                neprospavane noći sutradan je zvao dečko koji je pronašao u svom
-                ulazu kako mjauče i traži pomoć. Zvao me je i nisam mogla da
-                verujem da mi se moja Milica vraća u krilo. Hvala Pet ID
-                tagu!!!!
-              </p>
+              <blockquote>
+                <p className="font-semibold text-black text-[18px] lg:text-xl sm:pr-6">
+                  Moja Milica ne izlazi nigde, ona je tipična kućna maca, i ne
+                  znam šta joj je bilo da pobegne, ali srećom, posle užasne
+                  neprospavane noći sutradan je zvao dečko koji je pronašao u
+                  svom ulazu kako mjauče i traži pomoć. Zvao me je i nisam mogla
+                  da verujem da mi se moja Milica vraća u krilo. Hvala Pet ID
+                  tagu!!!!
+                </p>
+              </blockquote>
             </div>
             <div className="px-9 flex justify-center xl:justify-start xl:px-6">
               <div className="flex items-center justify-center text-white bg-[#FF553E] w-full sm:w-[300px] h-[64px] rounded-lg mt-12 sm:mt-16 mb-12 sm:mb-0 duration-500 hover:bg-[#3BC77E]">
@@ -149,7 +154,7 @@ const Main1 = () => {
                     className="mx-0 md:px-6 m-auto lg:mx-0"
                     src={Tags}
                   />
-                  <div className="xl:w-[200px] xl:mr-6">
+                  <div className="xl:w-[200px] lg:ml-0 xl:mr-6">
                     <h2 className="text-[#3BC77E] text-3xl font-bold xl:text-5xl mt-9 xl:mt-0 pt-0 sm:pt-5 md:pt-0">
                       Korak 1
                     </h2>
@@ -172,7 +177,7 @@ const Main1 = () => {
                       Korak 2
                     </h2>
                     <h3 className="text-[18px] md:text-lg lg:text-xl font-semibold mb-3 mt-3">
-                      Ostavi kontakt podatke u slucaju da se ljubimac izgubi.
+                      Ostavi kontakt u slucaju da se ljubimac izgubi.
                     </h3>
                   </div>
                 </div>
@@ -185,7 +190,7 @@ const Main1 = () => {
                     className="mx-0 md:px-6 m-auto lg:mx-0"
                     src={Map}
                   />
-                  <div className="xl:w-[200px]">
+                  <div className="xl:w-[200px] lg:ml-0 xl:mr-6">
                     <h2 className="text-[#3BC77E] text-3xl font-bold xl:text-5xl mt-9 xl:mt-0 pt-0 sm:pt-5 md:pt-0">
                       Korak 3
                     </h2>
@@ -241,6 +246,55 @@ const Main1 = () => {
                 <p className="pb-12 sm:pb-9 md:pb-0 text-center text-[18px]">
                   i ostavite sve potrebne podatke.
                 </p>
+              </div>
+            </div>
+          </div>
+          <div className="sm:w-full lg:w-[50%] px-6 sm:px-0 flex flex-col m-auto justify-center items-center">
+            <h2 className="text-[#3BC77E] text-3xl md:text-5xl lg:text-4xl xl:text-4xl 2xl:text-6xl font-bold md:text-left sm:mt-0 mt-6">
+              Prednosti QR KODA
+            </h2>
+            <div className="flex flex-col justify-center items-center bs rounded-lg my-8 w-[90%] min-[828px]:w-[800px]">
+              <div className="p-6">
+                <div className="flex items-center lg:mb-8 lg:mt-3 xl:mb-0">
+                  <img className="pr-5" src={Sapica} alt="Vektor" />
+                  <p className="text-black text-[18px] md:text-lg lg:text-xl font-semibold">
+                    Koristi kameru koju svaki telefon ima
+                  </p>
+                </div>
+                <div className="pt-6 flex items-center lg:mb-8 xl:mb-0">
+                  <img className="pr-5" src={Sapica} alt="Vektor" />
+                  <p className="text-black text-[18px] md:text-lg lg:text-xl font-semibold">
+                    Napravljen od prirodnog materijala - malih dimenzija, mekan,
+                    ima 3 oblika i mnoštvo kombinacija boja
+                  </p>
+                </div>
+                <div className="pt-6 flex items-center lg:mb-8 xl:mb-0">
+                  <img className="pr-5" src={Sapica} alt="Vektor" />
+                  <p className="text-black text-[18px] md:text-lg lg:text-xl font-semibold">
+                    Ne mora da se prilazi blizu, može da se skenira sa izvesne
+                    udaljenosti, nema čip i ne zrači
+                  </p>
+                </div>
+                <div className="pt-6 flex items-center lg:mb-8 xl:mb-0">
+                  <img className="pr-5" src={Sapica} alt="Vektor" />
+                  <p className="text-black text-[18px] md:text-lg lg:text-xl font-semibold">
+                    Prilikom skeniranja vide se samo podaci koje ste vi stavili
+                  </p>
+                </div>
+                <div className="pt-6 flex items-center lg:mb-8 xl:mb-0">
+                  <img className="pr-5" src={Sapica} alt="Vektor" />
+                  <p className="text-black text-[18px] md:text-lg lg:text-xl font-semibold">
+                    Ne može vam neko zloupotrebiti karticu ili podatke ukoliko
+                    nemate lozinku kao prilikom korišćenja NFC tehnologije
+                  </p>
+                </div>
+                <div className="pt-6 flex items-center lg:mb-8 xl:mb-0">
+                  <img className="pr-5" src={Sapica} alt="Vektor" />
+                  <p className="text-black text-[18px] md:text-lg lg:text-xl font-semibold">
+                    Već iz daljine se vidi QR kod i pronalazač odmah može
+                    pretpostaviti čemu služi
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -419,13 +473,6 @@ const Main1 = () => {
                   </div>
                   {/*body*/}
                   <div className="relative p-6 flex flex-col min-[450px]:flex-row">
-                    {/* <p className="my-4 text-slate-500 text-lg leading-relaxed">
-                      I always felt like I could do anything. That’s the main
-                      thing people are controlled by! Thoughts- their perception
-                      of themselves! They're slowed down by their perception of
-                      themselves. If you're taught you can’t do anything, you
-                      won’t do anything. I was taught I could do everything.
-                    </p> */}
                     <div className="w-full sm:block pr-7 pl-1">
                       <div className="flex md:justify-center">
                         <LazyLoadImage
@@ -444,7 +491,7 @@ const Main1 = () => {
                           effect="blur"
                           loading="lazy"
                           decoding="async"
-                          alt="Boby"
+                          alt="Boby_O"
                           src={Boby}
                           className="rounded-lg"
                         />
@@ -486,6 +533,7 @@ const Main1 = () => {
             className="pt-0 min-[1471px]:mt-1 min-[1638px]:pt-3 min-[1638px]:pt-6 m-auto px-6 xl:px-0"
           />
         </div>
+
         <div
           className="w-full sm:pt-8 sm:pb-32 text-center sm:text-left"
           style={{
@@ -505,6 +553,7 @@ const Main1 = () => {
                 className="m-auto"
               />
             </div>
+
             <div className="w-full lg:w-[70%] lg:pr-20 2xl:pr-[190px]">
               <div className="px-6">
                 <h2 className="text-[#FF553E] text-3xl md:text-5xl lg:text-4xl xl:text-4xl 2xl:text-6xl font-bold md:text-left sm:mt-0 mt-6">
