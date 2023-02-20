@@ -2,17 +2,16 @@ import React, { useState, useEffect } from "react";
 import { useForm } from "react-hook-form";
 import { Link } from "react-router-dom";
 import axios from "axios";
-import KontaktSlika from "../assets/group.webp";
 import bg from "../assets/bg.webp";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
 import toast, { Toaster } from "react-hot-toast";
-import HvalaSlika from "../assets/hvala.png";
+import HvalaSlika from "../assets/hvala_optimized.webp";
 import s7 from "../assets/s7.webp";
 import cutedog from "../assets/cutedog.jpg";
 import cutecat from "../assets/cutecat.jpg";
 import s6 from "../assets/s6.webp";
-import koktel from "../assets/koktel.png";
+import koktel from "../assets/koktel_optimized.webp";
 
 
 const KontaktUdomi = () => {
