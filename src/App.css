@@ -12,6 +12,7 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
+  letter-spacing: -1px;
   src: local("Itim-Regular"),
     url("./fonts/Itim-Regular.ttf") format("truetype");
 }
@@ -421,7 +422,6 @@ figure.snip1426 {
   font-family: 'Raleway', Arial, sans-serif;
   position: relative;
   overflow: hidden;
-  margin: 10px;
   min-width: 230px;
   max-width: 315px;
   width: 100%;
@@ -430,7 +430,13 @@ figure.snip1426 {
   font-size: 16px;
   background-color: #000000;
   border-radius: 20px;
-  margin: 25px;
+  margin-bottom: 25px;
+}
+@media only screen and (min-width: 600px) {
+  figure.snip1426 {
+    margin-bottom: 0;
+    margin: 25px;
+  }
 }
 figure.snip1426 *,
 figure.snip1426 *:before,

@@ -507,7 +507,7 @@ const Main1 = () => {
                         setShowModal(false);
                       }}
                     >
-                      Close
+                      Zatvori
                     </button>
                   </div>
                 </div>

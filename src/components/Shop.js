@@ -37,7 +37,7 @@ const Shop = () => {
       }}
     >
       {/* Gornje slike */}
-      <div className="w-full flex items-center absolute justify-between mt-32 min-[410px]:mt-12 sm:mt-8 md:mt-6 lg:mt-12 xl:mt-0 2xl:-mt-12">
+      <div className="w-full flex items-center absolute justify-between mt-[16rem] mb-32 min-[350px]:mt-[12rem] min-[410px]:mt-[10rem] sm:mt-[7rem] md:mt-[7rem] lg:mt-12 xl:mt-0 2xl:-mt-12">
         <div className="imgIzaberiHolder flex justify-start w-1/2 sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4">
           <LazyLoadImage
             effect="blur"
@@ -62,7 +62,7 @@ const Shop = () => {
         <h1 className="text-3xl lg:text-4xl font-bold text-center lg:mt-7 px-4 pb-4">
           KORAK 1 <br /> Izaberite oblik priveska za vašeg ljubimca{" "}
         </h1>
-        <p className="block">
+        <p className="block px-6 mx-auto">
           Na ovoj stranici unosite podatke samo ako naručujete tag preko ovog
           sajta
         </p>

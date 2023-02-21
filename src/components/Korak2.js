@@ -113,7 +113,7 @@ const Korak2 = () => {
   }, []);
   const ErrorContact = () =>
     toast.error("Stavite bar jedan način kako da vas kontaktira pronalazač.");
-    const onSubmit = (data) => {
+  const onSubmit = (data) => {
     const brTelefonaVlasnikaEmpty = form.watch("brTelefonaVlasnika");
     const brDrugiVlasnikaEmpty = form.watch("brDrugiVlasnika");
     const emailVlasnikaEmpty = form.watch("emailVlasnika");
@@ -1455,7 +1455,7 @@ const Korak2 = () => {
                     htmlFor="secretWord"
                     className="block w-full pb-1 text-sm font-medium text-gray-500 transition-all duration-200 ease-in-out group-focus-within:text-green-400"
                   >
-                    Sigurnosna reč* (JEDNA REČ - objasnjenje u napomeni)
+                    Sigurnosna reč* (objasnjenje u napomeni)
                   </label>
                   <input
                     type="text"

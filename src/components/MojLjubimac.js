@@ -735,7 +735,7 @@ const MojLjubimac = () => {
                     htmlFor="secretWord1"
                     className="block w-full pb-1 text-sm font-medium text-gray-500 transition-all duration-200 ease-in-out group-focus-within:text-green-400"
                   >
-                    Sigurnosna reč* (JEDNA REČ - objasnjenje u napomeni)
+                    Sigurnosna reč* (objasnjenje u napomeni)
                   </label>
                   <input
                     type="text"
@@ -746,12 +746,13 @@ const MojLjubimac = () => {
                         message: "Ovo polje je obavezno.",
                       },
                       pattern: {
-                        value: /^[a-zA-Z0-9\/_\-]{2,30}$/,
+                        value:
+                          /^[a-zA-Z0-9a-яА-ЯčćžšđљњђћџнјČĆŽŠĐЉЊЂЋЏНЈ\/_\-\s]{2,30}$/,
                         message:
-                          "Nema razmaka. Može sadržati samo slova, brojeve, kosu crtu, srednju crtu, donju crtu i min. 2 slova.",
+                          "Može sadržati samo slova, brojeve, razmak, kosu crtu, srednju crtu, donju crtu i min. 2 slova.",
                       },
                     })}
-                    placeholder="npr. Snežana_Nakić-Sneža-2004/478"
+                    placeholder="npr. Džeki"
                     className="peer h-10 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 font-normal outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400"
                   />
                   {errors.secretWord1 && (
@@ -780,9 +781,8 @@ const MojLjubimac = () => {
                   <br />
                   <br />* Sigurnosna reč: Ukoliko želite da promenite bilo koji
                   podatak, mi ćemo vas pitati za ovu reč, čime dokazujete da ste
-                  vlasnik. Ta reč može da bude bilo šta, samo je važno da bude
-                  JEDNA reč bez razmaka. Različite reči se mogu spajati crticom
-                  ili donjom crtom - npr. "mirko_23.78".
+                  vlasnik. Ta reč može da bude bilo šta, npr. ime vašeg prvog
+                  ljubimca, npr. "Džeki".
                 </h5>
               </div>
             </div>
@@ -814,7 +814,7 @@ const MojLjubimac = () => {
                  ${disabledState === false ? "opacity-50 mt-8 sm:mt-0" : ""} 
                   cursor-pointer flex items-center justify-center text-white bg-[#3BC77E] hover:bg-[#FF553E] w-[280px] sm:w-[270px] h-[64px] rounded-lg duration-500 ml-0 md:ml-[20px] mt-8 sm:mt-0`}
               >
-                <h2 className="text-3xl">Posalji</h2>
+                <h2 className="text-3xl">Pošalji</h2>
               </button>
               <Toaster
                 position="top-center"

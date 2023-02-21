@@ -69,11 +69,9 @@ function Uputstvo() {
             </div>
           </div>
           <Link to="/proizvodi">
-            <div className="w-full flex justify-center">
-              <div className="flex items-center justify-center text-white bg-[#3BC77E] hover:bg-[#FF553E] w-[300px] sm:w-[321px] h-[64px] rounded-lg mt-16 mb-28">
-                <h2 className="text-md sm:text-xl">
-                  Naruči kao poklon prijatelju
-                </h2>
+            <div class="flex justify-around mt-32 w-full">
+              <div class="cursor-pointer flex items-center justify-center text-white bg-[#3BC77E] hover:bg-[#FF553E] w-[300px] h-[64px] rounded-lg mt-16 duration-500">
+                <h2 class="text-3xl">Naruči kao poklon prijatelju</h2>
               </div>
             </div>
           </Link>
