@@ -303,7 +303,7 @@ const Shop = () => {
         <div className="flex justify-around mt-32 w-full">
           <div className="cursor-pointer flex items-center justify-center text-white bg-[#3BC77E] hover:bg-[#FF553E] w-[300px] h-[64px] rounded-lg mt-16 duration-500">
             <h2 className="text-3xl" onClick={ErrorNotify}>
-              Sledeci korak
+              Sledeći korak
             </h2>
             <Toaster
               position="top-center"

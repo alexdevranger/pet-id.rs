@@ -14,22 +14,24 @@
 .blogItem-wrap h3 {
   margin-bottom: 10px;
   flex: 1;
+  font-size: 25px;
+  font-weight: 600;
 }
 
 .blogItem-desc {
   position: relative;
   overflow: hidden;
   padding-right: 0.6rem;
-  font-size: 0.8rem;
+  font-size: 1rem;
   color: #a9a9a9;
 }
 
-.blogItem-desc::before {
+/* .blogItem-desc::before {
   position: absolute;
   content: '...';
   bottom: 0;
   right: 0;
-}
+} */
 
 .blogItem-wrap footer {
   display: flex;

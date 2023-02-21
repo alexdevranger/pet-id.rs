@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   padding: 25px;
-  
 }
 .blogItem-cover {
   width: 100%;
@@ -14,22 +13,22 @@
 .blogItem-wrap h3 {
   margin: 0.5rem 0 1rem 0;
   flex: 1;
+  font-size: 25px;
+  font-weight: 600;
 }
-
 .blogItem-desc {
   position: relative;
   overflow: hidden;
   padding-right: 0.6rem;
-  font-size: 0.8rem;
+  font-size: 1rem;
   color: #a9a9a9;
 }
-
-.blogItem-desc::before {
+/* .blogItem-desc::before {
   position: absolute;
   content: '...';
   bottom: 0;
   right: 0;
-}
+} */
 
 .blogItem-wrap footer {
   display: flex;

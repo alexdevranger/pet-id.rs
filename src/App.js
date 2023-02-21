@@ -1,10 +1,10 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
-import Blog from './pages/Blog';
-import Home from './pages/Home';
-import BlogUdomi from './pagesUdomi/BlogUdomi';
-import HomeUdomi from './pagesUdomi/HomeUdomi';
+import Blog from "./pages/Blog";
+import Home from "./pages/Home";
+import BlogUdomi from "./pagesUdomi/BlogUdomi";
+import HomeUdomi from "./pagesUdomi/HomeUdomi";
 import Header from "./components/Header";
 import Main1 from "./components/Main1";
 import Footer from "./components/Footer";
@@ -37,9 +37,17 @@ function App() {
           <Route exact path="/udomi" element={<HomeUdomi />} />
           <Route exact path="/moj-ljubimac" element={<MojLjubimac />} />
           <Route exact path="/uputstvo" element={<Uputstvo />} />
-          <Route exact path="/politika-privatnosti" element={<PolitikaPrivatnosti />} />
-          <Route exact path="/uslovi-koriscenja" element={<UsloviKoriscenja />} />
-          {/* <Route exact path="/galerija" element={<Galerija />} /> */}
+          <Route
+            exact
+            path="/politika-privatnosti"
+            element={<PolitikaPrivatnosti />}
+          />
+          <Route
+            exact
+            path="/uslovi-koriscenja"
+            element={<UsloviKoriscenja />}
+          />
+          <Route exact path="/galerija" element={<Galerija />} />
         </Routes>
         <Footer />
       </Router>

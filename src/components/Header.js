@@ -28,6 +28,12 @@ const Header = () => {
               <li className="md:p py-2 block transition-all duration-100 ease-in-out hover:font-bold px-4 text-xl">
                 <Link to="/proizvodi">Proizvodi</Link>
               </li>
+              <li className="md:p py-2 block transition-all duration-100 ease-in-out hover:font-bold px-4 text-xl">
+                <Link to="/uputstvo">Uputstvo</Link>
+              </li>
+              <li className="md:p py-2 block transition-all duration-100 ease-in-out hover:font-bold px-4 text-xl">
+                <Link to="/galerija">Galerija</Link>
+              </li>
               {/* <li className="md:p py-2 block transition-all duration-100 ease-in-out hover:font-bold px-4 text-xl">
                 <Link to="/udomi">Udomi</Link>
               </li> */}
@@ -37,9 +43,7 @@ const Header = () => {
               <li className="md:p py-2 block transition-all duration-100 ease-in-out hover:font-bold px-4 text-xl">
                 <Link to="/kontakt">Kontakt</Link>
               </li>
-              <li className="md:p py-2 block transition-all duration-100 ease-in-out hover:font-bold px-4 text-xl">
-                <Link to="/uputstvo">Uputstvo</Link>
-              </li>
+
               <li className="md:p py-2 block transition-all duration-100 ease-in-out hover:font-bold px-4 text-xl">
                 <Link to="/moj-ljubimac">
                   <img src={Avatar} alt="avatar" height="65px" width="48px" />
@@ -72,7 +76,6 @@ const Header = () => {
                 : "absolute top-0 left-0 w-full h-screen bg-[#FF553E] flex flex-col justify-center items-center z-20"
             }
           >
-
             <li className="min-[390px]:py-12 text-4xl text-white font-bold pt-6 min-[390px]:pt-0">
               <Link onClick={handleNav} to="/">
                 Početna
@@ -83,17 +86,23 @@ const Header = () => {
                 Proizvodi
               </Link>
             </li>
+            <li className="pt-6 min-[390px]:py-12 text-4xl text-white font-bold">
+              <Link onClick={handleNav} to="/uputstvo">
+                Uputstvo
+              </Link>
+            </li>
+            <li className="pt-6 min-[390px]:py-12 text-4xl text-white font-bold">
+              <Link onClick={handleNav} to="/galerija">
+                Galerija
+              </Link>
+            </li>
 
             <li className="pt-6 min-[390px]:py-12 text-4xl text-white font-bold">
               <Link onClick={handleNav} to="/kontakt">
                 Kontakt
               </Link>
             </li>
-            <li className="pt-6 min-[390px]:py-12 text-4xl text-white font-bold">
-              <Link onClick={handleNav} to="/uputstvo">
-                Uputstvo
-              </Link>
-            </li>
+
             <li className="pt-6 min-[390px]:py-12 text-4xl text-white font-bold">
               <Link onClick={handleNav} to="/moj-ljubimac">
                 <img src={Avatar} alt="avatar" height="65px" width="48px" />

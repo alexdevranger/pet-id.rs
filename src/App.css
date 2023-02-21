@@ -10,7 +10,7 @@
  @font-face {
   font-family: "Itim-Regular"; 
   font-style: normal;
-  font-weight: 700;
+  font-weight: 400;
   font-display: swap;
   src: local("Itim-Regular"),
     url("./fonts/Itim-Regular.ttf") format("truetype");
@@ -31,7 +31,6 @@ h1, h2 {
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  letter-spacing: -1px;
   font-feature-settings: "kern";
   backface-visibility: hidden;
   text-anchor: middle;
@@ -111,7 +110,7 @@ figure img{
     position: relative;
     display: inline-block;
     vertical-align: top;
-    border: 5px solid #fff;
+    border: 1px solid #fff;
     box-shadow: 0 0 5px #ddd;
     cursor: pointer;
   }
@@ -430,6 +429,8 @@ figure.snip1426 {
   text-align: center;
   font-size: 16px;
   background-color: #000000;
+  border-radius: 20px;
+  margin: 25px;
 }
 figure.snip1426 *,
 figure.snip1426 *:before,
@@ -446,20 +447,25 @@ figure.snip1426 img {
 }
 figure.snip1426 figcaption {
   position: absolute;
-  bottom: 25px;
-  right: 25px;
+  bottom: 0;
+  right: 0;
   padding: 5px 10px 10px;
 }
-figure.snip1426 figcaption:before,
+/* figure.snip1426 figcaption:before,
 figure.snip1426 figcaption:after {
   height: 2px;
   width: 400px;
   position: absolute;
   content: '';
-  background-color: #ffffff;
+  background-color: #989898;
+} */
+figure.snip1426 figcaption div {
+  border: 1px solid white;
+    border-radius: 32px;
+    background: #3bc77e;
 }
 figure.snip1426 figcaption:before {
-  top: 0;
+  top: -5px;
   left: 10px;
   -webkit-transform: translateX(100%);
   transform: translateX(100%);
@@ -470,14 +476,14 @@ figure.snip1426 figcaption:after {
   -webkit-transform: translateX(-100%);
   transform: translateX(-100%);
 }
-figure.snip1426 figcaption div:before,
+/* figure.snip1426 figcaption div:before,
 figure.snip1426 figcaption div:after {
   width: 2px;
   height: 300px;
   position: absolute;
   content: '';
-  background-color: #ffffff;
-}
+  background-color: #989898;
+} */
 figure.snip1426 figcaption div:before {
   top: 10px;
   right: 0;
@@ -501,9 +507,8 @@ figure.snip1426 h2 {
 figure.snip1426 h4 {
   display: block;
   font-weight: 700;
-  background-color: #ffffff;
   padding: 5px 10px;
-  color: #000000;
+  color: #ffffff;
 }
 figure.snip1426 a {
   position: absolute;
@@ -512,13 +517,13 @@ figure.snip1426 a {
   left: 0;
   right: 0;
 }
-figure.snip1426:hover img,
+/* figure.snip1426:hover img,
 figure.snip1426.hover img {
   zoom: 1;
   filter: alpha(opacity=50);
   -webkit-opacity: 0.5;
   opacity: 0.5;
-}
+} */
 figure.snip1426:hover figcaption:before,
 figure.snip1426.hover figcaption:before,
 figure.snip1426:hover figcaption:after,
@@ -536,4 +541,32 @@ figure.snip1426:hover figcaption:after,
 figure.snip1426.hover figcaption:after {
   -webkit-transition-delay: 0.15s;
   transition-delay: 0.15s;
+}
+.truncate4lines {
+  overflow: hidden;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    line-height: 1.4rem;
+    max-height: 8rem;
+    -webkit-box-orient: vertical;
+    display: block;
+    display: -webkit-box;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 4;
+}
+.floating {  
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 5px;
+}
+
+@keyframes floating {
+  from { transform: translate(0,  0px); }
+  65%  { transform: translate(0, 15px); }
+  to   { transform: translate(0, -0px); }    
 }
