@@ -62,7 +62,7 @@ const Main1 = () => {
                 </p>
               </div>
             </div>
-            <div className="px-0 md:px-8 flex justify-center lg:justify-start">
+            <div className="px-2 md:px-8 flex justify-center lg:justify-start">
               <div className="flex items-center justify-center text-white bg-[#FF553E] w-full sm:w-[300px] h-[64px] rounded-lg mt-16 duration-500 hover:bg-[#3BC77E]">
                 <Link to="/proizvodi">
                   <h3 className="text-[1.3rem] min-[410px]:text-[1.75rem]">
