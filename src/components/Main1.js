@@ -543,7 +543,7 @@ const Main1 = () => {
         </div>
 
         <div
-          className="w-full sm:pt-8 sm:pb-32 text-center sm:text-left"
+          className="w-full sm:pt-8 pb-32 text-center sm:text-left"
           style={{
             backgroundImage: `url(${bg})`,
             backgroundRepeat: "no repeat",
