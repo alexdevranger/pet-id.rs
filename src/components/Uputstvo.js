@@ -69,8 +69,8 @@ function Uputstvo() {
             </div>
           </div>
           <Link to="/proizvodi">
-            <div class="flex justify-around mt-32 w-full mb-32">
-              <div class="cursor-pointer flex items-center justify-center text-white bg-[#3BC77E] hover:bg-[#FF553E] w-[300px] h-[64px] rounded-lg mt-16 duration-500">
+            <div class="flex justify-around pt-8 w-full mb-16">
+              <div class="cursor-pointer flex items-center justify-center text-white bg-[#3BC77E] hover:bg-[#FF553E] w-[300px] h-[64px] rounded-lg duration-500">
                 <h2 class="text-lg md:text-3xl">
                   Naruči kao poklon prijatelju
                 </h2>
