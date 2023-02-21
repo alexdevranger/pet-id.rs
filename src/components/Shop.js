@@ -300,11 +300,11 @@ const Shop = () => {
         </div>
       </div>
       {cir === false && hea === false && bon === false && (
-        <div className="flex justify-around mt-32 w-full">
+        <div className="flex justify-around pt-16 md:pt-32 w-full px-2">
           <div className="cursor-pointer flex items-center justify-center text-white bg-[#3BC77E] hover:bg-[#FF553E] w-[300px] h-[64px] rounded-lg mt-16 duration-500">
-            <h2 className="text-3xl" onClick={ErrorNotify}>
-              Sledeći korak
-            </h2>
+            <h3 className="text-[1.3rem] min-[410px]:text-[1.75rem]">
+              Poruči Pet ID tag
+            </h3>
             <Toaster
               position="top-center"
               toastOptions={{
@@ -322,30 +322,36 @@ const Shop = () => {
         </div>
       )}
       {cir === true && (
-        <div className="flex justify-around mt-32 w-full">
-          <Link to={link}>
-            <div className="cursor-pointer flex items-center justify-center text-white bg-[#3BC77E] hover:bg-[#FF553E] w-[300px] h-[64px] rounded-lg mt-16 duration-500">
-              <h2 className="text-3xl">Sledeci korak</h2>
-            </div>
-          </Link>
+        <div className="px-2 md:px-8 flex justify-center lg:justify-start">
+          <div className="flex items-center justify-center text-white bg-[#FF553E] w-full sm:w-[300px] h-[64px] rounded-lg mt-16 duration-500 hover:bg-[#3BC77E]">
+            <Link to="/proizvodi">
+              <h3 className="text-[1.3rem] min-[410px]:text-[1.75rem]">
+                Poruči Pet ID tag
+              </h3>
+            </Link>
+          </div>
         </div>
       )}
       {bon === true && (
-        <div className="flex justify-around mt-32 w-full">
-          <Link to={link}>
-            <div className="cursor-pointer flex items-center justify-center text-white bg-[#3BC77E] hover:bg-[#FF553E] w-[300px] h-[64px] rounded-lg mt-16 duration-500">
-              <h2 className="text-3xl">Sledeci korak</h2>
-            </div>
-          </Link>
+        <div className="px-2 md:px-8 flex justify-center lg:justify-start">
+          <div className="flex items-center justify-center text-white bg-[#FF553E] w-full sm:w-[300px] h-[64px] rounded-lg mt-16 duration-500 hover:bg-[#3BC77E]">
+            <Link to="/proizvodi">
+              <h3 className="text-[1.3rem] min-[410px]:text-[1.75rem]">
+                Poruči Pet ID tag
+              </h3>
+            </Link>
+          </div>
         </div>
       )}
       {hea === true && (
-        <div className="flex justify-around mt-32 w-full">
-          <Link to={link}>
-            <div className="cursor-pointer flex items-center justify-center text-white bg-[#3BC77E] hover:bg-[#FF553E] w-[300px] h-[64px] rounded-lg mt-16 duration-500">
-              <h2 className="text-3xl">Sledeci korak</h2>
-            </div>
-          </Link>
+        <div className="px-2 md:px-8 flex justify-center lg:justify-start">
+          <div className="flex items-center justify-center text-white bg-[#FF553E] w-full sm:w-[300px] h-[64px] rounded-lg mt-16 duration-500 hover:bg-[#3BC77E]">
+            <Link to="/proizvodi">
+              <h3 className="text-[1.3rem] min-[410px]:text-[1.75rem]">
+                Poruči Pet ID tag
+              </h3>
+            </Link>
+          </div>
         </div>
       )}
       <div className="w-full mt-24 flex justify-around mb-6">

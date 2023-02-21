@@ -127,12 +127,12 @@ const Main1 = () => {
                 </p>
               </blockquote>
             </div>
-            <div className="px-2 md:px-8 flex justify-center xl:justify-start xl:px-6">
-              <div className="flex items-center justify-center text-white bg-[#FF553E] w-full sm:w-[300px] h-[64px] rounded-lg mt-12 sm:mt-16 mb-12 sm:mb-0 duration-500 hover:bg-[#3BC77E]">
+            <div className="px-2 md:px-8 flex justify-center lg:justify-start">
+              <div className="flex items-center justify-center text-white bg-[#FF553E] w-full sm:w-[300px] h-[64px] rounded-lg mt-16 duration-500 hover:bg-[#3BC77E]">
                 <Link to="/proizvodi">
-                  <h2 className="text-[1.3rem] min-[410px]:text-[1.75rem]">
+                  <h3 className="text-[1.3rem] min-[410px]:text-[1.75rem]">
                     Poruči Pet ID tag
-                  </h2>
+                  </h3>
                 </Link>
               </div>
             </div>
@@ -343,12 +343,12 @@ const Main1 = () => {
                 pobegne
               </p>
             </div>
-            <div className="px-2 md:px-8 flex justify-center xl:justify-start xl:px-3">
+            <div className="px-2 md:px-8 flex justify-center lg:justify-start">
               <div className="flex items-center justify-center text-white bg-[#FF553E] w-full sm:w-[300px] h-[64px] rounded-lg mt-16 duration-500 hover:bg-[#3BC77E]">
                 <Link to="/proizvodi">
-                  <h2 className="text-[1.3rem] min-[410px]:text-[1.75rem]">
+                  <h3 className="text-[1.3rem] min-[410px]:text-[1.75rem]">
                     Poruči Pet ID tag
-                  </h2>
+                  </h3>
                 </Link>
               </div>
             </div>
@@ -392,9 +392,9 @@ const Main1 = () => {
             <div className="px-2 md:px-8 flex justify-center sm:justify-start sm:px-0">
               <div className="flex items-center justify-center text-white bg-white w-full sm:w-[300px] h-[64px] rounded-lg mt-16 duration-500 hover:bg-[#3BC77E] text-center">
                 <Link to="/proizvodi">
-                  <h2 className="text-[1.3rem] min-[410px]:text-[1.75rem] text-[#FF553E]">
+                  <h3 className="text-[1.3rem] min-[410px]:text-[1.75rem] text-[#FF553E]">
                     Poruči Pet ID tag
-                  </h2>
+                  </h3>
                 </Link>
               </div>
             </div>
@@ -424,12 +424,12 @@ const Main1 = () => {
                 može nestati, i zato je Pet ID tag savršen poklon koji znači
                 brigu za bezbedan povratak kući.
               </p>
-              <div className="px-0 flex justify-center sm:justify-start xl:px-0">
-                <div className="flex items-center justify-center text-white bg-[#3BC77E] w-full sm:w-[300px] h-[64px] rounded-lg mt-16 duration-500 hover:bg-[#FF553E]">
+              <div className="px-2 md:px-8 flex justify-center lg:justify-start">
+                <div className="flex items-center justify-center text-white bg-[#FF553E] w-full sm:w-[300px] h-[64px] rounded-lg mt-16 duration-500 hover:bg-[#3BC77E]">
                   <Link to="/proizvodi">
-                    <h2 className="text-[1.3rem] min-[410px]:text-[1.75rem]">
+                    <h3 className="text-[1.3rem] min-[410px]:text-[1.75rem]">
                       Poruči Pet ID tag
-                    </h2>
+                    </h3>
                   </Link>
                 </div>
               </div>
@@ -581,12 +581,12 @@ const Main1 = () => {
                   proizvoda i usluge.
                 </p>
               </div>
-              <div className="px-2 md:px-8 xl:px-5">
-                <div className="flex items-center justify-center text-white bg-[#FF553E] w-full sm:w-[300px] h-[64px] rounded-lg mt-16 duration-500 hover:bg-[#3BC77E] mb-6">
+              <div className="px-2 md:px-8 flex justify-center lg:justify-start">
+                <div className="flex items-center justify-center text-white bg-[#FF553E] w-full sm:w-[300px] h-[64px] rounded-lg mt-16 duration-500 hover:bg-[#3BC77E]">
                   <Link to="/proizvodi">
-                    <h2 className="text-[1.3rem] min-[410px]:text-[1.75rem]">
+                    <h3 className="text-[1.3rem] min-[410px]:text-[1.75rem]">
                       Poruči Pet ID tag
-                    </h2>
+                    </h3>
                   </Link>
                 </div>
               </div>
