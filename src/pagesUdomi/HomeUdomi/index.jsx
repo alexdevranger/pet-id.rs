@@ -18,7 +18,7 @@ const Home = () => {
       }}
     >
       <div className="mt-20 w-full mx-auto text-center flex flex-col justify-center">
-        <Typed
+        {/* <Typed
           className="md:text-5xl sm:text-4xl text-3xl font-bold md:pl-4 px-2"
           strings={[
             "Udomite ljubimca, osvojite najboljeg prijatelja za ceo život",
@@ -30,7 +30,7 @@ const Home = () => {
           typeSpeed={40}
           backSpeed={40}
           loop
-        />
+        /> */}
       </div>
       <div className="m-auto text-center w-full lg:w-[80%]">
         <h2 className="text-xl sm:text-2xl px-2 md:text-3xl lg:px-32 mt-16">
@@ -52,18 +52,18 @@ const Home = () => {
       </div>
       <div className="px-1 sm:px-8 flex justify-center ">
         <div className="flex items-center justify-center text-white bg-[#3BC77E] w-[90%] lg:w-[60%] xl:w-[800px] h-[64px] rounded-lg mt-6 duration-500 hover:bg-[#FF553E]">
-          <Link to="/kontakt-udomi">
+          {/* <Link to="/kontakt-udomi">
             <h2 className="text-[19px] sm:text-xl md:text-2xl lg:text-2xl text-center min-[465px]:text-left">
               Doprinosi u spašavanju života napuštenih životinja
             </h2>
-          </Link>
+          </Link> */}
         </div>
       </div>
 
       {/* Blog List & Empty View */}
-      <div className="pt-20">
+      {/* <div className="pt-20">
         {!blogs.length ? <EmptyListUdomi /> : <BlogListUdomi blogs={blogs} />}
-      </div>
+      </div> */}
     </div>
   );
 };
