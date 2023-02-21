@@ -563,6 +563,8 @@ figure.snip1426.hover figcaption:after {
   margin-left: 20px;
   margin-right: 20px;
   margin-top: 5px;
+  width: 100px;
+  height: 52px!important;
 }
 
 @keyframes floating {

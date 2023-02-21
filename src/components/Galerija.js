@@ -39,23 +39,11 @@ function Galerija() {
             Galerija Srećnih Ljubimaca
           </h1>
           <div className="flex justify-center">
-            <img
-              src={Bone}
-              alt="bone"
-              className="floating"
-              width="100px"
-              height="52px"
-            />
+            <img src={Bone} alt="bone" className="hidden floating sm:block" />
             <p className="pt-6 font-bold text-xl sm:text-xl md:text-xl lg:text-xl text-center">
               Ovo su naši ponosni članovi
             </p>
-            <img
-              src={Bone}
-              alt="bone"
-              className="floating"
-              width="100px"
-              height="52px"
-            />
+            <img src={Bone} alt="bone" className="hidden floating sm:block" />
           </div>
         </div>
         <figure className="snip1426">
