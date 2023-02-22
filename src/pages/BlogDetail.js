@@ -1,14 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router";
-import { blogList } from "../../config/datanew";
+import { blogList } from "../config/datanew";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import Chip from "../../components/common/Chip";
-import EmptyList from "../../components/common/EmptyList";
-import "./styles.css";
+import Chip from "../components/Chip";
+import EmptyList from "../components/EmptyList";
 import { Link } from "react-router-dom";
-import bg from "../../assets/bg.webp";
+import bg from "../assets/bg.webp";
 
-const Blog = () => {
+const BlogDetail = () => {
   const { id } = useParams();
   const [blog, setBlog] = useState(null);
 
@@ -73,4 +72,4 @@ const Blog = () => {
   );
 };
 
-export default Blog;
+export default BlogDetail;

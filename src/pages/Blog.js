@@ -1,13 +1,19 @@
 import React, { useState } from "react";
-import EmptyList from "../../components/common/EmptyList";
-import BlogList from "../../components/Home/BlogList";
-import SearchBar from "../../components/Home/SearchBar";
-import { blogList } from "../../config/datanew";
-import bg from "../../assets/bg.webp";
+import EmptyList from "../components/EmptyList";
+import BlogList from "../components/BlogList";
+import SearchBar from "../components/SearchBar";
+import { blogList } from "../config/datanew";
+import bg from "../assets/bg.webp";
 
-const Home = () => {
+const Blog = () => {
   const [blogs, setBlogs] = useState(blogList);
   const [searchKey, setSearchKey] = useState("");
+
+  const [value, setValue] = useState("");
+
+  const handleClick = (value) => {
+    setValue(value);
+  };
 
   // Search submit
   const handleSearchBar = (e) => {
@@ -55,10 +61,15 @@ const Home = () => {
 
       {/* Blog List & Empty View */}
       <div className="pt-20">
-        {!blogs.length ? <EmptyList /> : <BlogList blogs={blogs} />}
+        {!blogs.length ? (
+          <EmptyList />
+        ) : (
+          <BlogList blogs={blogs} value={value} klik={handleClick} />
+        )}
+        Value is: {value}
       </div>
     </div>
   );
 };
 
-export default Home;
+export default Blog;

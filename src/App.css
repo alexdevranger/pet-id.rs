@@ -578,3 +578,128 @@ figure.snip1426.hover figcaption:after {
   65%  { transform: translate(0, 15px); }
   to   { transform: translate(0, -0px); }    
 }
+.blog-goBack {
+  text-decoration: none;
+  font-size: 0.8rem;
+  color: #a9a9a9;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  display: block;
+}
+.blog-wrap header {
+  text-align: center;
+}
+
+.blog-date {
+  font-size: 0.8rem;
+  color: #a9a9a9;
+  font-weight: 500;
+}
+
+.blog-wrap img {
+  width: 100%;
+}
+
+.blog-subCategory {
+  display: flex;
+  justify-content: center;
+}
+.blog-subCategory > div {
+  margin: 5px;
+}
+.blog-desc {
+  padding: 1rem;
+  margin-top: 1.5rem;
+}
+.blogItem-wrap {
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+}
+.blogItem-cover {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 20px;
+  margin-bottom: 0.5rem;
+}
+.blogItem-wrap h3 {
+  margin: 0.5rem 0 1rem 0;
+  flex: 1;
+  font-size: 25px;
+  font-weight: 600;
+}
+.blogItem-desc {
+  position: relative;
+  overflow: hidden;
+  padding-right: 0.6rem;
+  font-size: 1rem;
+  color: #a9a9a9;
+}
+
+.blogItem-wrap footer {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+  justify-content: space-between;
+}
+
+.blogItem-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.blogItem-author {
+  display: flex;
+  align-items: center;
+}
+
+.blogItem-author img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 0.5rem;
+}
+
+.blogItem-author p {
+  font-size: 0.6rem;
+  color: #a9a9a9;
+  font-weight: 600;
+}
+
+.blogList-wrap {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 3rem;
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .blogList-wrap {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .blogList-wrap {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.chip {
+  font-size: 0.7rem;
+  background: #3BC77E;
+  color: #fff;
+  padding: 0.3rem 0.5rem;
+  border-radius: 5px;
+  width: fit-content;
+  text-transform: capitalize;
+}
+.emptyList-wrap {
+  display: flex;
+  justify-content: center;
+}
+.emptyList-wrap img {
+  max-width: 250px;
+  width: 100%;
+}

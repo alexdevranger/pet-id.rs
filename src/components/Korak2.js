@@ -492,8 +492,8 @@ const Korak2 = () => {
         {/* KOSKICA */}
         {step === 1 && params.id === "koskica" && (
           <>
-            <div className="w-full relative text-xl">
-              <h1 className="text-3xl lg:text-4xl px-3 font-bold text-center w-full pb-14">
+            <div className="w-full flex items-center justify-center mb-32 min-[410px]:mb-36 min-[496px]:mb-48 min-[600px]:mb-48 sm:mb-52 md:mb-36 lg:mb-56 mt-8 sm:mt-12 md:mt-12">
+              <h1 className="text-3xl lg:text-4xl font-bold text-center lg:mt-7 px-4">
                 Korak 2 - Izaberite boju priveska i unesite podatke
               </h1>
             </div>
@@ -697,8 +697,8 @@ const Korak2 = () => {
         {/*KRUG  */}
         {step === 1 && params.id === "krug" && (
           <>
-            <div className="w-full relative">
-              <h1 className="text-3xl lg:text-4xl px-3 font-bold text-center w-full pb-14">
+            <div className="w-full flex items-center justify-center mb-32 min-[410px]:mb-36 min-[496px]:mb-48 min-[600px]:mb-48 sm:mb-52 md:mb-36 lg:mb-56 mt-8 sm:mt-12 md:mt-12">
+              <h1 className="text-3xl lg:text-4xl font-bold text-center lg:mt-7 px-4">
                 Korak 2 - Izaberite boju priveska i unesite podatke
               </h1>
             </div>
