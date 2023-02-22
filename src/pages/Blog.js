@@ -35,7 +35,7 @@ const Blog = () => {
     setBlogs(blogList);
     setSearchKey("");
   };
-
+  console.log(typeof onClick);
   return (
     <div
       style={{
@@ -64,9 +64,9 @@ const Blog = () => {
         {!blogs.length ? (
           <EmptyList />
         ) : (
-          <BlogList blogs={blogs} value={value} klik={handleClick} />
+          <BlogList blogs={blogs} onClick={handleClick} />
         )}
-        Value is: {value}
+        {/* Value is: {value} */}
       </div>
     </div>
   );

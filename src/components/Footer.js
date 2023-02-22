@@ -10,12 +10,11 @@ const Footer = () => {
   return (
     <div className="w-full mx-auto py-1 px-6 flex justify-between text-white bg-[#FF553E] items-center flex-col md:flex-row">
       <div className="flex justify-center md:justify-start mt-5 md:mt-0">
-        <img src={PETnav} alt="logo" />
+        <img src={PETnav} className="w-[120px]" alt="logo" />
       </div>
 
       <div className="w-[95%] flex items-center flex-col-reverse md:flex-row">
         <div className="flex justify-center w-full flex-col items-center">
-
           <p className="text-[16px] min-[315px]:text-[18px]">
             All right reserved © 2023 Pet ID
           </p>
@@ -30,7 +29,6 @@ const Footer = () => {
                 Uslovi korišćenja
               </Link>
             </p>
-
           </div>
         </div>
         <div>

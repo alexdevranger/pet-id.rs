@@ -5,13 +5,17 @@ import Chip from "./Chip";
 const BlogItem = (props) => {
   const { description, title, createdAt, cover, category, id, subCategory } =
     props.blog;
-
+  const { onClick } = props;
+  const handleClick = () => {
+    onClick("hello");
+  };
+  console.log(typeof onClick);
   return (
     <div className="blogItem blogItem-wrap">
       <Link className="blogItem blogItem-link" to={`/blog/${id}`}>
         <img className="blogItem blogItem-cover" src={cover} alt="cover" />
       </Link>
-      <Chip label={category} className="blogItem" />
+      <Chip label={category} className="blogItem" onClick={handleClick} />
       {/* <div className="blog-subCategory" style={{ justifyContent: "left" }}>
         {subCategory.map((category, i) => (
           <div key={i}>

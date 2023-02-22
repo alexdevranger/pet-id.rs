@@ -329,7 +329,7 @@ const Shop = () => {
           <Link to={link}>
             <div className="cursor-pointer flex items-center justify-center text-white bg-[#3BC77E] hover:bg-[#FF553E] w-[300px] h-[64px] rounded-lg mt-16 duration-500">
               <h3 className="text-[1.3rem] min-[410px]:text-[1.75rem]">
-                Sledeci korak
+                Sledeći korak
               </h3>
             </div>
           </Link>
@@ -340,7 +340,7 @@ const Shop = () => {
           <Link to={link}>
             <div className="cursor-pointer flex items-center justify-center text-white bg-[#3BC77E] hover:bg-[#FF553E] w-[300px] h-[64px] rounded-lg mt-16 duration-500">
               <h3 className="text-[1.3rem] min-[410px]:text-[1.75rem]">
-                Sledeci korak
+                Sledeći korak
               </h3>
             </div>
           </Link>
@@ -351,7 +351,7 @@ const Shop = () => {
           <Link to={link}>
             <div className="cursor-pointer flex items-center justify-center text-white bg-[#3BC77E] hover:bg-[#FF553E] w-[300px] h-[64px] rounded-lg mt-16 duration-500">
               <h3 className="text-[1.3rem] min-[410px]:text-[1.75rem]">
-                Sledeci korak
+                Sledeći korak
               </h3>
             </div>
           </Link>

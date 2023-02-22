@@ -1,7 +1,6 @@
 import React from "react";
 
 const Grandchild = ({ onClick }) => {
-  console.log(typeof onClick);
   const handleClick = () => {
     onClick("hello");
   };
