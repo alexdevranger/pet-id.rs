@@ -7,7 +7,7 @@ const BlogItem = (props) => {
     props.blog;
   const { onClick } = props;
   const handleClick = () => {
-    onClick("hello");
+    onClick(category);
   };
   console.log(typeof onClick);
   return (
@@ -15,7 +15,13 @@ const BlogItem = (props) => {
       <Link className="blogItem blogItem-link" to={`/blog/${id}`}>
         <img className="blogItem blogItem-cover" src={cover} alt="cover" />
       </Link>
-      <Chip label={category} className="blogItem" onClick={handleClick} />
+      <input
+        type="button"
+        className="chip cursor-pointer"
+        value={category}
+        onClick={handleClick}
+      />
+      {/* <Chip label={category} className="blogItem" onClick={handleClick} /> */}
       {/* <div className="blog-subCategory" style={{ justifyContent: "left" }}>
         {subCategory.map((category, i) => (
           <div key={i}>

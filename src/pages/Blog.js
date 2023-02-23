@@ -8,11 +8,18 @@ import bg from "../assets/bg.webp";
 const Blog = () => {
   const [blogs, setBlogs] = useState(blogList);
   const [searchKey, setSearchKey] = useState("");
+  const [iskljuci, setIskljuci] = useState(false);
 
   const [value, setValue] = useState("");
 
   const handleClick = (value) => {
     setValue(value);
+    const allBlogs = blogList;
+    const filteredBlogs = allBlogs.filter((blog) =>
+      blog.category.toLowerCase().includes(value.toLowerCase().trim())
+    );
+    setBlogs(filteredBlogs);
+    setIskljuci(true);
   };
 
   // Search submit
@@ -34,8 +41,8 @@ const Blog = () => {
   const handleClearSearch = () => {
     setBlogs(blogList);
     setSearchKey("");
+    setIskljuci(false);
   };
-  console.log(typeof onClick);
   return (
     <div
       style={{
@@ -59,8 +66,18 @@ const Blog = () => {
         />
       </div>
 
+      {iskljuci && (
+        <div className="flex justify-center items-center">
+          <button
+            className="hover:text-[#3BC77E] text-white hover:bg-white bg-[#3BC77E] focus:outline-none font-medium rounded-lg text-sm px-4 py-2 border border-slate-200 dark:bg-white dark:hover:bg-[#3BC77E]"
+            onClick={handleClearSearch}
+          >
+            Isključi filter
+          </button>
+        </div>
+      )}
       {/* Blog List & Empty View */}
-      <div className="pt-20">
+      <div className="pt-10">
         {!blogs.length ? (
           <EmptyList />
         ) : (

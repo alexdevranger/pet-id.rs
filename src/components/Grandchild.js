@@ -1,4 +1,5 @@
 import React from "react";
+import Chip from "./Chip";
 
 const Grandchild = ({ onClick }) => {
   const handleClick = () => {
@@ -7,7 +8,12 @@ const Grandchild = ({ onClick }) => {
 
   return (
     <div>
-      <button onClick={handleClick}>Click me!</button>
+      <input
+        type="button"
+        className="chip cursor-pointer"
+        value="hello"
+        onClick={handleClick}
+      />
     </div>
   );
 };

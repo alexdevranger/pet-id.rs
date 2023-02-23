@@ -7,7 +7,6 @@ const Parent = () => {
   const handleClick = (value) => {
     setValue(value);
   };
-  console.log(typeof onClick);
 
   return (
     <div>
