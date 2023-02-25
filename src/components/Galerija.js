@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState, useEffect, useRef } from "react";
 import bg from "../assets/bg.webp";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import LoadingPlaceHolder, { containerStyles } from "./LoadingPlaceHolder";
 import Bone from "../assets/bone.png";
 import Boby from "../assets/galerija/bobi_optimized.webp";
 import Cezar from "../assets/galerija/cezar_optimized.webp";
@@ -23,6 +24,15 @@ import Oto from "../assets/galerija/Oto_optimized.webp";
 import Persi from "../assets/galerija/persi_optimized.webp";
 
 function Galerija() {
+  const [loaded, setLoaded] = useState(false);
+  let imageLoadNum = 0;
+  const stuffLoaded = () => {
+    imageLoadNum++;
+    if (imageLoadNum < 2) return;
+    setTimeout(() => {
+      setLoaded(true);
+    }, 500);
+  };
   return (
     <div
       className="text-gray-700 body-font relative"
@@ -46,6 +56,27 @@ function Galerija() {
             <img src={Bone} alt="bone" className="hidden floating sm:block" />
           </div>
         </div>
+        {/* <div className="card snip1426">
+          <div style={containerStyles}>
+            {!loaded && (
+              <LoadingPlaceHolder
+                extraStyles={{ height: "100%", top: "0", left: "0" }}
+                container
+              />
+            )}
+            <LazyLoadImage
+              src={Boby}
+              alt="Boby"
+              className="cardHeaderImg"
+              onLoad={stuffLoaded}
+            />
+            <figcaption>
+              <div>
+                <h4>BOBY</h4>
+              </div>
+            </figcaption>
+          </div>
+        </div> */}
         <figure className="snip1426">
           <LazyLoadImage
             effect="blur"

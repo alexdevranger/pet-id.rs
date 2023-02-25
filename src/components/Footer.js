@@ -16,7 +16,7 @@ const Footer = () => {
       <div className="w-[95%] flex items-center flex-col-reverse md:flex-row">
         <div className="flex justify-center w-full flex-col items-center">
           <p className="text-[16px] min-[315px]:text-[18px]">
-            All right reserved © 2023 Pet ID
+            Sva prava zadržana © 2023 Pet ID
           </p>
           <div className="px-6 flex flex-row pt-2">
             <p className="text-[14px] min-[315px]:text-[18px] md:text-[18px] mt-2">
