@@ -58,7 +58,7 @@ const Blog = () => {
         </h1>
       </div>
       {/* Search Bar */}
-      <div className="w-full blog-subCategory">
+      <div className="w-full blog-subCategory flex-wrap">
         <div>
           <input
             type="button"
