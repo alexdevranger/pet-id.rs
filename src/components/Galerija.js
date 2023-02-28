@@ -22,6 +22,7 @@ import Moli from "../assets/galerija/Moli.webp";
 import Nina from "../assets/galerija/nina_optimized.webp";
 import Oto from "../assets/galerija/Oto_optimized.webp";
 import Persi from "../assets/galerija/persi_optimized.webp";
+import Arci from "../assets/galerija/arci_optimized.webp";
 
 function Galerija() {
   const [loaded, setLoaded] = useState(false);
@@ -340,6 +341,20 @@ function Galerija() {
           <figcaption>
             <div>
               <h4>Billy</h4>
+            </div>
+          </figcaption>
+        </figure>
+        <figure className="snip1426">
+          <LazyLoadImage
+            effect="blur"
+            src={Arci}
+            loading="lazy"
+            decoding="async"
+            alt="Arci"
+          />
+          <figcaption>
+            <div>
+              <h4>Arči</h4>
             </div>
           </figcaption>
         </figure>

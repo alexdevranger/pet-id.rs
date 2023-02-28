@@ -17,6 +17,7 @@ import KontaktUdomi from "./components/KontaktUdomi";
 import PolitikaPrivatnosti from "./components/PolitikaPrivatnosti";
 import UsloviKoriscenja from "./components/UsloviKoriscenja";
 import Galerija from "./components/Galerija";
+import Udomi from "./components/Udomi";
 // import Grandchild from "./components/Grandchild";
 // import Child from "./components/Child";
 // import Parent from "./components/Parent";
@@ -36,10 +37,11 @@ function App() {
           <Route exact path="/kontakt-udomi" element={<KontaktUdomi />} />
           <Route exact path="/blog/:id" element={<BlogDetail />} />
           <Route exact path="/blog" element={<Blog />} />
-          <Route exact path="/udomi/:id" element={<BlogUdomi />} />
-          <Route exact path="/udomi" element={<HomeUdomi />} />
+          {/* <Route exact path="/udomi/:id" element={<BlogUdomi />} />
+          <Route exact path="/udomi" element={<HomeUdomi />} /> */}
           <Route exact path="/moj-ljubimac" element={<MojLjubimac />} />
           <Route exact path="/uputstvo" element={<Uputstvo />} />
+          {/* <Route exact path="/udomi" element={<Udomi />} /> */}
           {/* <Route exact path="/child" element={<Child />} />
           <Route exact path="/grandchild" element={<Grandchild />} />
           <Route exact path="/parent" element={<Parent />} /> */}

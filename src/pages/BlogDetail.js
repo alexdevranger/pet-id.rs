@@ -24,6 +24,7 @@ const BlogDetail = () => {
         backgroundImage: `url(${bg})`,
         backgroundRepeat: "no repeat",
         backgroundSize: "100%",
+        minHeight: "85vh",
       }}
     >
       {blog ? (
