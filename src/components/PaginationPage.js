@@ -1,16 +1,6 @@
 import React, { useState } from "react";
 import PaginationFinal from "./PaginationFinal";
 
-// const propTypes = {
-//   items: React.PropTypes.array.isRequired,
-//   onChangePage: React.PropTypes.func.isRequired,
-//   initialPage: React.PropTypes.number,
-// };
-
-// const defaultProps = {
-//   initialPage: 1,
-// };
-
 function PaginationPage() {
   const [exampleItems, setExampleItems] = useState(
     [...Array(55).keys()].map((i) => ({

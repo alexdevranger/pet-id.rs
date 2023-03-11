@@ -1,7 +1,8 @@
 import React from "react";
 import { FaUserAlt } from "react-icons/fa";
 
-function UdomiDetail({
+function UdomiDetailCrveni({
+  id,
   slika,
   dan,
   mesec,
@@ -13,9 +14,13 @@ function UdomiDetail({
   kontakt,
   psp,
   galery,
+  text1,
+  text2,
+  text3,
 }) {
   const [showModal1, setShowModal1] = React.useState(false);
   const [showModal2, setShowModal2] = React.useState(false);
+
   return (
     <div>
       {" "}
@@ -99,7 +104,7 @@ function UdomiDetail({
                   {/*header*/}
                   <div className="flex items-start justify-between p-5 border-b border-solid border-slate-200 rounded-t">
                     <h3 className="text-3xl font-semibold flex items-center">
-                      {petName}
+                      {petName} <span className="pl-[30px]">ID: {id}</span>
                     </h3>
                     <button
                       className="p-1 ml-auto bg-transparent border-0 text-black float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
@@ -118,11 +123,6 @@ function UdomiDetail({
                       {galery.map((slide, index) => (
                         <s id={`s${index + 1}`} key={`sg${index + 1}`}></s>
                       ))}
-                      {/* <s id="s1"></s>
-                      <s id="s2"></s>
-                      <s id="s3"></s>
-                      <s id="s4"></s> */}
-
                       <div className="slider">
                         {galery.map((slide, index) => (
                           <div
@@ -279,7 +279,7 @@ function UdomiDetail({
                   {/*header*/}
                   <div className="flex items-start justify-between p-5 border-b border-solid border-slate-200 rounded-t">
                     <h3 className="text-3xl font-semibold flex items-center">
-                      Boby online{" "}
+                      {petName} <span className="pl-[30px]">ID: {id}</span>
                     </h3>
                     <button
                       className="p-1 ml-auto bg-transparent border-0 text-black float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
@@ -294,15 +294,11 @@ function UdomiDetail({
                   </div>
                   {/*body*/}
                   <div className="relative p-6 flex flex-col">
-                    <p className="text-left">
-                      Cezar je vraćen i ponovo traži dom. Osoba koja ga je
-                      usvojila vratila ga je jer "se ne slaže sa mačkama i
-                      pernatim životinjama". Spasili smo ga sa ulice kada je
-                      imao svega mesec dana, sada ima oko 5 i po meseci,
-                      vakcinisan je i očišćen od parazita, veseo i mazan. Ponovo
-                      tražimo dom za Cezara u kome će biti voljen, a što će on
-                      mnogostruko vratiti.
-                    </p>
+                    {text1 && <p className="text-left">{text1}</p>}
+                    <br />
+                    {text2 && <p className="text-left">{text2}</p>}
+                    <br />
+                    {text3 && <p className="text-left">{text3}</p>}
                   </div>
                   {/*footer*/}
                   <div className="flex items-center justify-end p-6 border-t border-solid border-slate-200 rounded-b">
@@ -327,4 +323,4 @@ function UdomiDetail({
   );
 }
 
-export default UdomiDetail;
+export default UdomiDetailCrveni;

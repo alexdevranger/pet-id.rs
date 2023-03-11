@@ -890,12 +890,12 @@ figure.snip1426.hover figcaption:after {
   perspective: 600px;
 }
 
-.cards-container {
+/* .cards-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
-}
+} */
 
 .card1 {
   width: 300px;
@@ -1651,6 +1651,7 @@ padding-top:10px;
 }
 .paginate-ctn{
     display: flex;
+    margin-top: 40px;
 }
 .round-effect{
   color: #ff553e;
@@ -1686,6 +1687,76 @@ padding-top:10px;
 a:link {
   text-decoration: none;
   color:#DD4124;
+}
+.input-box {
+  position: relative;
+  width: 350px;
+}
+.input-box button {
+  background: #ff543c;
+    color: #fff;
+    padding: 11px;
+    font-family: 'Itim';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    font-feature-settings: "kern";
+    backface-visibility: hidden;
+    text-anchor: middle;
+    font-size: 18px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.input-box input {
+  position: relative;
+  padding: 8px 10px;
+  width: 100%;
+  border: none;
+  border-radius: 6px;
+  outline: none;
+  background: transparent;
+  color: #fff;
+  font-size: 1.25rem;
+  letter-spacing: 0.05rem;
+  z-index: 2;
+  font-weight: 700;
+}
+
+.input-box span {
+  position: absolute;
+  left: 0;
+  padding: 10px 0;
+  pointer-events: none;
+  font-size: 1rem;
+  color: #a19f9f;
+  transition: 0.5s;
+}
+
+.input-box input:valid ~ span,
+.input-box input:focus ~ span {
+  font-size: 0.85rem;
+  transform: translateY(-32px);
+}
+
+.input-box i {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  border-radius: 1.5px;
+  background: linear-gradient(45deg, #3bc77e, #3bc77e);
+  transition: 0.5s;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.input-box input:valid ~ i,
+.input-box input:focus ~ i {
+  height: 100%;
+  border-radius: 6px;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.25);
 }
 /* .carousel {
   padding-bottom: 40px;

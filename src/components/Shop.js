@@ -62,9 +62,12 @@ const Shop = () => {
         <h1 className="text-3xl lg:text-4xl font-bold text-center lg:mt-7 px-4 pb-4">
           KORAK 1 <br /> Izaberite oblik priveska za vašeg ljubimca{" "}
         </h1>
-        <p className="block px-6 mx-auto">
-          Na ovoj stranici unosite podatke samo ako naručujete tag preko ovog
-          sajta
+        <p className="block px-6 mx-auto z-50">
+          Naručivanje priveska preko ovog sajta, a ukoliko ste već kupili
+          kliknite{" "}
+          <Link to="/uputstvo">
+            <span className="text-[#FF553E] font-semibold">OVDE</span>
+          </Link>
         </p>
       </div>
 

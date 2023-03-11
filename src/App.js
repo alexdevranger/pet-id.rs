@@ -36,7 +36,7 @@ function App() {
           <Route exact path="/proizvodi" element={<Shop />} />
           <Route exact path="/proizvodi/:id" element={<Korak2 />} />
           <Route exact path="/kontakt" element={<ContactUs />} />
-          <Route exact path="/kontakt-udomi" element={<KontaktUdomi />} />
+          {/* <Route exact path="/kontakt-udomi" element={<KontaktUdomi />} /> */}
           <Route exact path="/blog/:id" element={<BlogDetail />} />
           <Route exact path="/blog" element={<Blog />} />
           {/* <Route exact path="/udomi/:id" element={<BlogUdomi />} />

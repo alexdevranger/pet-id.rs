@@ -68,34 +68,34 @@ function PaginationFinal({ items, initialPage, onChangePage }) {
   }
 
   return (
-    <ul className="pagination paginate-ctn">
+    <ul className="pagination paginate-ctn w-full justify-center">
       <li
-        className={`{pager.currentPage === 1 ? "disabled" : ""} round-effect`}
+        className={`{pager.currentPage === 1 ? "disabled" : ""} round-effect`}  onClick={() => setPage(1)}
       >
-        <a onClick={() => setPage(1)}>First</a>
+        <a>First</a>
       </li>
       <li
-        className={`{pager.currentPage === 1 ? "disabled" : ""} round-effect`}
+        className={`{pager.currentPage === 1 ? "disabled" : ""} round-effect`}  onClick={() => setPage(pager.currentPage - 1)}
       >
-        <a onClick={() => setPage(pager.currentPage - 1)}>Prev</a>
+        <a>Prev</a>
       </li>
       {pager.pages.map((page, index) => (
         <li
           key={index}
-          className={`{pager.currentPage === page ? "active" : ""} round-effect`}
+          className={`{pager.currentPage === page ? "active" : ""} round-effect`}  onClick={() => setPage(page)}
         >
-          <a onClick={() => setPage(page)}>{page}</a>
+          <a>{page}</a>
         </li>
       ))}
       <li
-        className={`{pager.currentPage === pager.totalPages ? "disabled" : ""} round-effect`}
+        className={`{pager.currentPage === pager.totalPages ? "disabled" : ""} round-effect`}  onClick={() => setPage(pager.currentPage + 1)}
       >
-        <a onClick={() => setPage(pager.currentPage + 1)}>Next</a>
+        <a>Next</a>
       </li>
       <li
-        className={`{pager.currentPage === pager.totalPages ? "disabled" : ""} round-effect`}
+        className={`{pager.currentPage === pager.totalPages ? "disabled" : ""} round-effect`}  onClick={() => setPage(pager.totalPages)}
       >
-        <a onClick={() => setPage(pager.totalPages)}>Last</a>
+        <a>Last</a>
       </li>
     </ul>
   );
