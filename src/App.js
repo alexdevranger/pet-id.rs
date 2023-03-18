@@ -43,8 +43,8 @@ function App() {
           <Route exact path="/udomi" element={<HomeUdomi />} /> */}
           <Route exact path="/moj-ljubimac" element={<MojLjubimac />} />
           <Route exact path="/uputstvo" element={<Uputstvo />} />
-          {/* <Route exact path="/udomi" element={<Udomi />} />
-          <Route exact path="/paginacija" element={<Pagination1 />} />
+          {/* <Route exact path="/udomi" element={<Udomi />} /> */}
+          {/* <Route exact path="/paginacija" element={<Pagination1 />} />
           <Route exact path="/pagination" element={<PaginationPage />} /> */}
           {/* <Route exact path="/child" element={<Child />} />
           <Route exact path="/grandchild" element={<Grandchild />} />

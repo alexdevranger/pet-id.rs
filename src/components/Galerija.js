@@ -24,6 +24,7 @@ import Oto from "../assets/galerija/Oto_optimized.webp";
 import Persi from "../assets/galerija/persi_optimized.webp";
 import Arci from "../assets/galerija/arci_optimized.webp";
 import Beti from "../assets/galerija/beti_optimized.webp";
+import Rada from "../assets/galerija/Rada_optimized.webp";
 
 function Galerija() {
   const [loaded, setLoaded] = useState(false);
@@ -357,6 +358,20 @@ function Galerija() {
           <figcaption>
             <div>
               <h4>Arči</h4>
+            </div>
+          </figcaption>
+        </figure>
+        <figure className="snip1426">
+          <LazyLoadImage
+            effect="blur"
+            src={Rada}
+            loading="lazy"
+            decoding="async"
+            alt="Rada"
+          />
+          <figcaption>
+            <div>
+              <h4>Rada</h4>
             </div>
           </figcaption>
         </figure>

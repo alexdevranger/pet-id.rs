@@ -146,9 +146,13 @@ function Udomi() {
         </div>
         <div className="w-full flex justify-center mt-12 pb-4">
           <div className="input-box">
-            <input type="text" onInput={handleFilter} />
+            <input
+              type="text"
+              onInput={handleFilter}
+              style={{ color: "#ff543c" }}
+            />
             <span>Pretraži po imenu ljubimca</span>
-            <i></i>
+            <i className="prazanInput"></i>
           </div>
         </div>
 
