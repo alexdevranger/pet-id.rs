@@ -1,21 +1,12 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState } from "react";
 import bg from "../assets/bg.webp";
-import { LazyLoadImage } from "react-lazy-load-image-component";
-import LoadingPlaceHolder, { containerStyles } from "./LoadingPlaceHolder";
 import { cardsData } from "../config/data";
-import { SearchBar } from "./SearchBar";
 import UdomiDetailCrveni from "./UdomiDetailCrveni";
 import UdomiDetailZeleni from "./UdomiDetailZeleni";
 import PaginationFinal from "./PaginationFinal";
-import Udomi1 from "./Udomi1";
-import Bone from "../assets/bone.png";
-import Boby from "../assets/galerija/bobi_optimized.webp";
-import { FaUserAlt } from "react-icons/fa";
-import Mobile from "../assets/mobile_optimized.webp";
 
 function Udomi() {
   const [showModal3, setShowModal3] = React.useState(false);
-  const [showModal2, setShowModal2] = React.useState(false);
   const cardsData1 = [].concat(cardsData).reverse();
   const [filteredItems, setFilteredItems] = useState(cardsData1);
   const [pageOfItems, setPageOfItems] = useState([]);
@@ -237,6 +228,7 @@ function Udomi() {
               marginHeight="0"
               marginWidth="0"
               scrolling="auto"
+              title="idChatBox"
             ></iframe>
           </div>
         </div>
