@@ -13,9 +13,9 @@ const Footer = () => {
         <img src={PETnav} className="w-[120px]" alt="logo" />
       </div>
 
-      <div className="w-[95%] flex items-center flex-col-reverse md:flex-row">
+      <div className="w-[95%] flex items-center flex-col-reverse sm:flex-row">
         <div className="flex justify-center w-full flex-col items-center">
-          <p className="text-[16px] min-[315px]:text-[18px]">
+          <p className="text-[16px] min-[315px]:text-[18px] mt-4 md:mt-0">
             Sva prava zadržana © 2023 Pet ID
           </p>
           <div className="px-6 flex flex-row pt-2">
@@ -29,11 +29,22 @@ const Footer = () => {
                 Uslovi korišćenja
               </Link>
             </p>
+            <p className="text-[14px] min-[315px]:text-[18px] md:text-[18px] mt-2 pl-6">
+              <Link to="/kontakt" rel="noreferrer">
+                Kontakt
+              </Link>
+            </p>
           </div>
         </div>
-        <div>
-          <div className="flex justify-center w-[287px] md:w-[236px] flex-col-reverse md:flex-row">
-            <div className="flex justify-between md:w-[75%] my-6">
+        <div className="flex align-center">
+          {/* <div className="flex justify-center w-[287px] md:w-[236px] flex-col-reverse md:flex-row"> */}
+          <div className="flex justify-center w-[287px] md:w-[236px] flex-col flex-col-reverse items-center sm:items-end">
+            <div>
+              <span className="text-1xl min-[412px]:text-2xl sm:text-2xl text-[#fff] font-bold lg:text-2xl pl-1 items-center align-sub">
+                060/60-12-199
+              </span>
+            </div>
+            <div className="flex justify-between md:w-[75%] my-3 w-[50%] items-center">
               <a
                 href="https://www.instagram.com/pet.id.rs/"
                 target="_blank"

@@ -33,7 +33,7 @@ function App() {
           <Route exact path="/blog" element={<Blog />} />
           <Route exact path="/moj-ljubimac" element={<MojLjubimac />} />
           <Route exact path="/uputstvo" element={<Uputstvo />} />
-          <Route exact path="/udomi" element={<Udomi />} />
+          {/* <Route exact path="/udomi" element={<Udomi />} /> */}
           <Route
             exact
             path="/politika-privatnosti"

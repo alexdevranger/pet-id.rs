@@ -98,9 +98,12 @@ const ContactUs = () => {
                 Kontaktirajte nas
               </h1>
               <p className="pt-8 font-bold text-xl sm:text-xl md:text-xl lg:text-xl text-center">
-                Ukoliko imate pitanje, kontaktirajte nas putem mejla ili
-                drustvenih mreza
+                Ukoliko imate pitanje, kontaktirajte nas telefonom, putem mejla
+                ili drustvenih mreza
               </p>
+              <span className="text-2xl min-[412px]:text-4xl sm:text-5xl text-[#3bc77e] font-bold mr-2 lg:text-3xl pl-1 align-sub">
+                060/60-12-199
+              </span>
             </div>
           )}
           <form>
