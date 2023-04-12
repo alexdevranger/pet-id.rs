@@ -28,6 +28,14 @@ a:link {
   --d: 700ms;
   --e: cubic-bezier(0.19, 1, 0.22, 1);
 }
+.drop a:link, .drop a {
+  color: #9a9b9d !important;
+  font-weight: 400;
+}
+.drop a:link:hover, .drop a:hover {
+  color: #757575 !important;
+  font-weight: 400;
+}
 
 
 h1, h2 {

@@ -11,6 +11,7 @@ import Korak2 from "./components/Korak2";
 import ContactUs from "./components/ContactUs";
 import MojLjubimac from "./components/MojLjubimac";
 import Uputstvo from "./components/Uputstvo";
+import Poklon from "./components/Poklon";
 
 import PolitikaPrivatnosti from "./components/PolitikaPrivatnosti";
 import UsloviKoriscenja from "./components/UsloviKoriscenja";
@@ -33,6 +34,7 @@ function App() {
           <Route exact path="/blog" element={<Blog />} />
           <Route exact path="/moj-ljubimac" element={<MojLjubimac />} />
           <Route exact path="/uputstvo" element={<Uputstvo />} />
+          {/* <Route exact path="/kupi-kao-poklon" element={<Poklon />} /> */}
           {/* <Route exact path="/udomi" element={<Udomi />} /> */}
           <Route
             exact
