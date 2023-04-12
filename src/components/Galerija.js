@@ -25,6 +25,9 @@ import Persi from "../assets/galerija/persi_optimized.webp";
 import Arci from "../assets/galerija/arci_optimized.webp";
 import Beti from "../assets/galerija/beti_optimized.webp";
 import Rada from "../assets/galerija/Rada_optimized.webp";
+import Zizi from "../assets/galerija/zizi_optimized.webp";
+import Gea from "../assets/galerija/gea_optimized.webp";
+import Pepito from "../assets/galerija/pepito_optimized.webp";
 
 function Galerija() {
   const [loaded, setLoaded] = useState(false);
@@ -386,6 +389,48 @@ function Galerija() {
           <figcaption>
             <div>
               <h4>Indi</h4>
+            </div>
+          </figcaption>
+        </figure>
+        <figure className="snip1426">
+          <LazyLoadImage
+            effect="blur"
+            src={Pepito}
+            loading="lazy"
+            decoding="async"
+            alt="Pepito"
+          />
+          <figcaption>
+            <div>
+              <h4>Pepito</h4>
+            </div>
+          </figcaption>
+        </figure>
+        <figure className="snip1426">
+          <LazyLoadImage
+            effect="blur"
+            src={Gea}
+            loading="lazy"
+            decoding="async"
+            alt="Gea"
+          />
+          <figcaption>
+            <div>
+              <h4>Gea</h4>
+            </div>
+          </figcaption>
+        </figure>
+        <figure className="snip1426">
+          <LazyLoadImage
+            effect="blur"
+            src={Zizi}
+            loading="lazy"
+            decoding="async"
+            alt="Zizi"
+          />
+          <figcaption>
+            <div>
+              <h4>Zizi</h4>
             </div>
           </figcaption>
         </figure>
