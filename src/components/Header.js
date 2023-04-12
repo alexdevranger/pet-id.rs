@@ -12,7 +12,7 @@ const Header = () => {
     setNav(!nav);
   };
   //////////////////
-  const [showDropdown, setShowDropdown] = useState(true);
+  const [showDropdown, setShowDropdown] = useState(false);
   const handleDropdown = () => {
     setShowDropdown(!showDropdown);
   };
