@@ -1486,18 +1486,18 @@ const Korak2 = () => {
             <div className="flex justify-around mt-16 w-4/6 m-auto">
               <div className="flex items-center justify-center text-black duration-500">
                 <h5 className="text-sm sm:text-md md:text-lg">
-                  Napomena: Ovi podaci nece se prikazivati na nasem websajtu,
-                  ali će biti dostupni korisniku koji učita unikatni QR kod sa
-                  priveska koji ste kupili, tako da niko sa strane ne može da
-                  pristupi vašim ličnim podacima. Nijedan od ličnih podataka
-                  vlasnika nije obavezan, tako da odaberite broj telefona ili
-                  email koji će moći javno da se vidi, pa njega stavite. Takođe,
-                  možete staviti i 2 telefona, jedan rezervni ako vaš nije
-                  trenutno dostupan. Za adresu, ako ne želite da stavite ulicu i
-                  broj, možete staviti i samo opštinu. Na sledećoj stranici ćete
-                  ostaviti podatke za dostavu, adresu i telefon, ti podaci neće
-                  biti vidljivi i mogu se razlikovati od ovih unetih na ovoj
-                  stranici.
+                  Napomena: Ovi podaci će biti dostupni korisniku koji učita
+                  unikatni QR kod sa priveska koji ste kupili, tako da niko sa
+                  strane ne može da pristupi vašim ličnim podacima, samo onaj ko
+                  učita qr kod. Nijedan od ličnih podataka vlasnika nije
+                  obavezan, tako da odaberite broj telefona ili email koji će
+                  biti dostupan pronalazaču, pa njega stavite. Takođe, možete
+                  staviti i 2 telefona, jedan rezervni ako vaš nije trenutno
+                  dostupan. Za adresu, ako ne želite da stavite ulicu i broj,
+                  možete staviti i samo opštinu ili grad. Na sledećoj stranici
+                  ćete ostaviti podatke za dostavu, adresu i telefon, ti podaci
+                  neće biti vidljivi i mogu se razlikovati od ovih unetih na
+                  ovoj stranici.
                   <br />
                   <br />* Sigurnosna reč: Ukoliko želite da promenite bilo koji
                   podatak, mi ćemo vas pitati za ovu reč, čime dokazujete da ste
