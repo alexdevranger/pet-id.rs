@@ -1782,6 +1782,12 @@ padding-top:10px;
   border-radius: 6px;
   box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.25);
 }
+.boje_oblici {
+  width: 200px;
+  height: 200px;
+  min-width: 200px;
+  min-height: 200px;
+}
 /* .carousel {
   padding-bottom: 40px;
 }

@@ -19,16 +19,31 @@ import Mobile from "../assets/mobile_optimized.webp";
 import Boby from "../assets/boby_optimized.webp";
 import Sapica from "../assets/sapica.png";
 import { FaHeart } from "react-icons/fa";
+import KoskicaZl from "../assets/koskica_optimized.webp";
+import KoskicaCr from "../assets/koskicaCr_optimized.webp";
+import koskicaPl from "../assets/koskicaPL_optimized.webp";
+import koskicaRo from "../assets/koskicaRo_optimized.webp";
+import SrcePl from "../assets/srceBlue_optimized.webp";
+import SrceRo from "../assets/srceRo_optimized.webp";
+import Srce from "../assets/srce_optimized.webp";
+import SrceBlue from "../assets/srcePl_optimized.webp";
+import SrceZl from "../assets/srceZl_optimized.webp";
+import KrugPl from "../assets/krug_optimized.webp";
+import KrugRo from "../assets/krugRo_optimized.webp";
+import KrugOr from "../assets/krugOr_optimized.webp";
+import KrugBlue from "../assets/krugBlue_optimized.webp";
+import KrugZl from "../assets/krugZl_optimized.webp";
 
 const Main1 = () => {
   const [showModal, setShowModal] = React.useState(false);
+  const [showModalTags, setShowModalTags] = React.useState(false);
   return (
     <div className="flex justify-center">
       <div className="w-full">
         {/* Glavna */}
 
         <div className="flex pt-12 sm:pt-28 flex-col sm:flex-row">
-          <div className="lg:ml-16 xl:pl-22 sm:w-[80%] lg:w-[70%]">
+          <div className="lg:ml-16 xl:pl-22 sm:w-[50%] lg:w-[50%] xl:w-[60%] 2xl:w-[80%]">
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-center sm:text-left px-3 sm:pl-6 md:pl-6 md:mt-6 lg:mt-9 xl:mt-12 2xl:pb-8">
               Želiš svog ljubimca nazad ako se izgubi?
             </h1>
@@ -62,13 +77,28 @@ const Main1 = () => {
                 </p>
               </div>
             </div>
-            <div className="px-2 md:px-8 flex justify-center lg:justify-start">
-              <div className="flex items-center justify-center text-white bg-[#FF553E] w-full sm:w-[300px] h-[64px] rounded-lg mt-16 duration-500 hover:bg-[#3BC77E]">
-                <Link to="/proizvodi">
-                  <h3 className="text-[1.3rem] min-[410px]:text-[1.75rem]">
-                    Poruči Pet ID tag
+            <div className="flex wrap flex-col sm:flex-row">
+              <div className="px-2 md:px-8 flex justify-center lg:justify-start">
+                <div className="flex items-center justify-center text-white bg-[#FF553E] w-full sm:w-[300px] h-[64px] rounded-lg mt-16 duration-500 hover:bg-[#3BC77E]">
+                  <Link to="/proizvodi">
+                    <h3 className="text-[1.3rem] min-[410px]:text-[1.75rem]">
+                      Poruči Pet ID tag
+                    </h3>
+                  </Link>
+                </div>
+              </div>
+              <div
+                className="px-2 md:px-8 flex justify-center lg:justify-start"
+                style={{ zIndex: "5" }}
+              >
+                <div className="flex items-center justify-center text-white bg-[#3BC77E] w-full sm:w-[300px] h-[64px] rounded-lg mt-16 duration-500 hover:bg-[#FF553E]">
+                  <h3
+                    className="text-[1.3rem] min-[410px]:text-[1.75rem]"
+                    onClick={() => setShowModalTags(true)}
+                  >
+                    Boje i oblici
                   </h3>
-                </Link>
+                </div>
               </div>
             </div>
           </div>
@@ -77,15 +107,211 @@ const Main1 = () => {
               effect="blur"
               alt="Pet"
               src={Pet}
-              className="mt-12 sm:mt-0 lg:mt-[-77px] lg:w-full m-auto sm:block 2xl:pl-48"
+              className="mt-12 sm:mt-0 lg:w-full m-auto sm:block 2xl:pl-48"
+              style={{ zIndex: "1" }}
             />
           </div>
         </div>
-
+        {showModalTags ? (
+          <>
+            <div className="justify-center items-center fixed inset-0 z-50 overflow-auto outline-none focus:outline-none">
+              <div className="relative w-auto my-6 mx-auto max-w-3xl">
+                {/*content*/}
+                <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
+                  {/*header*/}
+                  <div className="flex items-start justify-between p-5 border-b border-solid border-slate-200 rounded-t">
+                    <h3 className="text-3xl font-semibold flex items-center">
+                      SVE BOJE I OBLICI
+                      <span className="pl-2 text-[#ff0000]">
+                        <FaHeart size={20} />
+                      </span>
+                      <span className="pl-2 text-[#ff0000]">
+                        <FaHeart size={20} />
+                      </span>
+                      <span className="pl-2 text-[#ff0000]">
+                        <FaHeart size={20} />
+                      </span>
+                    </h3>
+                    <button
+                      className="p-1 ml-auto bg-transparent border-0 text-black float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
+                      onClick={() => {
+                        setShowModalTags(false);
+                      }}
+                    >
+                      <span className="bg-transparent text-black h-6 w-6 text-2xl block outline-none focus:outline-none">
+                        x
+                      </span>
+                    </button>
+                  </div>
+                  {/*body*/}
+                  <div className="relative p-6 flex flex-col min-[450px]:flex-row">
+                    <div className="w-full sm:block pr-1 pl-1">
+                      <div className="flex flex-wrap place-content-evenly">
+                        <figure>
+                          <LazyLoadImage
+                            className="boje_oblici"
+                            effect="blur"
+                            src={KoskicaZl}
+                            loading="lazy"
+                            decoding="async"
+                            alt="KoskicaZl"
+                          />
+                        </figure>
+                        <figure>
+                          <LazyLoadImage
+                            className="boje_oblici"
+                            effect="blur"
+                            src={KoskicaCr}
+                            loading="lazy"
+                            decoding="async"
+                            alt="KoskicaCr"
+                          />
+                        </figure>
+                        <figure>
+                          <LazyLoadImage
+                            className="boje_oblici"
+                            effect="blur"
+                            src={koskicaPl}
+                            loading="lazy"
+                            decoding="async"
+                            alt="koskicaPl"
+                          />
+                        </figure>
+                        <figure>
+                          <LazyLoadImage
+                            className="boje_oblici"
+                            effect="blur"
+                            src={koskicaRo}
+                            loading="lazy"
+                            decoding="async"
+                            alt="koskicaRo"
+                          />
+                        </figure>
+                        <figure>
+                          <LazyLoadImage
+                            className="boje_oblici"
+                            effect="blur"
+                            src={SrceRo}
+                            loading="lazy"
+                            decoding="async"
+                            alt="SrceRo"
+                          />
+                        </figure>
+                        <figure>
+                          <LazyLoadImage
+                            className="boje_oblici"
+                            effect="blur"
+                            src={SrcePl}
+                            loading="lazy"
+                            decoding="async"
+                            alt="SrcePl"
+                          />
+                        </figure>
+                        <figure>
+                          <LazyLoadImage
+                            className="boje_oblici"
+                            effect="blur"
+                            src={Srce}
+                            loading="lazy"
+                            decoding="async"
+                            alt="Srce"
+                          />
+                        </figure>
+                        <figure>
+                          <LazyLoadImage
+                            className="boje_oblici"
+                            effect="blur"
+                            src={SrceBlue}
+                            loading="lazy"
+                            decoding="async"
+                            alt="SrceBlue"
+                          />
+                        </figure>
+                        <figure>
+                          <LazyLoadImage
+                            className="boje_oblici"
+                            effect="blur"
+                            src={SrceZl}
+                            loading="lazy"
+                            decoding="async"
+                            alt="SrceZl"
+                          />
+                        </figure>
+                        <figure>
+                          <LazyLoadImage
+                            className="boje_oblici"
+                            effect="blur"
+                            src={KrugRo}
+                            loading="lazy"
+                            decoding="async"
+                            alt="KrugRo"
+                          />
+                        </figure>
+                        <figure>
+                          <LazyLoadImage
+                            className="boje_oblici"
+                            effect="blur"
+                            src={KrugOr}
+                            loading="lazy"
+                            decoding="async"
+                            alt="KrugOr"
+                          />
+                        </figure>
+                        <figure>
+                          <LazyLoadImage
+                            className="boje_oblici"
+                            effect="blur"
+                            src={KrugBlue}
+                            loading="lazy"
+                            decoding="async"
+                            alt="KrugBlue"
+                          />
+                        </figure>
+                        <figure>
+                          <LazyLoadImage
+                            className="boje_oblici"
+                            effect="blur"
+                            src={KrugPl}
+                            loading="lazy"
+                            decoding="async"
+                            alt="KrugPl"
+                          />
+                        </figure>
+                        <figure>
+                          <LazyLoadImage
+                            className="boje_oblici"
+                            effect="blur"
+                            src={KrugZl}
+                            loading="lazy"
+                            decoding="async"
+                            alt="KrugZl"
+                          />
+                        </figure>
+                      </div>
+                    </div>
+                  </div>
+                  {/*footer*/}
+                  <div className="flex items-center justify-end p-6 border-t border-solid border-slate-200 rounded-b">
+                    <button
+                      className="bg-emerald-500 text-white active:bg-emerald-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                      type="button"
+                      onClick={() => {
+                        setShowModalTags(false);
+                      }}
+                    >
+                      Zatvori
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="opacity-25 fixed inset-0 z-40 bg-black"></div>
+          </>
+        ) : null}
         {/* Utisci */}
 
         <div
-          className="flex 2xl:justify-center pt-20 xl:pt-18 pb-10 w-full sm:flex-row items-center flex-col-reverse"
+          className="flex 2xl:justify-center pt-20 xl:pt-18 pb-10 w-full min-[800px]:flex-row items-center flex-col-reverse"
           style={{
             backgroundImage: `url(${bg})`,
             backgroundRepeat: "no repeat",
