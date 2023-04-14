@@ -311,7 +311,7 @@ const Main1 = () => {
         {/* Utisci */}
 
         <div
-          className="flex 2xl:justify-center pt-20 xl:pt-18 pb-10 w-full min-[800px]:flex-row items-center flex-col-reverse"
+          className="flex 2xl:justify-center pt-20 xl:pt-18 pb-10 w-full min-[1032px]:flex-row items-center flex-col-reverse"
           style={{
             backgroundImage: `url(${bg})`,
             backgroundRepeat: "no repeat",
@@ -319,10 +319,10 @@ const Main1 = () => {
           }}
         >
           <div className="w-full xl:pr-12">
-            <LazyLoadImage
-              effect="blur"
-              loading="lazy"
-              decoding="async"
+            <img
+              // effect="blur"
+              // loading="lazy"
+              // decoding="async"
               alt="Utisci"
               className="w-[700px] rounded-lg"
               src={Utisci}
@@ -389,7 +389,7 @@ const Main1 = () => {
                       Korak 1
                     </h2>
                     <h3 className="text-[18px] md:text-lg lg:text-xl font-semibold mb-3 mt-3">
-                      Izaberi boju i oblik priveska Pet ID za vašeg ljubimca.
+                      Izaberi boju i oblik priveska Pet ID za tvog ljubimca.
                     </h3>
                   </div>
                 </div>
@@ -407,7 +407,7 @@ const Main1 = () => {
                       Korak 2
                     </h2>
                     <h3 className="text-[18px] md:text-lg lg:text-xl font-semibold mb-3 mt-3">
-                      Ostavi kontakt u slucaju da se ljubimac izgubi.
+                      Ostavi kontakt u slučaju da se ljubimac izgubi.
                     </h3>
                   </div>
                 </div>
@@ -462,8 +462,7 @@ const Main1 = () => {
               </div>
               <hr />
               <p className="text-black text-[18px] font-semibold pb-0 sm:pb-0 text-center mt-8">
-                Takođe, porudžbinu možete izvršiti i telefonom ako vam je
-                lakše!!!
+                Takođe, porudžbinu možeš izvršiti i telefonom ako ti je lakše!!!
               </p>
               <div className="flex items-center justify-center flex-col">
                 <p className="text-center text-black text-md md:text-lg lg:text-xl font-semibold pt-3 lg:mt-0   align-sub">
@@ -474,7 +473,7 @@ const Main1 = () => {
                 </span>
 
                 <p className="pb-12 sm:pb-9 md:pb-0 text-center text-[18px]">
-                  i ostavite sve potrebne podatke.
+                  i ostavi sve potrebne podatke.
                 </p>
               </div>
             </div>
@@ -508,14 +507,14 @@ const Main1 = () => {
                 <div className="pt-6 flex items-center lg:mb-8 xl:mb-0">
                   <img className="pr-5" src={Sapica} alt="Vektor" />
                   <p className="text-black text-[18px] md:text-lg lg:text-xl font-semibold">
-                    Prilikom skeniranja vide se samo podaci koje ste vi stavili
+                    Prilikom skeniranja vide se samo podaci koje si ti stavio
                   </p>
                 </div>
                 <div className="pt-6 flex items-center lg:mb-8 xl:mb-0">
                   <img className="pr-5" src={Sapica} alt="Vektor" />
                   <p className="text-black text-[18px] md:text-lg lg:text-xl font-semibold">
-                    Ne može vam neko zloupotrebiti karticu ili podatke ukoliko
-                    nemate lozinku kao prilikom korišćenja NFC tehnologije
+                    Ne može ti neko zloupotrebiti karticu ili podatke ukoliko
+                    nemaš lozinku kao prilikom korišćenja NFC tehnologije
                   </p>
                 </div>
                 <div className="pt-6 flex items-center lg:mb-8 xl:mb-0">
