@@ -14,6 +14,7 @@ import koktel from "../assets/koktel_optimized.webp";
 import HvalaSlika from "../assets/hvala_optimized.webp";
 import "react-lazy-load-image-component/src/effects/blur.css";
 import toast, { Toaster } from "react-hot-toast";
+import QrReader from "react-qr-reader";
 
 const MojLjubimac = () => {
   const form1 = useForm({
@@ -44,6 +45,7 @@ const MojLjubimac = () => {
 
   const [petImage, setPetImage] = useState("");
   const [petImgFile, setPetImgFile] = useState("");
+  const [showQRScanner, setShowQRScanner] = useState(false);
 
   const handleFileChange = (e) => {
     let file = e.target.files[0];
@@ -64,7 +66,7 @@ const MojLjubimac = () => {
   } = form1;
   const [korak, setKorak] = useState(1);
   const [disabledState, setDisabledState] = React.useState(false);
-
+  const scannedLink = form1.watch("linkPetId");
   const ErrorContact = () =>
     toast.error("Stavite bar jedan način kako da vas kontaktira pronalazač.");
   const onSubmit = (data) => {
@@ -95,7 +97,7 @@ const MojLjubimac = () => {
         .catch((error) => console.log(error));
     }
   };
-
+  console.log(scannedLink);
   useEffect(() => {
     const firstError = Object.keys(errors).reduce((field, a) => {
       return !!errors[field] ? field : a;
@@ -177,6 +179,7 @@ const MojLjubimac = () => {
               <input
                 id="linkPetId"
                 autoFocus={true}
+                onClick={() => setShowQRScanner(true)}
                 type="text"
                 {...register("linkPetId", {
                   required: {
@@ -193,6 +196,18 @@ const MojLjubimac = () => {
                 placeholder="https://qr.pet-id.digital/Pk7298MlMs/8Ws3KLLN7b"
                 className="peer h-10 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 font-normal outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400"
               />
+              {showQRScanner && (
+                <QrReader
+                  delay={300}
+                  onError={() => {
+                    setShowQRScanner(false);
+                  }}
+                  onScan={(result) => {
+                    setValue("linkPetId", result);
+                    setShowQRScanner(false);
+                  }}
+                />
+              )}
               {errors.linkPetId && (
                 <small className="text-red-400 pl-[3px]">
                   {errors.linkPetId.message}
