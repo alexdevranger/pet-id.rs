@@ -172,7 +172,7 @@ const Header = () => {
           className={
             !nav
               ? "hidden"
-              : "absolute top-0 left-0 w-full bg-[#FF553E] flex flex-col justify-center items-center z-20"
+              : "absolute h-screen top-0 left-0 w-full bg-[#FF553E] flex flex-col justify-center items-center z-20"
           }
         >
           <ul
