@@ -101,9 +101,17 @@ const ContactUs = () => {
                 Ukoliko imate pitanje, kontaktirajte nas telefonom, putem mejla
                 ili drustvenih mreza
               </p>
-              <span className="text-2xl min-[412px]:text-4xl sm:text-5xl text-[#3bc77e] font-bold mr-2 lg:text-3xl pl-1 align-sub">
+              <span className="text-2xl min-[412px]:text-4xl sm:text-5xl text-[#3bc77e] font-bold mr-2 lg:text-3xl pl-1 align-sub py-4">
                 060/60-12-199
               </span>
+              <div className="flex flex-col text-center w-full mb-12">
+                <p className="pb-4">petiddigital@gmail.com</p>
+                <p>ID PROTECT PR ALEKSANDAR MILIVOJEVIĆ</p>
+                <p>računarsko programiranje</p>
+                <p>Branka Radičevića 14 19350 Knjaževac</p>
+                <p>Matični broj: 66930815</p>
+                <p>PIB 113585474</p>
+              </div>
             </div>
           )}
           <form>

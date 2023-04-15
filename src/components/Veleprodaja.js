@@ -10,6 +10,7 @@ import KrugPakovanje from "../assets/krug_pakovanje_optimized.webp";
 import SrcePakovanje from "../assets/srce_pakovanje_optimized.webp";
 import bg from "../assets/bg.webp";
 import toast, { Toaster } from "react-hot-toast";
+import HvalaSlika from "../assets/hvala_optimized.webp";
 
 function Veleprodaja() {
   const form = useForm({
@@ -89,141 +90,171 @@ function Veleprodaja() {
             vam poslati ponudu sa veleprodajnim cenama.
           </p>
           <form>
-            <div className="group relative w-52 min-[450px]:w-60 sm:w-72 md:w-[400px] m-auto pb-4 sm:pb-4 mt-7">
-              <label
-                htmlFor="imeKupcaVP"
-                className="block w-full pb-1 text-sm font-medium text-gray-500 transition-all duration-200 ease-in-out group-focus-within:text-green-400 text-center"
-              >
-                Ime pet shop-a ili veleprodaje
-              </label>
-              <input
-                id="imeKupcaVP"
-                type="text"
-                {...register("imeKupcaVP", {
-                  required: {
-                    value: true,
-                    message: "Ovo polje je obavezno.",
-                  },
-                  pattern: {
-                    value:
-                      /^[a-zA-Z0-9a-яА-ЯčćžšđљњђћџнјČĆŽŠĐЉЊЂЋЏНЈ\/_\-\s]{2,30}$/,
-                    message:
-                      "Može sadržati samo slova, brojeve, razmak, kosu crtu, srednju crtu, donju crtu i min. 2 slova.",
-                  },
-                })}
-                placeholder="moj PET SHOP"
-                className="peer h-10 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 font-normal outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400 text-center"
-              />
-              {errors.imeKupcaVP && (
-                <small className="text-red-400 pl-[3px]">
-                  {errors.imeKupcaVP.message}
-                </small>
-              )}
-              <label
-                htmlFor="mailKupcaVP"
-                className="block w-full pb-1 text-sm font-medium text-gray-500 transition-all duration-200 ease-in-out group-focus-within:text-green-400 text-center mt-4"
-              >
-                Vaša email adresa
-              </label>
-              <input
-                id="mailKupcaVP"
-                type="text"
-                {...register("mailKupcaVP", {
-                  required: {
-                    value: true,
-                    message: "Ovo polje je obavezno.",
-                  },
-                  pattern: {
-                    value:
-                      /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/,
-                    message: "Mora biti odgovarajući format za email.",
-                  },
-                })}
-                placeholder="pet_shop_panda@gmail.com"
-                className="peer h-10 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 font-normal outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400 text-center"
-              />
-              {errors.mailKupcaVP && (
-                <small className="text-red-400 pl-[3px]">
-                  {errors.mailKupcaVP.message}
-                </small>
-              )}
-              {showMessage && (
-                <div
-                  className="p-2 w-full flex justify-center transitionDiv mt-[20px]"
-                  id="captchaHolder"
-                  style={showMessage ? mountedStyle : ""}
+            {step === 1 && (
+              <div className="group relative w-52 min-[450px]:w-60 sm:w-72 md:w-[400px] m-auto pb-4 sm:pb-4 mt-7">
+                <label
+                  htmlFor="imeKupcaVP"
+                  className="block w-full pb-1 text-sm font-medium text-gray-500 transition-all duration-200 ease-in-out group-focus-within:text-green-400 text-center"
                 >
-                  <div className="rnc">
-                    <div className="rnc-row">
-                      <div
-                        width="200"
-                        height="50"
-                        className="rnc-canvas blur-[2px]"
-                        data-testid="captcha-canvas"
-                      >
-                        {captcha}
-                      </div>
-                      <div className="rnc-column">
-                        <button
-                          type="button"
-                          onClick={reloadCaptcha}
-                          className="rnc-button"
+                  Ime pet shop-a ili veleprodaje
+                </label>
+                <input
+                  id="imeKupcaVP"
+                  type="text"
+                  {...register("imeKupcaVP", {
+                    required: {
+                      value: true,
+                      message: "Ovo polje je obavezno.",
+                    },
+                    pattern: {
+                      value:
+                        /^[a-zA-Z0-9a-яА-ЯčćžšđљњђћџнјČĆŽŠĐЉЊЂЋЏНЈ\/_\-\s]{2,30}$/,
+                      message:
+                        "Može sadržati samo slova, brojeve, razmak, kosu crtu, srednju crtu, donju crtu i min. 2 slova.",
+                    },
+                  })}
+                  placeholder="moj PET SHOP"
+                  className="peer h-10 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 font-normal outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400 text-center"
+                />
+                {errors.imeKupcaVP && (
+                  <small className="text-red-400 pl-[3px]">
+                    {errors.imeKupcaVP.message}
+                  </small>
+                )}
+                <label
+                  htmlFor="mailKupcaVP"
+                  className="block w-full pb-1 text-sm font-medium text-gray-500 transition-all duration-200 ease-in-out group-focus-within:text-green-400 text-center mt-4"
+                >
+                  Vaša email adresa
+                </label>
+                <input
+                  id="mailKupcaVP"
+                  type="text"
+                  {...register("mailKupcaVP", {
+                    required: {
+                      value: true,
+                      message: "Ovo polje je obavezno.",
+                    },
+                    pattern: {
+                      value:
+                        /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/,
+                      message: "Mora biti odgovarajući format za email.",
+                    },
+                  })}
+                  placeholder="pet_shop_panda@gmail.com"
+                  className="peer h-10 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 font-normal outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400 text-center"
+                />
+                {errors.mailKupcaVP && (
+                  <small className="text-red-400 pl-[3px]">
+                    {errors.mailKupcaVP.message}
+                  </small>
+                )}
+                {showMessage && (
+                  <div
+                    className="p-2 w-full flex justify-center transitionDiv mt-[20px]"
+                    id="captchaHolder"
+                    style={showMessage ? mountedStyle : ""}
+                  >
+                    <div className="rnc">
+                      <div className="rnc-row">
+                        <div
+                          width="200"
+                          height="50"
+                          className="rnc-canvas blur-[2px]"
+                          data-testid="captcha-canvas"
                         >
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 24 24"
+                          {captcha}
+                        </div>
+                        <div className="rnc-column">
+                          <button
+                            type="button"
+                            onClick={reloadCaptcha}
+                            className="rnc-button"
                           >
-                            <g data-name="Layer 2">
-                              <g data-name="refresh">
-                                <rect width="24" height="24" opacity="0"></rect>
-                                <path d="M20.3 13.43a1 1 0 0 0-1.25.65A7.14 7.14 0 0 1 12.18 19 7.1 7.1 0 0 1 5 12a7.1 7.1 0 0 1 7.18-7 7.26 7.26 0 0 1 4.65 1.67l-2.17-.36a1 1 0 0 0-1.15.83 1 1 0 0 0 .83 1.15l4.24.7h.17a1 1 0 0 0 .34-.06.33.33 0 0 0 .1-.06.78.78 0 0 0 .2-.11l.09-.11c0-.05.09-.09.13-.15s0-.1.05-.14a1.34 1.34 0 0 0 .07-.18l.75-4a1 1 0 0 0-2-.38l-.27 1.45A9.21 9.21 0 0 0 12.18 3 9.1 9.1 0 0 0 3 12a9.1 9.1 0 0 0 9.18 9A9.12 9.12 0 0 0 21 14.68a1 1 0 0 0-.7-1.25z"></path>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 24 24"
+                            >
+                              <g data-name="Layer 2">
+                                <g data-name="refresh">
+                                  <rect
+                                    width="24"
+                                    height="24"
+                                    opacity="0"
+                                  ></rect>
+                                  <path d="M20.3 13.43a1 1 0 0 0-1.25.65A7.14 7.14 0 0 1 12.18 19 7.1 7.1 0 0 1 5 12a7.1 7.1 0 0 1 7.18-7 7.26 7.26 0 0 1 4.65 1.67l-2.17-.36a1 1 0 0 0-1.15.83 1 1 0 0 0 .83 1.15l4.24.7h.17a1 1 0 0 0 .34-.06.33.33 0 0 0 .1-.06.78.78 0 0 0 .2-.11l.09-.11c0-.05.09-.09.13-.15s0-.1.05-.14a1.34 1.34 0 0 0 .07-.18l.75-4a1 1 0 0 0-2-.38l-.27 1.45A9.21 9.21 0 0 0 12.18 3 9.1 9.1 0 0 0 3 12a9.1 9.1 0 0 0 9.18 9A9.12 9.12 0 0 0 21 14.68a1 1 0 0 0-.7-1.25z"></path>
+                                </g>
                               </g>
-                            </g>
-                          </svg>
-                        </button>
+                            </svg>
+                          </button>
+                        </div>
                       </div>
+                      <input
+                        type="number"
+                        placeholder="Insert captcha"
+                        className="rnc-input"
+                        value={valueCaptcha}
+                        onChange={handleChange}
+                      />
                     </div>
-                    <input
-                      type="number"
-                      placeholder="Insert captcha"
-                      className="rnc-input"
-                      value={valueCaptcha}
-                      onChange={handleChange}
-                    />
                   </div>
-                </div>
-              )}
-              <button
-                onClick={(e) => {
-                  e.preventDefault();
-                  if (imeKupcaVPEmpty === "" && mailKupcaVPEmpty === "") {
-                    ErrorEmptyFields();
-                  } else if (isValid === false) {
-                    setShowMessage(true);
-                  } else {
-                    handleSubmit(onSubmit)();
-                  }
-                }}
-                className="cursor-pointer flex items-center justify-center text-white bg-[#3BC77E] hover:bg-[#FF553E] w-full h-[64px] rounded-lg duration-500 ml-0 mt-8"
-              >
-                <h2 className="text-3xl">Pošalji</h2>
-              </button>
-              <Toaster
-                position="top-center"
-                toastOptions={{
-                  className: "",
-                  style: {
-                    border: "1px solid red",
-                    padding: "16px",
-                    color: "red",
-                    width: "300px",
-                    background: "white",
-                  },
-                }}
-              />
-            </div>
+                )}
+                <button
+                  onClick={(e) => {
+                    e.preventDefault();
+                    if (imeKupcaVPEmpty === "" && mailKupcaVPEmpty === "") {
+                      ErrorEmptyFields();
+                    } else if (isValid === false) {
+                      setShowMessage(true);
+                    } else {
+                      handleSubmit(onSubmit)();
+                    }
+                  }}
+                  className="cursor-pointer flex items-center justify-center text-white bg-[#3BC77E] hover:bg-[#FF553E] w-full h-[64px] rounded-lg duration-500 ml-0 mt-8"
+                >
+                  <h2 className="text-3xl">Pošalji</h2>
+                </button>
+                <Toaster
+                  position="top-center"
+                  toastOptions={{
+                    className: "",
+                    style: {
+                      border: "1px solid red",
+                      padding: "16px",
+                      color: "red",
+                      width: "300px",
+                      background: "white",
+                    },
+                  }}
+                />
+              </div>
+            )}
             {/* <pre>{JSON.stringify(form.watch(), null, 2)}</pre> */}
           </form>
+          {step === 2 && (
+            <div className="bg-white">
+              <div className="text-center mt-12 sm:mt-28">
+                <h1 className="text-2xl sm:text-4xl font-bold text-[#3BC77E] pb-[25px]">
+                  Hvala Vam na poverenju!
+                </h1>
+                <h2 className="text-xl sm:text-3xl mt-2">
+                  Uspesno ste poslali podatke.
+                </h2>
+                <p className="text-sm sm:text-xl mt-7">
+                  Ponuda će vam biti ubrzo poslata.{" "}
+                </p>
+                <div className="flex justify-center mt-12 sm:mt-0">
+                  <LazyLoadImage
+                    effect="blur"
+                    loading="lazy"
+                    decoding="async"
+                    alt="HvalaSlika"
+                    src={HvalaSlika}
+                  />
+                </div>
+              </div>
+            </div>
+          )}
           <p className="text-[18px] sm:text-xl mt-7 w-[75%] min-[730px]:w-[50%] m-auto pb-4">
             Naše transportno pakovanje je 14 kom, ali možete kupiti i manje od
             toga.

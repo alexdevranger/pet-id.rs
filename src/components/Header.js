@@ -123,7 +123,9 @@ const Header = () => {
                     style={{ zIndex: "50" }}
                   >
                     <li className="py-2 px-4 text-gray-400 text-[15px] leading-4">
-                      <Link to="/uputstvo">Kako i gde da popunim podatke</Link>
+                      <Link to="/uputstvo">
+                        Kako i gde da popunim podatke - već imam Pet ID
+                      </Link>
                     </li>
                     {/* <li className="py-2 px-4 text-gray-400">
                       <Link to="/kupi-kao-poklon">Kupi kao poklon</Link>
@@ -241,7 +243,7 @@ const Header = () => {
                 <ul className="left-0 top-full w-full bg-[#FF553E] text-center pt-3 z-30">
                   <li className="text-white text-2xl py-2 text-1xl">
                     <Link onClick={handleNav} to="/uputstvo">
-                      Uputstvo
+                      Kako i gde da popunim podatke - već imam Pet ID
                     </Link>
                   </li>
                   {/* <li className="text-white text-2xl py-2">
