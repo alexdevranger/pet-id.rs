@@ -19,6 +19,9 @@
 a:link {
   color: #fff!important;
 }
+ a.blogItem-link {
+  color: #000;
+}
 * {
   -webkit-locale: auto;
   white-space: normal;

@@ -12,17 +12,19 @@ import ContactUs from "./components/ContactUs";
 import MojLjubimac from "./components/MojLjubimac";
 import Uputstvo from "./components/Uputstvo";
 import Poklon from "./components/Poklon";
+import Veleprodaja from "./components/Veleprodaja";
 
 import PolitikaPrivatnosti from "./components/PolitikaPrivatnosti";
 import UsloviKoriscenja from "./components/UsloviKoriscenja";
 import Galerija from "./components/Galerija";
+import SveBoje from "./components/SveBoje";
 import Udomi from "./components/Udomi";
 import "./App.css";
 import "./fonts/IndieFlower-Regular.ttf";
 
 function App() {
   return (
-    <div className="h-screen w-full bg-[#fff]">
+    <div className="w-full bg-[#fff]">
       <Router>
         <Header />
         <Routes>
@@ -34,6 +36,8 @@ function App() {
           <Route exact path="/blog" element={<Blog />} />
           <Route exact path="/moj-ljubimac" element={<MojLjubimac />} />
           <Route exact path="/uputstvo" element={<Uputstvo />} />
+          <Route exact path="/veleprodaja" element={<Veleprodaja />} />
+          <Route exact path="/sve-kombinacije" element={<SveBoje />} />
           {/* <Route exact path="/kupi-kao-poklon" element={<Poklon />} /> */}
           {/* <Route exact path="/udomi" element={<Udomi />} /> */}
           <Route

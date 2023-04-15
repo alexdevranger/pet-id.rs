@@ -31,8 +31,6 @@ import par from "../assets/par_optimized.webp";
 import koktel from "../assets/koktel_optimized.webp";
 import HvalaSlika from "../assets/hvala_optimized.webp";
 import kitty from "../assets/kitty1_optimized.webp";
-import "react-lazy-load-image-component/src/effects/blur.css";
-
 import toast, { Toaster } from "react-hot-toast";
 
 const Korak2 = () => {
@@ -943,17 +941,6 @@ const Korak2 = () => {
                   backgroundSize: "cover",
                 }}
               >
-                {/* <div className="md:flex md:justify-center w-full md:w-full absolute top-[-120px]  min-[450px]:top-[-170px] min-[550px]:top-[-214px] sm:top-[-250px] md:top-[-247px] lg:top-[-145px] xl:top-[-223px]">
-                  <LazyLoadImage
-                    effect="blur"
-                    src={s7}
-                    className="w-full"
-                    loading="lazy"
-                    decoding="async"
-                    alt="s7"
-                  />
-                </div> */}
-
                 {/* PODACI O LJUBIMCU */}
                 <div className="w-full mt-2 flex justify-around">
                   <div className="items-center flex flex-col w-[240px] min-[450px]:w-[350px] sm:w-[350px] lg:w-[300px] xl:w-[350px] relative">
@@ -1410,7 +1397,6 @@ const Korak2 = () => {
                       },
                     })}
                     placeholder="sara2365@gmail.com"
-                    // pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
                     className="peer h-10 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 font-normal outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400"
                   />
                   {errors.emailVlasnika && (
@@ -1455,7 +1441,7 @@ const Korak2 = () => {
                     htmlFor="secretWord"
                     className="block w-full pb-1 text-sm font-medium text-gray-500 transition-all duration-200 ease-in-out group-focus-within:text-green-400"
                   >
-                    Sigurnosna reč* (objasnjenje u napomeni)
+                    Sigurnosna reč* (objašnjenje u napomeni)
                   </label>
                   <input
                     type="text"
