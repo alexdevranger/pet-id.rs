@@ -35,9 +35,11 @@ function SveBoje() {
           </div>
         </div>
         <Link to="/proizvodi">
-          <div className="flex justify-around pt-32 w-full mb-32">
-            <div className="cursor-pointer flex items-center justify-center text-white bg-[#3BC77E] hover:bg-[#FF553E] w-[300px] h-[64px] rounded-lg duration-500">
-              <h2 className="text-lg md:text-3xl">Poruči Pet ID tag</h2>
+          <div className="flex justify-center mt-8 w-full">
+            <div className="pb-12">
+              <div className="cursor-pointer flex items-center justify-center text-white bg-[#3BC77E] hover:bg-[#FF553E] w-[300px] h-[64px] rounded-lg duration-500">
+                <button className="text-3xl">Poruči Pet ID tag</button>
+              </div>
             </div>
           </div>
         </Link>

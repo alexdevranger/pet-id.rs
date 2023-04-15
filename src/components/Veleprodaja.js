@@ -98,7 +98,6 @@ function Veleprodaja() {
               </label>
               <input
                 id="imeKupcaVP"
-                autoFocus={true}
                 type="text"
                 {...register("imeKupcaVP", {
                   required: {
@@ -112,7 +111,7 @@ function Veleprodaja() {
                       "Može sadržati samo slova, brojeve, razmak, kosu crtu, srednju crtu, donju crtu i min. 2 slova.",
                   },
                 })}
-                placeholder="PANDA"
+                placeholder="moj PET SHOP"
                 className="peer h-10 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 font-normal outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400 text-center"
               />
               {errors.imeKupcaVP && (

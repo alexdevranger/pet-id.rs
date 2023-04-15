@@ -20,7 +20,7 @@ a:link {
   color: #fff!important;
 }
  a.blogItem-link {
-  color: #000;
+  color: #000!important;
 }
 * {
   -webkit-locale: auto;
