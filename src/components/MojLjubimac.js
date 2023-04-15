@@ -153,7 +153,15 @@ const MojLjubimac = () => {
     imeVlasnikaEmpty,
     secretWordEmpty1,
   ]);
-
+  const handleScan = (data) => {
+    if (data) {
+      setValue("linkPetId", data);
+      setShowQRScanner(false);
+    }
+  };
+  const handleError = (err) => {
+    console.error(err);
+  };
   return (
     <div>
       <form>
@@ -179,7 +187,7 @@ const MojLjubimac = () => {
               <input
                 id="linkPetId"
                 autoFocus={true}
-                onClick={() => setShowQRScanner(true)}
+                //onClick={() => setShowQRScanner(true)}
                 type="text"
                 {...register("linkPetId", {
                   required: {
@@ -196,18 +204,31 @@ const MojLjubimac = () => {
                 placeholder="https://qr.pet-id.digital/Pk7298MlMs/8Ws3KLLN7b"
                 className="peer h-10 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 font-normal outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400"
               />
+              <button
+                onClick={(e) => {
+                  e.preventDefault();
+                  setShowQRScanner(!showQRScanner);
+                }}
+                className="bg-blue-500 text-white px-4 py-2 rounded ml-4"
+              >
+                {" "}
+                {showQRScanner ? "Close Scanner" : "Open Scanner"}
+              </button>
               {showQRScanner && (
                 <QrReader
                   delay={300}
-                  onError={() => {
-                    alert("error");
-                    //setShowQRScanner(false);
-                  }}
-                  onScan={(result) => {
-                    setValue("linkPetId", result);
-                    setShowQRScanner(false);
-                  }}
-                  facingMode="environment"
+                  // onError={() => {
+                  //   alert("error");
+                  //   //setShowQRScanner(false);
+                  // }}
+                  // onScan={(result) => {
+                  //   setValue("linkPetId", result);
+                  //   setShowQRScanner(false);
+                  // }}
+                  // facingMode="environment"
+                  onError={handleError}
+                  onScan={handleScan}
+                  style={{ width: "100%" }}
                 />
               )}
               {errors.linkPetId && (
