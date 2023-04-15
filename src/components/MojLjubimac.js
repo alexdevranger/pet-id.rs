@@ -204,7 +204,7 @@ const MojLjubimac = () => {
                 placeholder="https://qr.pet-id.digital/Pk7298MlMs/8Ws3KLLN7b"
                 className="peer h-10 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 font-normal outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400"
               />
-              <button
+              {/* <button
                 onClick={(e) => {
                   e.preventDefault();
                   setShowQRScanner(!showQRScanner);
@@ -213,7 +213,7 @@ const MojLjubimac = () => {
               >
                 {" "}
                 {showQRScanner ? "Close Scanner" : "Open Scanner"}
-              </button>
+              </button> */}
               {showQRScanner && (
                 <QrReader
                   delay={300}
