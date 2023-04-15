@@ -200,7 +200,8 @@ const MojLjubimac = () => {
                 <QrReader
                   delay={300}
                   onError={() => {
-                    setShowQRScanner(false);
+                    alert("error");
+                    //setShowQRScanner(false);
                   }}
                   onScan={(result) => {
                     setValue("linkPetId", result);
