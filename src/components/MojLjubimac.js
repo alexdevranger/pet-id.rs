@@ -201,7 +201,7 @@ const MojLjubimac = () => {
                   },
                   pattern: {
                     value:
-                      /^https:\/\/qr\.pet-id\.digital\/[a-zA-Z0-9]+\/[a-zA-Z0-9]+$/,
+                      /^https:\/\/qr\.pet-id\.digital\/[a-zA-Z0-9]+\/[a-zA-Z0-9]+(\.html)?$/,
                     message:
                       "Može sadržati samo slova i brojeve u formi url-a.",
                   },
