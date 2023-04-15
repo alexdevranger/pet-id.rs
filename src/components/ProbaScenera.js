@@ -1,10 +1,17 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 //import QrReader from "react-qr-reader";
 import QRReader from "modern-react-qr-reader";
 
 function ProbaScenera() {
   const [qrData, setQrData] = useState("");
   const [showScanner, setShowScanner] = useState(false);
+  const scannerRef = useRef(null);
+
+  useEffect(() => {
+    if (showScanner && scannerRef.current) {
+      scannerRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  }, [showScanner]);
 
   const handleScan = (data) => {
     if (data) {
@@ -18,7 +25,7 @@ function ProbaScenera() {
   };
 
   return (
-    <div className="h-screen">
+    <div className="h-screen pt-[600px]">
       <h1>QR Code Scanner</h1>
       <input
         type="text"
@@ -38,7 +45,7 @@ function ProbaScenera() {
       </button>
 
       {showScanner && (
-        <div className="mt-4">
+        <div className="mt-4" ref={scannerRef}>
           <QRReader
             delay={300}
             onError={handleError}

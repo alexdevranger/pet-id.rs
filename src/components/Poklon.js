@@ -46,9 +46,8 @@ function Poklon() {
     formState: { errors },
     reset,
   } = form;
-  const [activeThumbKoskica, setActiveThumbKoskica] = useState(KoskicaZl);
-  const [activeThumbSrce, setActiveThumbSrce] = useState(SrceRo);
-  const [activeThumbKrug, setActiveThumbKrug] = useState(KrugPl);
+
+  const [activeThumb, setActiveThumb] = useState(KoskicaZl);
   const narudzba = useRef(Math.floor(1000000 + Math.random() * 9000000));
 
   return (
@@ -70,17 +69,17 @@ function Poklon() {
             čupavog prijatelja, pratite sledeće uputstvo :
           </p>
           <div className="flex justify-center mt-12 sm:mt-0 flex-col xl:flex-row pt-[50px] items-center">
-            <div className="px-3 sm:px-6 lg:ml-0 lg:mt-12 sm:w-[80%] md:w-[50%] xl:w-[40%] 2xl:w-[34%]">
+            <div className="px-3 sm:px-6 lg:ml-0 lg:mt-12 sm:w-[80%] md:w-[50%] xl:w-[40%] 2xl:w-[34%] bs py-12 bg-[#fff]">
               <div className="flex items-center">
                 <img className="pr-12" src={Vektor} alt="Vektor" />
                 <p className="text-black text-left text-[18px] sm:text-md md:text-lg lg:text-xl font-semibold inline">
-                  1. Popunite sledeću formu sa podacima za dostavu.
+                  1. Popunite sledeću formu sa podacima za dostavu i pošaljite.
                 </p>
               </div>
               <div className="pt-12 flex items-center pb-[15px]">
                 <img className="pr-12" src={Vektor} alt="Vektor" />
                 <p className="text-black text-left text-[18px] sm:text-md md:text-lg lg:text-xl font-semibold">
-                  2. Pošaljite i zapišite broj porudžbine koji će vam izaći.
+                  2. Zapišite broj porudžbine koji će vam izaći.
                 </p>
               </div>
               <div className="pt-12 flex items-center">
@@ -113,9 +112,9 @@ function Poklon() {
             <div className="flex items-center justify-center">
               <div className="flex w-[300px] md:w-[330px] lg:w-[330px]">
                 <div
-                  onClick={() => setActiveThumbKoskica(KoskicaZl)}
+                  onClick={() => setActiveThumb(KoskicaZl)}
                   className={`${
-                    activeThumbKoskica === KoskicaZl
+                    activeThumb === KoskicaZl
                       ? "bg-[#fff6a2] border-[#3BC77E]"
                       : ""
                   } cursor-pointer flex mt-14 w-[70px] border-2 rounded-md hover:bg-gray-200 hover:border-[#3BC77E] transition-all ease-in-out duration-500 items-center`}
@@ -146,9 +145,9 @@ function Poklon() {
                   </label>
                 </div>
                 <div
-                  onClick={() => setActiveThumbKoskica(KoskicaCr)}
+                  onClick={() => setActiveThumb(KoskicaCr)}
                   className={`${
-                    activeThumbKoskica === KoskicaCr
+                    activeThumb === KoskicaCr
                       ? "bg-[#fff6a2] border-[#3BC77E]"
                       : ""
                   } cursor-pointer ml-4 flex mt-14 w-[70px] border-2 rounded-md hover:bg-gray-200 hover:border-red-300 transition-all ease-in-out duration-500 items-center`}
@@ -179,9 +178,9 @@ function Poklon() {
                   </label>
                 </div>
                 <div
-                  onClick={() => setActiveThumbKoskica(koskicaPl)}
+                  onClick={() => setActiveThumb(koskicaPl)}
                   className={`${
-                    activeThumbKoskica === koskicaPl
+                    activeThumb === koskicaPl
                       ? "bg-[#fff6a2] border-[#3BC77E]"
                       : ""
                   } cursor-pointer ml-4 flex mt-14 w-[70px] border-2 rounded-md hover:bg-gray-200 hover:border-blue-300 transition-all ease-in-out duration-500 items-center`}
@@ -212,9 +211,9 @@ function Poklon() {
                   </label>
                 </div>
                 <div
-                  onClick={() => setActiveThumbKoskica(koskicaRo)}
+                  onClick={() => setActiveThumb(koskicaRo)}
                   className={`${
-                    activeThumbKoskica === koskicaRo
+                    activeThumb === koskicaRo
                       ? "bg-[#fff6a2] border-[#3BC77E]"
                       : ""
                   } cursor-pointer ml-4 flex mt-14 w-[70px] border-2 rounded-md hover:bg-gray-200 hover:border-pink-300 transition-all ease-in-out duration-500 items-center`}
@@ -254,9 +253,9 @@ function Poklon() {
             <div className="flex items-center justify-center">
               <div className="flex w-[300px] md:w-[330px] lg:w-[330px]">
                 <div
-                  onClick={() => setActiveThumbSrce(SrceRo)}
+                  onClick={() => setActiveThumb(SrceRo)}
                   className={`${
-                    activeThumbSrce === SrceRo
+                    activeThumb === SrceRo
                       ? "bg-[#fff6a2] border-[#3BC77E]"
                       : ""
                   } cursor-pointer flex mt-7 w-[70px] border-2 rounded-md hover:bg-gray-200 hover:border-[#3b63c7] transition-all ease-in-out duration-500 items-center`}
@@ -286,9 +285,9 @@ function Poklon() {
                   </label>
                 </div>
                 <div
-                  onClick={() => setActiveThumbSrce(SrcePl)}
+                  onClick={() => setActiveThumb(SrcePl)}
                   className={`${
-                    activeThumbSrce === SrcePl
+                    activeThumb === SrcePl
                       ? "bg-[#fff6a2] border-[#3BC77E]"
                       : ""
                   } cursor-pointer flex mt-7 w-[70px] border-2 rounded-md hover:bg-gray-200 hover:border-pink-300 transition-all ease-in-out duration-500 items-center`}
@@ -319,11 +318,9 @@ function Poklon() {
                   </label>
                 </div>
                 <div
-                  onClick={() => setActiveThumbSrce(Srce)}
+                  onClick={() => setActiveThumb(Srce)}
                   className={`${
-                    activeThumbSrce === Srce
-                      ? "bg-[#fff6a2] border-[#3BC77E]"
-                      : ""
+                    activeThumb === Srce ? "bg-[#fff6a2] border-[#3BC77E]" : ""
                   } cursor-pointer flex mt-7 w-[70px] border-2 rounded-md hover:bg-gray-200 hover:border-orange-300 transition-all ease-in-out duration-500 items-center`}
                 >
                   <label htmlFor="srce-narandzasto-belo">
@@ -352,9 +349,9 @@ function Poklon() {
                   </label>
                 </div>
                 <div
-                  onClick={() => setActiveThumbSrce(SrceBlue)}
+                  onClick={() => setActiveThumb(SrceBlue)}
                   className={`${
-                    activeThumbSrce === SrceBlue
+                    activeThumb === SrceBlue
                       ? "bg-[#fff6a2] border-[#3BC77E]"
                       : ""
                   } cursor-pointer flex mt-7 w-[70px] border-2 rounded-md hover:bg-gray-200 hover:border-blue-300 transition-all ease-in-out duration-500 items-center`}
@@ -385,9 +382,9 @@ function Poklon() {
                   </label>
                 </div>
                 <div
-                  onClick={() => setActiveThumbSrce(SrceZl)}
+                  onClick={() => setActiveThumb(SrceZl)}
                   className={`${
-                    activeThumbSrce === SrceZl
+                    activeThumb === SrceZl
                       ? "bg-[#fff6a2] border-[#3BC77E]"
                       : ""
                   } cursor-pointer flex mt-7 w-[70px] border-2 rounded-md hover:bg-gray-200 hover:border-[#3BC77E] transition-all ease-in-out duration-500 items-center`}
@@ -427,9 +424,9 @@ function Poklon() {
             <div className="flex items-center justify-center">
               <div className="flex w-[300px] md:w-[330px] lg:w-[330px]">
                 <div
-                  onClick={() => setActiveThumbKrug(KrugPl)}
+                  onClick={() => setActiveThumb(KrugPl)}
                   className={`${
-                    activeThumbKrug === KrugPl
+                    activeThumb === KrugPl
                       ? "bg-[#fff6a2] border-[#3BC77E]"
                       : ""
                   } cursor-pointer flex mt-7 w-[70px] border-2 rounded-md hover:bg-gray-200 hover:border-[#3b63c7] transition-all ease-in-out duration-500 items-center`}
@@ -460,9 +457,9 @@ function Poklon() {
                   </label>
                 </div>
                 <div
-                  onClick={() => setActiveThumbKrug(KrugRo)}
+                  onClick={() => setActiveThumb(KrugRo)}
                   className={`${
-                    activeThumbKrug === KrugRo
+                    activeThumb === KrugRo
                       ? "bg-[#fff6a2] border-[#3BC77E]"
                       : ""
                   } cursor-pointer flex mt-7 w-[70px] border-2 rounded-md hover:bg-gray-200 hover:border-pink-300 transition-all ease-in-out duration-500 items-center`}
@@ -493,9 +490,9 @@ function Poklon() {
                   </label>
                 </div>
                 <div
-                  onClick={() => setActiveThumbKrug(KrugOr)}
+                  onClick={() => setActiveThumb(KrugOr)}
                   className={`${
-                    activeThumbKrug === KrugOr
+                    activeThumb === KrugOr
                       ? "bg-[#fff6a2] border-[#3BC77E]"
                       : ""
                   } cursor-pointer flex mt-7 w-[70px] border-2 rounded-md hover:bg-gray-200 hover:border-orange-300 transition-all ease-in-out duration-500 items-center`}
@@ -526,9 +523,9 @@ function Poklon() {
                   </label>
                 </div>
                 <div
-                  onClick={() => setActiveThumbKrug(KrugBlue)}
+                  onClick={() => setActiveThumb(KrugBlue)}
                   className={`${
-                    activeThumbKrug === KrugBlue
+                    activeThumb === KrugBlue
                       ? "bg-[#fff6a2] border-[#3BC77E]"
                       : ""
                   } cursor-pointer flex mt-7 w-[70px] border-2 rounded-md hover:bg-gray-200 hover:border-blue-300 transition-all ease-in-out duration-500 items-center`}
@@ -559,9 +556,9 @@ function Poklon() {
                   </label>
                 </div>
                 <div
-                  onClick={() => setActiveThumbKrug(KrugZl)}
+                  onClick={() => setActiveThumb(KrugZl)}
                   className={`${
-                    activeThumbKrug === KrugZl
+                    activeThumb === KrugZl
                       ? "bg-[#fff6a2] border-[#3BC77E]"
                       : ""
                   } cursor-pointer flex mt-7 w-[70px] border-2 rounded-md hover:bg-gray-200 hover:border-[#3BC77E] transition-all ease-in-out duration-500 items-center`}

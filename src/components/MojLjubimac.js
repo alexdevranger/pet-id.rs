@@ -162,16 +162,12 @@ const MojLjubimac = () => {
   const handleError = (err) => {
     const ErrorScanning = () =>
       toast.error(
-        err +
-          "Greška prilikom skeniranja qr koda, zatvorite skener i pokušajte ručno da kopirate qr kod."
+        "Greška prilikom skeniranja qr koda, zatvorite skener i pokušajte ručno da kopirate qr kod."
       );
     ErrorScanning();
     console.error(err);
   };
-  // const ErrorScanning = () =>
-  //   toast.error(
-  //     "Greška prilikom skeniranja qr koda, zatvorite skener i pokušajte ručno da kopirate qr kod."
-  //   );
+
   return (
     <div>
       <form>
