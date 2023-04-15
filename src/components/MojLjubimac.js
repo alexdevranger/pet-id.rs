@@ -14,7 +14,7 @@ import koktel from "../assets/koktel_optimized.webp";
 import HvalaSlika from "../assets/hvala_optimized.webp";
 import "react-lazy-load-image-component/src/effects/blur.css";
 import toast, { Toaster } from "react-hot-toast";
-import QrReader from "react-qr-reader";
+import QRReader from "modern-react-qr-reader";
 
 const MojLjubimac = () => {
   const form1 = useForm({
@@ -46,6 +46,12 @@ const MojLjubimac = () => {
   const [petImage, setPetImage] = useState("");
   const [petImgFile, setPetImgFile] = useState("");
   const [showQRScanner, setShowQRScanner] = useState(false);
+  const scannerRef = useRef(null);
+  useEffect(() => {
+    if (showQRScanner && scannerRef.current) {
+      scannerRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  }, [showQRScanner]);
 
   const handleFileChange = (e) => {
     let file = e.target.files[0];
@@ -241,14 +247,16 @@ const MojLjubimac = () => {
                 }}
               />
               {showQRScanner && (
-                <QrReader
-                  delay={300}
-                  onError={handleError}
-                  onScan={handleScan}
-                  style={{ width: "100%" }}
-                  facingMode="environment"
-                  playsInline
-                />
+                <div className="mt-4" ref={scannerRef}>
+                  <QRReader
+                    delay={300}
+                    onError={handleError}
+                    onScan={handleScan}
+                    style={{ width: "100%" }}
+                    facingMode="environment"
+                    playsInline
+                  />
+                </div>
               )}
               {errors.linkPetId && (
                 <small className="text-red-400 pl-[3px]">
