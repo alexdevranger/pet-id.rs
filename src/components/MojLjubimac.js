@@ -207,6 +207,7 @@ const MojLjubimac = () => {
                     setValue("linkPetId", result);
                     setShowQRScanner(false);
                   }}
+                  facingMode="environment"
                 />
               )}
               {errors.linkPetId && (
