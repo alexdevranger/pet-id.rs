@@ -160,13 +160,18 @@ const MojLjubimac = () => {
     }
   };
   const handleError = (err) => {
+    const ErrorScanning = () =>
+      toast.error(
+        err +
+          "Greška prilikom skeniranja qr koda, zatvorite skener i pokušajte ručno da kopirate qr kod."
+      );
     ErrorScanning();
     console.error(err);
   };
-  const ErrorScanning = () =>
-    toast.error(
-      "Greška prilikom skeniranja qr koda, zatvorite skener i pokušajte ručno da kopirate qr kod."
-    );
+  // const ErrorScanning = () =>
+  //   toast.error(
+  //     "Greška prilikom skeniranja qr koda, zatvorite skener i pokušajte ručno da kopirate qr kod."
+  //   );
   return (
     <div>
       <form>
@@ -246,6 +251,7 @@ const MojLjubimac = () => {
                   onScan={handleScan}
                   style={{ width: "100%" }}
                   facingMode="environment"
+                  playsInline
                 />
               )}
               {errors.linkPetId && (
