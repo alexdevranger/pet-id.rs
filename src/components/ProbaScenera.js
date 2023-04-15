@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import QrReader from "react-qr-reader";
+//import QrReader from "react-qr-reader";
+import QRReader from "modern-react-qr-reader";
 
 function ProbaScenera() {
   const [qrData, setQrData] = useState("");
@@ -13,7 +14,7 @@ function ProbaScenera() {
   };
 
   const handleError = (err) => {
-    console.error(err);
+    alert(err);
   };
 
   return (
@@ -38,7 +39,7 @@ function ProbaScenera() {
 
       {showScanner && (
         <div className="mt-4">
-          <QrReader
+          <QRReader
             delay={300}
             onError={handleError}
             onScan={handleScan}
