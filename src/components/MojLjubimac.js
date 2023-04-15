@@ -160,8 +160,13 @@ const MojLjubimac = () => {
     }
   };
   const handleError = (err) => {
+    ErrorScanning();
     console.error(err);
   };
+  const ErrorScanning = () =>
+    toast.error(
+      "Greška prilikom skeniranja qr koda, zatvorite skener i pokušajte ručno da kopirate qr kod."
+    );
   return (
     <div>
       <form>
@@ -177,7 +182,7 @@ const MojLjubimac = () => {
               </p>
             </div>
 
-            <div className="group relative w-52 min-[450px]:w-60 sm:w-72 md:w-[400px] m-auto pb-10 sm:pb-24 mt-7">
+            <div className="group relative w-52 min-[450px]:w-60 sm:w-72 md:w-[400px] m-auto pb-10 sm:pb-24 mt-7 text-center">
               <label
                 htmlFor="linkPetId"
                 className="block w-full pb-1 text-sm font-medium text-gray-500 transition-all duration-200 ease-in-out group-focus-within:text-green-400 text-center"
@@ -204,31 +209,43 @@ const MojLjubimac = () => {
                 placeholder="https://qr.pet-id.digital/Pk7298MlMs/8Ws3KLLN7b"
                 className="peer h-10 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 font-normal outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400"
               />
-              {/* <button
+              <button
                 onClick={(e) => {
                   e.preventDefault();
                   setShowQRScanner(!showQRScanner);
                 }}
-                className="bg-blue-500 text-white px-4 py-2 rounded ml-4"
+                className="bg-[#3BC77E] text-white px-4 py-2 rounded mt-4"
               >
                 {" "}
-                {showQRScanner ? "Close Scanner" : "Open Scanner"}
-              </button> */}
+                {showQRScanner ? "Zatvori Skener" : "Otvori Skener"}
+              </button>
+              <label
+                htmlFor="linkPetId"
+                className="block w-full pb-1 text-sm font-medium text-gray-500 transition-all duration-200 ease-in-out group-focus-within:text-[#FF553E] text-center"
+              >
+                Na nekim telefonima ne radi, u tom slučaju ručno otvorite vašu
+                kameru ili aplikaciju za skeniranje qr koda i kopirajte kod.
+              </label>
+              <Toaster
+                position="top-center"
+                toastOptions={{
+                  className: "",
+                  style: {
+                    border: "1px solid red",
+                    padding: "16px",
+                    color: "red",
+                    width: "300px",
+                    background: "white",
+                  },
+                }}
+              />
               {showQRScanner && (
                 <QrReader
                   delay={300}
-                  // onError={() => {
-                  //   alert("error");
-                  //   //setShowQRScanner(false);
-                  // }}
-                  // onScan={(result) => {
-                  //   setValue("linkPetId", result);
-                  //   setShowQRScanner(false);
-                  // }}
-                  // facingMode="environment"
                   onError={handleError}
                   onScan={handleScan}
                   style={{ width: "100%" }}
+                  facingMode="environment"
                 />
               )}
               {errors.linkPetId && (
