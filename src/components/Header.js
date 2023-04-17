@@ -232,12 +232,6 @@ const Header = () => {
                       Hoću da vidim sve kombinacije
                     </Link>
                   </li>
-
-                  {/* <li className="text-white text-2xl py-2">
-                    <Link onClick={handleNav} to="/kupi-kao-poklon">
-                      Kupi kao poklon
-                    </Link>
-                  </li> */}
                 </ul>
               )}
             </li>
@@ -253,11 +247,11 @@ const Header = () => {
                       Kako i gde da popunim podatke - već imam Pet ID
                     </Link>
                   </li>
-                  {/* <li className="text-white text-2xl py-2">
+                  <li className="text-white text-2xl py-2 text-1xl">
                     <Link onClick={handleNav} to="/kupi-kao-poklon">
                       Kupi kao poklon
                     </Link>
-                  </li> */}
+                  </li>
                 </ul>
               )}
             </li>

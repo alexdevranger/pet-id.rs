@@ -213,8 +213,12 @@ function Poklon() {
                 Kupi kao POKLON
               </h1>
               <p className="text-[18px] sm:text-xl mt-7 w-[75%] min-[730px]:w-[50%] m-auto">
-                Ukoliko želite da poklonite dragoj osobi Pet ID tag za njenog
-                čupavog prijatelja, pratite sledeće uputstvo :
+                Obradujte dragu osobu Pet ID tag-om za njenog čupavog
+                prijatelja!!!
+              </p>
+              <p>
+                Naknadno ćete popuniti podatke o ljubimcu i vlasniku po uputstvu
+                na poledjini pakovanja.
               </p>
               <div className="flex justify-center max-[633px]:mt-[200px] sm:mt-[200px] md:mt-0 flex-col xl:flex-row pt-[50px] items-center">
                 <div className="px-3 sm:px-6 lg:ml-0 sm:w-[80%] md:w-[50%] xl:w-[40%] 2xl:w-[34%] bs py-6 bg-[#fff] rounded-md">
@@ -239,7 +243,7 @@ function Poklon() {
                           })}
                         />{" "}
                         <i className="mr-3"></i>Želim da platim preko uplatnice
-                        i pošaljem direktno dragoj osobi
+                        i pošaljem poklon direktno prijatelju
                       </label>
                       <label className="rad pl-3 py-3">
                         <input
@@ -254,7 +258,7 @@ function Poklon() {
                           })}
                         />{" "}
                         <i className="mr-3"></i>Želim da mi pošaljete pouzećem,
-                        pa ću lično pokloniti dragoj osobi
+                        pa ću lično predati poklon
                       </label>
                     </div>
                   </div>
