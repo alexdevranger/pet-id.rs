@@ -28,6 +28,7 @@ import Rada from "../assets/galerija/Rada_optimized.webp";
 import Zizi from "../assets/galerija/zizi_optimized.webp";
 import Gea from "../assets/galerija/gea_optimized.webp";
 import Pepito from "../assets/galerija/pepito_optimized.webp";
+import Zoi from "../assets/galerija/zoi_optimized.webp";
 
 function Galerija() {
   const [loaded, setLoaded] = useState(false);
@@ -83,6 +84,48 @@ function Galerija() {
             </figcaption>
           </div>
         </div> */}
+        <figure className="snip1426">
+          <LazyLoadImage
+            effect="blur"
+            src={Zoi}
+            loading="lazy"
+            decoding="async"
+            alt="Zoi"
+          />
+          <figcaption>
+            <div>
+              <h4>Zoi</h4>
+            </div>
+          </figcaption>
+        </figure>
+        <figure className="snip1426">
+          <LazyLoadImage
+            effect="blur"
+            src={Zizi}
+            loading="lazy"
+            decoding="async"
+            alt="Zizi"
+          />
+          <figcaption>
+            <div>
+              <h4>Zizi</h4>
+            </div>
+          </figcaption>
+        </figure>
+        <figure className="snip1426">
+          <LazyLoadImage
+            effect="blur"
+            src={Luna}
+            loading="lazy"
+            decoding="async"
+            alt="Luna"
+          />
+          <figcaption>
+            <div>
+              <h4>Luna</h4>
+            </div>
+          </figcaption>
+        </figure>
         <figure className="snip1426">
           <LazyLoadImage
             effect="blur"
@@ -266,20 +309,7 @@ function Galerija() {
             </div>
           </figcaption>
         </figure>
-        <figure className="snip1426">
-          <LazyLoadImage
-            effect="blur"
-            src={Luna}
-            loading="lazy"
-            decoding="async"
-            alt="Luna"
-          />
-          <figcaption>
-            <div>
-              <h4>Luna</h4>
-            </div>
-          </figcaption>
-        </figure>
+
         <figure className="snip1426">
           <LazyLoadImage
             effect="blur"
@@ -417,20 +447,6 @@ function Galerija() {
           <figcaption>
             <div>
               <h4>Gea</h4>
-            </div>
-          </figcaption>
-        </figure>
-        <figure className="snip1426">
-          <LazyLoadImage
-            effect="blur"
-            src={Zizi}
-            loading="lazy"
-            decoding="async"
-            alt="Zizi"
-          />
-          <figcaption>
-            <div>
-              <h4>Zizi</h4>
             </div>
           </figcaption>
         </figure>

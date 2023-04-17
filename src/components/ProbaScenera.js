@@ -25,7 +25,86 @@ function ProbaScenera() {
   };
 
   return (
-    <div className="h-screen pt-[600px]">
+    <div>
+      <div style={{ width: "100%" }}>
+        <div id="uplatnica" className="clearfix">
+          <div id="levo">
+            <div id="uplatnicanaslov">uplatilac</div>
+            <div id="uplatilac">
+              <span style={{ fontSize: "16px", marginLeft: "10px" }}>
+                Vaše ime i adresa
+              </span>
+            </div>
+            <div id="svrhauplatenaslov">svrha uplate</div>
+            <div id="svrhauplate">
+              <span style={{ marginLeft: "10px", fontSize: "16px" }}>
+                547286{" "}
+              </span>
+            </div>
+            <div id="primalacnaslov">primalac</div>
+            <div
+              id="primalac"
+              style={{
+                paddingLeft: "10px",
+              }}
+            >
+              <span
+                style={{
+                  fontSize: "16px",
+                }}
+              >
+                ID PROTECT PR KNJAŽEVAC
+                <br />
+                Branka Radičevića 14
+              </span>
+            </div>
+          </div>
+          <div id="desno">
+            <div id="naslov">nalog za uplatu</div>
+
+            <div id="desnakolona">
+              <div id="kolonaiznos">
+                <div id="kolonaiznosnaslov">
+                  <div id="sifraplacanjanaslov">šifra plaćanja</div>
+                  <div id="valutanaslov">valuta</div>
+                  <div id="iznosnaslov">iznos</div>
+                </div>
+                <div id="kolonaiznosunos">
+                  <div id="sifraplacanjaunos" style={{ paddingLeft: "4px" }}>
+                    289
+                  </div>
+                  <div id="valutaunos">RSD </div>
+                  <div id="iznosunos" style={{ paddingLeft: "10px" }}>
+                    1.600,00{" "}
+                  </div>
+                </div>
+              </div>
+              <div id="racunprimaoca">
+                <div id="racunprimaocanaslov">račun primaoca</div>
+                <div id="racunprimaocaunos" style={{ paddingLeft: "10px" }}>
+                  265-1100310081703-59{" "}
+                </div>
+              </div>
+              <div id="modelipozivnabr">
+                <div id="modelipozivbrnaslov">model i poziv na broj</div>
+                <div id="modelipozivunos">
+                  <div id="modelunos"> </div>
+                  <div id="pozivbrunos" style={{ paddingLeft: "10px" }}>
+                    547286{" "}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="footer">
+            <div id="pecatpotpis">pečat i potpis uplatioca</div>
+            <div id="mestounos"></div>
+            <div id="mestodatum">mesto i datum prijema</div>
+            <div id="datumvalute">datum valute</div>
+          </div>
+        </div>
+      </div>
+      <div className="h-[150px]"></div>
       <h1>QR Code Scanner</h1>
       <input
         type="text"

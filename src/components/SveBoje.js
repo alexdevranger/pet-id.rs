@@ -14,6 +14,7 @@ function SveBoje() {
           backgroundImage: `url(${bg})`,
           backgroundRepeat: "no repeat",
           backgroundSize: "100%",
+          minHeight: "100vh",
         }}
       >
         <div className="text-center mt-12">

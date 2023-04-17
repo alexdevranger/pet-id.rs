@@ -1791,132 +1791,438 @@ padding-top:10px;
   min-width: 200px;
   min-height: 200px;
 }
-/* .carousel {
-  padding-bottom: 40px;
-}
 
-ul.slides {
-  display: block;
-  position: relative;
-  height: 440px;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  list-style: none;
-}
-
-.slides * {
-  user-select: none;
-  -ms-user-select: none;
-  -moz-user-select: none;
-  -khtml-user-select: none;
-  -webkit-user-select: none;
-  -webkit-touch-callout: none;
-}
-
-ul.slides input {
-  display: none; 
-}
-
-
-.slide-container { 
-  display: block; 
-}
-
-.slide-image {
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: auto;
-  top: 0;
-  opacity: 0;
-  transition: all .7s ease-in-out;
-}   
-
-.slide-image img {
-  width: auto;
-  min-width: 100%;
-  height: auto;
-}
-
-.carousel-controls {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 999;
-  font-size: 100px;
-  line-height: 600px;
-  color: #fff;
-}
-
-.carousel-controls label {
-  display: none;
-  position: absolute;
-  padding: 0 20px;
-  opacity: 0;
-  transition: opacity .2s;
-  cursor: pointer;
-}
-
-.slide-image:hover + .carousel-controls label{
-  opacity: 0.5;
-}
-
-.carousel-controls label:hover {
-  opacity: 1;
-}
-
-.carousel-controls .prev-slide {
-  width: 49%;
+#uplatnica {
+  height: 95mm;
+  width: 208mm;
+  margin-right: auto;
+  margin-left: auto;
+  border: thin solid #CCC;
   text-align: left;
-  left: 0;
+  margin-top: 30px;
 }
 
-.carousel-controls .next-slide {
-  width: 49%;
-  text-align: right;
-  right: 0;
+#uplatilac {
+  border: thin solid #333;
+  float: left;
+  height: 15mm;
+  width: 91mm;
 }
 
-.carousel-dots {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 999;
+#uplatnica #levo {
+  float: left;
+  width: 98mm;
+  height: 60mm;
+  margin-top: 9mm;
+  margin-left: 5mm;
+  border-right-width: thin;
+  border-right-style: solid;
+  border-right-color: #999;
+  font-size: 12px;
+}
+
+#svrhauplatenaslov {
+  width: 91mm;
+}
+
+#svrhauplate {
+  float: left;
+  height: 15mm;
+  width: 91mm;
+  border: thin solid #333;
+}
+
+#primalac {
+  float: left;
+  height: 15mm;
+  width: 91mm;
+  border: thin solid #333;
+}
+
+#uplatnica #desno {
+  width: 280px;
+    float: right;
+    height: 264px;
+    }
+
+#uplatnica #desno #naslov {
+  text-transform: uppercase;
+    font-weight: bolder;
+    float: right;
+    margin-right: 15px;
+    margin-top: 0;
+    font-size: 12px;
+    }
+
+#desno #racunprimaoca {
+  height: 10mm;
+  width: 92mm;
+  margin-left: 9mm;
+  margin-top: 3mm;
+}
+
+#desnakolona #kolonaiznos {
+  width: 92mm;
+  height: 13mm;
+  margin-top: 8mm;
+  margin-left: 9mm;
+}
+
+#desno #modelipozivnabr {
+  width: 93mm;
+  height: 13mm;
+  margin-left: 9mm;
+  margin-top: 3mm;
+}
+
+#desnakolona #kolonaiznos #kolonaiznosnaslov {
+  height: 7mm;
+  font-size: 12px;
+}
+#desnakolona {
+  margin-left: -126px;
+}
+
+#kolonaiznos #kolonaiznosnaslov #sifraplacanjanaslov {
+  width: 12mm;
+  height: 7mm;
+  float: left;
+  font-size: 12px;
+  margin-top: -10px;
+}
+
+#kolonaiznos #kolonaiznosnaslov #valutanaslov {
+  width: 13mm;
+  height: 4mm;
+  float: left;
+  margin-left: 5mm;
+  margin-top: 8px;
+}
+
+#kolonaiznos #kolonaiznosnaslov #iznosnaslov {
+  width: 53mm;
+  float: left;
+  height: 4mm;
+  margin-left: 6mm;
+  margin-top: 8px;
+}
+
+#desnakolona #kolonaiznos #kolonaiznosunos #sifraplacanjaunos {
+  float: left;
+  height: 8mm;
+  width: 12mm;
+  border: 2px solid #333;
+}
+
+#desnakolona #kolonaiznos #kolonaiznosunos #valutaunos {
+  width: 12mm;
+  float: left;
+  height: 8mm;
+  margin-left: 4mm;
+  border: 2px solid #333;
+  text-transform: uppercase;
   text-align: center;
 }
 
-.carousel-dots .carousel-dot {
-  display: inline-block;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  background-color: #10b981;
-  opacity: 0.5;
-  margin: 10px;
+#desnakolona #kolonaiznos #kolonaiznosunos #iznosunos {
+  height: 8mm;
+  width: 58mm;
+  float: left;
+  border: 2px solid #333;
+  position: relative;
+  margin-left: 5mm;
 }
 
-input:checked + .slide-container .slide-image {
-  opacity: 1;
-  transform: scale(1);
-  transition: opacity 1s ease-in-out;
+#desno #racunprimaoca {
+  height: 10mm;
+  width: 92mm;
+  margin-left: 9mm;
+  margin-top: 3mm;
 }
 
-input:checked + .slide-container .carousel-controls label {
-   display: block; 
+#desno #racunprimaoca #racunprimaocanaslov {
+  font-size: 12px;
+  width: 99%;
 }
 
-input#img-1:checked ~ .carousel-dots label#img-dot-1,
-input#img-2:checked ~ .carousel-dots label#img-dot-2,
-input#img-3:checked ~ .carousel-dots label#img-dot-3,
-input#img-4:checked ~ .carousel-dots label#img-dot-4,
-input#img-5:checked ~ .carousel-dots label#img-dot-5,
-input#img-6:checked ~ .carousel-dots label#img-dot-6 {
-opacity: 1;
+#desno #racunprimaoca #racunprimaocaunos {
+  height: 8mm;
+  width: 99%;
+  border: 2px solid #333;
+}
+
+#desno #modelipozivnabr {
+  width: 93mm;
+  height: 13mm;
+  margin-left: 9mm;
+  margin-top: 3mm;
+}
+
+#desno #modelipozivnabr #modelipozivbrnaslov {
+  font-size: 12px;
+}
+
+#desno #modelipozivnabr #modelipozivunos {
+  height: auto;
+  width: 100%;
+}
+
+#desno #modelipozivnabr #modelipozivunos #modelunos {
+  float: left;
+  height: 8mm;
+  width: 12mm;
+  border: 2px solid #333;
+}
+
+#desno #modelipozivnabr #modelipozivunos #pozivbrunos {
+  margin-left: 17mm;
+  height: 8mm;
+  width: 74mm;
+  border: 2px solid #333;
+}
+
+#uplatnica #footer {
+  width: 100%;
+  margin-top: 70mm;
+  height: 25mm;
+  padding-left: 5mm;
+  padding-top: 7mm;
+}
+
+#footer #pecatpotpis {
+  width: 55mm;
+  border-top-width: thin;
+  border-top-style: solid;
+  border-top-color: #333;
+  font-size: 12px;
+}
+
+#footer #mestounos {
+  width: 45mm;
+  margin-left: 75mm;
+  padding-left: 10px;
+  margin-top: -5px;
+}
+
+#footer #mestodatum {
+  width: 50mm;
+  font-size: 12px;
+  margin-left: 75mm;
+  margin-top: 1mm;
+  border-top-width: thin;
+  border-top-style: solid;
+  border-top-color: #333;
+}
+
+#footer #datumvalute {
+  width: 35mm;
+  margin-left: 140mm;
+  border-top-width: thin;
+  border-top-style: solid;
+  border-top-color: #333;
+  margin-top: -18px;
+  font-size: 12px;
+}
+
+@media only screen and (max-width: 768px) {
+  #uplatnica {
+    display: flex;
+    flex-direction: column;
+    height: 167mm;
+    width: 75mm;
+    margin-right: auto;
+    margin-left: auto;
+    border: none;
+    text-align: left;
+    margin-top: 30px;
+  }
+  #uplatnica #levo {
+    float: none;
+    width: 70mm;
+    height: 60mm;
+    margin-top: 9mm;
+    margin-left: 3mm;
+    border: none;
+    font-size: 12px;
+}
+  #uplatilac {
+    border: thin solid #333;
+    float: left;
+    height: 15mm;
+    width: 70mm;
+  }
+  #svrhauplatenaslov {
+    width: 70mm;
+  }
+  #svrhauplate {
+    float: left;
+    height: 15mm;
+    width: 70mm;
+    border: thin solid #333;
+  }
+  #primalac {
+    float: left;
+    height: 15mm;
+    width: 70mm;
+    border: thin solid #333;
+  }
+
+  #uplatnica #desno {
+    width: 280px;
+    float: none;
+    height: 200px;
+  }
+  #uplatnica #desno #naslov {
+    text-transform: uppercase;
+    font-weight: bolder;
+    float: left;
+    margin-left: 14px;
+    margin-top: -250px;
+    font-size: 12px;
+  }
+  #desnakolona {
+    margin-left: -25px;
+  }
+  #desnakolona #kolonaiznos {
+    width: 71mm;
+    height: 13mm;
+    margin-top: 8mm;
+    margin-left: 9mm;
+  }
+  #desnakolona #kolonaiznos #kolonaiznosnaslov {
+    height: 7mm;
+    font-size: 12px;
+  }
+  #kolonaiznos #kolonaiznosnaslov #sifraplacanjanaslov {
+    width: 12mm;
+    height: 7mm;
+    float: left;
+    font-size: 12px;
+    margin-top: -10px;
+  }
+  #kolonaiznos #kolonaiznosnaslov #valutanaslov {
+    width: 13mm;
+    height: 4mm;
+    float: left;
+    margin-left: 5mm;
+    margin-top: 8px;
+  }
+  #kolonaiznos #kolonaiznosnaslov #iznosnaslov {
+    width: 35mm;
+    float: left;
+    height: 4mm;
+    margin-left: 6mm;
+    margin-top: 8px;
+  }
+  #desnakolona #kolonaiznos #kolonaiznosunos #sifraplacanjaunos {
+    float: left;
+    height: 8mm;
+    width: 12mm;
+    border: 2px solid #333;
+  }
+  #desnakolona #kolonaiznos #kolonaiznosunos #valutaunos {
+    width: 12mm;
+    float: left;
+    height: 8mm;
+    margin-left: 4mm;
+    border: 2px solid #333;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  #desnakolona #kolonaiznos #kolonaiznosunos #iznosunos {
+    height: 8mm;
+    width: 38mm;
+    float: left;
+    border: 2px solid #333;
+    position: relative;
+    margin-left: 5mm;
+  }
+  #desno #racunprimaoca {
+    height: 10mm;
+    width: 72mm;
+    margin-left: 9mm;
+    margin-top: 3mm;
+  }
+  #desno #racunprimaoca #racunprimaocanaslov {
+    font-size: 12px;
+    width: 99%;
+  }
+  #desno #racunprimaoca #racunprimaocaunos {
+    height: 8mm;
+    width: 99%;
+    border: 2px solid #333;
+  }
+  #desno #modelipozivnabr {
+    width: 72mm;
+    height: 13mm;
+    margin-left: 9mm;
+    margin-top: 3mm;
+  }
+  #desno #modelipozivnabr #modelipozivbrnaslov {
+    font-size: 12px;
+  }
+  #desno #modelipozivnabr #modelipozivunos {
+    height: auto;
+    width: 100%;
+  }
+  #desno #modelipozivnabr #modelipozivunos #modelunos {
+    float: left;
+    height: 8mm;
+    width: 12mm;
+    border: 2px solid #333;
+  }
+  #desno #modelipozivnabr #modelipozivunos #pozivbrunos {
+    margin-left: 17mm;
+    height: 8mm;
+    width: 54mm;
+    border: 2px solid #333;
+  }
+  #uplatnica #footer {
+    width: 74mm;
+    margin-top: 2mm;
+    height: 25mm;
+    padding-left: 3mm;
+    padding-top: 7mm;
+    display: flex;
+    flex-direction: column;
+  }
+  #footer #pecatpotpis {
+    width: 100%;
+    border-top-width: thin;
+    border-top-style: solid;
+    border-top-color: #333;
+    font-size: 12px;
+  }
+  #footer #mestounos {
+    width: 45mm;
+    margin-left: 75mm;
+    padding-left: 10px;
+    margin-top: -5px;
+  }
+  #footer #mestodatum {
+    width: 100%;
+    font-size: 12px;
+    margin-left: 0;
+    margin-top: 7mm;
+    border-top-width: thin;
+    border-top-style: solid;
+    border-top-color: #333;
+  }
+  #footer #datumvalute {
+    width: 100%;
+    margin-left: 0mm;
+    border-top-width: thin;
+    border-top-style: solid;
+    border-top-color: #333;
+    margin-top: 19px;
+    font-size: 12px;
+  }
+}
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 
-input:checked + .slide-container .nav label { display: block; }
- */
+ 

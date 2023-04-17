@@ -1753,7 +1753,7 @@ const Korak2 = () => {
                       htmlFor="drzava"
                       className="block w-full pb-1 text-sm font-medium text-gray-500 transition-all duration-200 ease-in-out group-focus-within:text-green-400"
                     >
-                      Država ( samo Srbija, za ostale zemlje preko predstavnika)
+                      Država ( samo Srbija, za ostale zemlje pošaljite email )
                     </label>
                     <input
                       type="text"
@@ -1983,7 +1983,7 @@ const Korak2 = () => {
               Hvala Vam na poverenju!
             </h1>
             <h2 className="text-xl sm:text-3xl mt-2">
-              Vasa porudzbina je prihvacena
+              Vaša porudžbina je prihvaćena
             </h2>
             <p className="text-sm sm:text-xl mt-7">
               Broj vaše porudžbine je <b>{narudzba.current}</b> <br></br> Pet ID

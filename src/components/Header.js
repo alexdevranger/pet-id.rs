@@ -90,6 +90,7 @@ const Header = () => {
                         Hoću da vidim sve kombinacije
                       </Link>
                     </li>
+
                     {/* <li className="py-2 px-4 text-gray-400">
                       <Link to="/kupi-kao-poklon">Kupi kao poklon</Link>
                     </li> */}
@@ -127,9 +128,15 @@ const Header = () => {
                         Kako i gde da popunim podatke - već imam Pet ID
                       </Link>
                     </li>
-                    {/* <li className="py-2 px-4 text-gray-400">
+                    <li>
+                      <div className="h-px bg-gray-200 my-1"></div>
+                    </li>
+                    <li
+                      className="py-2 px-4 text-gray-400 text-[15px] leading-4"
+                      style={{ zIndex: "50" }}
+                    >
                       <Link to="/kupi-kao-poklon">Kupi kao poklon</Link>
-                    </li> */}
+                    </li>
                   </ul>
                 )}
               </li>
