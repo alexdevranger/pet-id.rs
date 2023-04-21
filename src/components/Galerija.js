@@ -29,6 +29,7 @@ import Zizi from "../assets/galerija/zizi_optimized.webp";
 import Gea from "../assets/galerija/gea_optimized.webp";
 import Pepito from "../assets/galerija/pepito_optimized.webp";
 import Zoi from "../assets/galerija/zoi_optimized.webp";
+import Franc from "../assets/galerija/franc_optimized.webp";
 
 function Galerija() {
   const [loaded, setLoaded] = useState(false);
@@ -95,6 +96,20 @@ function Galerija() {
           <figcaption>
             <div>
               <h4>Zoi</h4>
+            </div>
+          </figcaption>
+        </figure>
+        <figure className="snip1426">
+          <LazyLoadImage
+            effect="blur"
+            src={Franc}
+            loading="lazy"
+            decoding="async"
+            alt="Franc"
+          />
+          <figcaption>
+            <div>
+              <h4>Franc</h4>
             </div>
           </figcaption>
         </figure>
