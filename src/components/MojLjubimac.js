@@ -976,7 +976,7 @@ const MojLjubimac = () => {
             </div>
           </>
         )}
-        <pre>{JSON.stringify(form1.watch(), null, 2)}</pre>
+        {/* <pre>{JSON.stringify(form1.watch(), null, 2)}</pre> */}
       </form>
       {korak === 2 && (
         <div className="bg-white">
