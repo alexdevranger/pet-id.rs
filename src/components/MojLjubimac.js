@@ -20,6 +20,8 @@ const MojLjubimac = () => {
   const form1 = useForm({
     defaultValues: {
       linkPetId: "",
+      oblik_priveska: "",
+      boja_priveska: "",
       pas_macka: "",
       imeLjubimca: "",
       rasa: "",
@@ -114,10 +116,11 @@ const MojLjubimac = () => {
     }
   }, [errors, setFocus]);
 
+  let oblik_priveskaEmpty = form1.watch("oblik_priveska");
+  let boja_priveskaEmpty = form1.watch("boja_priveska");
   let brTelefonaVlasnikaEmptyLjubimac1 = form1.watch("brTelefonaVlasnika");
   let brDrugiVlasnikaEmpty1 = form1.watch("brDrugiVlasnika");
   let emailVlasnikaEmpty1 = form1.watch("emailVlasnika");
-  let tagEmpty = form1.watch("tag");
   let imeLjubimcaEmpty = form1.watch("imeLjubimca");
   let pas_mackaEmpty = form1.watch("pas_macka");
   let rasaEmpty = form1.watch("rasa");
@@ -133,7 +136,8 @@ const MojLjubimac = () => {
       ) {
         setDisabledState(false);
       } else if (
-        tagEmpty === "" ||
+        oblik_priveskaEmpty === "" ||
+        boja_priveskaEmpty === "" ||
         imeLjubimcaEmpty === "" ||
         pas_mackaEmpty === "" ||
         rasaEmpty === "" ||
@@ -151,7 +155,8 @@ const MojLjubimac = () => {
     brTelefonaVlasnikaEmptyLjubimac1,
     brDrugiVlasnikaEmpty1,
     emailVlasnikaEmpty1,
-    tagEmpty,
+    oblik_priveskaEmpty,
+    boja_priveskaEmpty,
     imeLjubimcaEmpty,
     pas_mackaEmpty,
     rasaEmpty,
@@ -189,12 +194,12 @@ const MojLjubimac = () => {
               </p>
             </div>
 
-            <div className="group relative w-52 min-[450px]:w-60 sm:w-72 md:w-[400px] m-auto pb-10 sm:pb-24 mt-7 text-center">
+            <div className="group relative w-52 min-[450px]:w-60 sm:w-72 md:w-[400px] m-auto pb-4 sm:pb-4 mt-7 text-center">
               <label
                 htmlFor="linkPetId"
                 className="block w-full pb-1 text-sm font-medium text-gray-500 transition-all duration-200 ease-in-out group-focus-within:text-green-400 text-center"
               >
-                Skenirajte tag (privezak) i taj link unesite u ovo polje
+                Skeniraj tag (privezak) i taj link unesi u ovo polje
               </label>
               <input
                 id="linkPetId"
@@ -230,8 +235,8 @@ const MojLjubimac = () => {
                 htmlFor="linkPetId"
                 className="block w-full pb-1 text-sm font-medium text-gray-500 transition-all duration-200 ease-in-out group-focus-within:text-[#FF553E] text-center"
               >
-                Na nekim telefonima ne radi, u tom slučaju ručno otvorite vašu
-                kameru ili aplikaciju za skeniranje qr koda i kopirajte kod.
+                Na nekim telefonima ne radi, u tom slučaju ručno otvori kameru
+                ili aplikaciju za skeniranje qr koda i kopiraj kod.
               </label>
               <Toaster
                 position="top-center"
@@ -264,6 +269,80 @@ const MojLjubimac = () => {
                 </small>
               )}
             </div>
+            <div className="group relative w-52 min-[450px]:w-60 sm:w-72 md:w-[400px] m-auto pb-10 sm:pb-4 mt-7 text-center">
+              <label
+                htmlFor="oblik_priveska"
+                className="block w-full pb-1 text-sm font-medium text-gray-500 transition-all duration-200 ease-in-out group-focus-within:text-green-400 text-center"
+              >
+                Odaberi OBLIK priveska
+              </label>
+              <select
+                id="oblik_priveska"
+                {...register("oblik_priveska", {
+                  required: {
+                    value: true,
+                    message: "Ovo polje je obavezno.",
+                  },
+                })}
+                className="bpeer h-10 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 text-[#919191] font-normal outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400"
+              >
+                <option value="">Izaberi oblik</option>
+                <option value="koskica">KOSKICA</option>
+                <option value="srce">SRCE</option>
+                <option value="krug">KRUG</option>
+              </select>
+              {errors.oblik_priveska && (
+                <small className="text-red-400 pl-[3px]">
+                  {errors.oblik_priveska.message}
+                </small>
+              )}
+            </div>
+            <div className="group relative w-52 min-[450px]:w-60 sm:w-72 md:w-[400px] m-auto pb-10 sm:pb-12 mt-7 text-center">
+              <label
+                htmlFor="boja_priveska"
+                className="block w-full pb-1 text-sm font-medium text-gray-500 transition-all duration-200 ease-in-out group-focus-within:text-green-400 text-center"
+              >
+                Odaberi BOJU priveska
+              </label>
+              <select
+                id="boja_priveska"
+                {...register("boja_priveska", {
+                  required: {
+                    value: true,
+                    message: "Ovo polje je obavezno.",
+                  },
+                })}
+                className="bpeer h-10 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 text-[#919191] font-normal outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400"
+              >
+                <option value="">Izaberi boju</option>
+                <option value="CR100SZ">
+                  Pozadi CRNA napred SVETLO ZELENA
+                </option>
+                <option value="CR100PL">Pozadi CRNA napred PLAVA</option>
+                <option value="CR100RO">Pozadi CRNA napred ROZE</option>
+                <option value="CR100CV">Pozadi CRNA napred CRVENA</option>
+                <option value="CR100NA">Pozadi CRNA napred NARANDŽASTA</option>
+                <option value="SR100RO">
+                  Pozadi SVETLO ROZE napred TAMNO ROZE
+                </option>
+                <option value="SZ100ZE">
+                  Pozadi SVETLO ZELENA napred TAMNO ZELENA
+                </option>
+                <option value="NA100BE">Pozadi NARANDŽASTA napred BELA</option>
+                <option value="SP100BE">Pozadi SVETLO PLAVA napred BELA</option>
+                <option value="SZ100BE">
+                  Pozadi SVETLO ZELENA napred BELA
+                </option>
+                <option value="PL100SP">
+                  Pozadi TAMNO PLAVA napred SVETLO PLAVA
+                </option>
+              </select>
+              {errors.boja_priveska && (
+                <small className="text-red-400 pl-[3px]">
+                  {errors.boja_priveska.message}
+                </small>
+              )}
+            </div>
 
             <div className="flex flex-col items-center lg:flex-row justify-center lg:justify-evenly mt-12 min-[450px]:pt-12 md:mt-0 md:pt-64 px-4 lg:pt-12 xl:pt-24 lg:items-stretch">
               <div
@@ -275,16 +354,6 @@ const MojLjubimac = () => {
                   backgroundSize: "cover",
                 }}
               >
-                {/* <div className="md:flex md:justify-center w-full absolute top-[-125px] min-[450px]:top-[-180px] sm:top-[-244px] md:top-[-247px] lg:top-[-145px] xl:top-[-223px]">
-                  <LazyLoadImage
-                    effect="blur"
-                    src={s7}
-                    className="w-full"
-                    loading="lazy"
-                    decoding="async"
-                    alt="s7"
-                  />
-                </div> */}
                 {/* PODACI O LJUBIMCU */}
                 <div className="w-full mt-2 flex justify-around">
                   <div className="items-center flex flex-col w-[240px] min-[450px]:w-[350px] sm:w-[350px] lg:w-[300px] xl:w-[350px] relative">
@@ -907,7 +976,7 @@ const MojLjubimac = () => {
             </div>
           </>
         )}
-        {/* <pre>{JSON.stringify(form1.watch(), null, 2)}</pre> */}
+        <pre>{JSON.stringify(form1.watch(), null, 2)}</pre>
       </form>
       {korak === 2 && (
         <div className="bg-white">
