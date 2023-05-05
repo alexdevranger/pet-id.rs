@@ -63,10 +63,11 @@ const Shop = () => {
           KORAK 1 <br /> Izaberite oblik priveska za vašeg ljubimca{" "}
         </h1>
         <p className="block px-6 mx-auto z-27" style={{ zIndex: "18" }}>
-          ( Ukoliko ste već kupili u pet shop-u, pogledajte uputstvo
+          {/* ( Ukoliko ste već kupili u pet shop-u, pogledajte uputstvo
           <Link to="/uputstvo">
             <span className="text-[#FF553E] font-semibold ml-1">OVDE )</span>
-          </Link>
+          </Link> */}
+          ( Prodaja preko sajta počinje 15. maja 2023.god. )
         </p>
       </div>
 

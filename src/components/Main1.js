@@ -33,15 +33,38 @@ import KrugRo from "../assets/krugRo_optimized.webp";
 import KrugOr from "../assets/krugOr_optimized.webp";
 import KrugBlue from "../assets/krugBlue_optimized.webp";
 import KrugZl from "../assets/krugZl_optimized.webp";
+//import JSConfetti from "js-confetti";
 
 const Main1 = () => {
   const [showModal, setShowModal] = React.useState(false);
   const [showModalTags, setShowModalTags] = React.useState(false);
+  // const canvas = document.getElementById("canva");
+  // const jsConfetti = new JSConfetti({ canvas });
+  // const getConfetti = () => {
+  //   jsConfetti
+  //     .addConfetti({
+  //       // emojis: ["❤️", "🌈", "🦴", "💥", "✨", "💫", "🌸"],
+  //       emojis: ["❤️", "🦴", "🔵", "🟢", "⚪"],
+  //       confettiColors: [
+  //         "#ff0a54",
+  //         "#ff477e",
+  //         "#ff7096",
+  //         "#ff85a1",
+  //         "#fbb1bd",
+  //         "#f9bec7",
+  //       ],
+  //     })
+  //     // .then(console.log("clicked"))
+  //     .then(setTimeout(() => setShowModalTags(true), 1000));
+  // };
+  const getConfetti = () => {
+    setShowModalTags(true);
+  };
   return (
     <div className="flex justify-center">
       <div className="w-full">
         {/* Glavna */}
-
+        {/* +` ++-<canvas id="canva"></canvas> */}
         <div className="flex pt-12 sm:pt-28 flex-col sm:flex-row">
           <div className="lg:ml-16 xl:pl-22 sm:w-[50%] lg:w-[50%] xl:w-[60%] 2xl:w-[80%]">
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-center sm:text-left px-3 sm:pl-6 md:pl-6 md:mt-6 lg:mt-9 xl:mt-12 2xl:pb-8">
@@ -94,7 +117,7 @@ const Main1 = () => {
                 <div className="flex items-center justify-center text-white bg-[#3BC77E] w-full sm:w-[300px] h-[64px] rounded-lg mt-16 duration-500 hover:bg-[#FF553E]">
                   <h3
                     className="text-[1.3rem] min-[410px]:text-[1.75rem]"
-                    onClick={() => setShowModalTags(true)}
+                    onClick={() => getConfetti()}
                   >
                     Boje i oblici
                   </h3>
@@ -309,7 +332,6 @@ const Main1 = () => {
           </>
         ) : null}
         {/* Utisci */}
-
         <div
           className="flex 2xl:justify-center pt-20 xl:pt-18 pb-10 w-full min-[1032px]:flex-row items-center flex-col-reverse"
           style={{
@@ -364,7 +386,6 @@ const Main1 = () => {
             </div>
           </div>
         </div>
-
         {/* Koraci */}
         <div className="sivaPozadina w-full">
           <div className="text-center">
@@ -589,7 +610,6 @@ const Main1 = () => {
             />
           </div>
         </div>
-
         {/* Poklanjamo */}
         <div className="flex justify-center sm:pt-12 md:pt-8 lg:pt-44 w-full pb-16 sm:flex-row flex-col items-center crvenaPozadina mt-8 pt-6 sm:mt-6">
           <div className="m-auto w-full lg:w-[50%] lg:flex lg:justify-center">
@@ -625,7 +645,6 @@ const Main1 = () => {
             </div>
           </div>
         </div>
-
         {/* Poruci */}
         <div
           className=" pb-24 flex sm:pt-3 pt-12 md:pt-6 lg:pt-32 items-center text-center sm:text-left md:flex-row flex-col-reverse"
@@ -651,7 +670,7 @@ const Main1 = () => {
               </p>
               <div className="px-2 md:px-8 flex justify-center lg:justify-start">
                 <div className="flex items-center justify-center text-white bg-[#FF553E] w-full sm:w-[300px] h-[64px] rounded-lg mt-16 duration-500 hover:bg-[#3BC77E]">
-                  <Link to="/proizvodi">
+                  <Link to="/kupi-kao-poklon">
                     <h3 className="text-[1.3rem] min-[410px]:text-[1.75rem]">
                       Poruči Pet ID tag
                     </h3>
@@ -749,7 +768,6 @@ const Main1 = () => {
             <div className="opacity-25 fixed inset-0 z-40 bg-black"></div>
           </>
         ) : null}
-
         {/* Garancija */}
         <div
           className="flex justify-center 2xl:pb-6"
@@ -766,7 +784,6 @@ const Main1 = () => {
             className="pt-0 min-[1471px]:mt-1 min-[1638px]:pt-3 min-[1638px]:pt-6 m-auto px-6 xl:px-0"
           />
         </div>
-
         <div
           className="w-full sm:pt-8 pb-32 text-center sm:text-left"
           style={{

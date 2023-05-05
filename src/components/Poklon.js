@@ -217,8 +217,9 @@ function Poklon() {
                 prijatelja!!!
               </p>
               <p>
-                Naknadno ćete popuniti podatke o ljubimcu i vlasniku po uputstvu
-                na poledjini pakovanja.
+                {/* Naknadno ćete popuniti podatke o ljubimcu i vlasniku po uputstvu
+                na poledjini pakovanja. */}
+                ( Prodaja preko sajta počinje 15. maja 2023.god. )
               </p>
               <div className="flex justify-center max-[633px]:mt-[200px] sm:mt-[200px] md:mt-0 flex-col xl:flex-row pt-[50px] items-center">
                 <div className="px-3 sm:px-6 lg:ml-0 sm:w-[80%] md:w-[50%] xl:w-[40%] 2xl:w-[34%] bs py-6 bg-[#fff] rounded-md">
