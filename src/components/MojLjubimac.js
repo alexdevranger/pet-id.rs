@@ -646,11 +646,12 @@ const MojLjubimac = () => {
                     htmlFor="napomena"
                     className="block w-full pb-1 text-sm font-medium text-gray-500 transition-all duration-200 ease-in-out group-focus-within:text-green-400"
                   >
-                    Napomena (alergije, sta posebno voli, cega se plasi i sl.)
+                    Napomena (za pronalazača, kako najbolje da smiri ljubimca i
+                    sl.)
                   </label>
                   <div className="box border rounded flex flex-col shadow bg-white">
                     <textarea
-                      placeholder="Npr. Mnogo voli decu, voli sve da jede, nije agresivna"
+                      placeholder="Npr. Mnogo voli decu, nije agresivna, ako ima alergije na neku hranu"
                       className="peer h-20 w-full border border-zinc-300 rounded-md bg-gray-50 px-4 font-normal outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-green-400"
                       id="napomena"
                       {...register("napomena", {

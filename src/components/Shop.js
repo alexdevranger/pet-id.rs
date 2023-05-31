@@ -67,7 +67,7 @@ const Shop = () => {
           <Link to="/uputstvo">
             <span className="text-[#FF553E] font-semibold ml-1">OVDE )</span>
           </Link> */}
-          ( Prodaja preko sajta počinje 15. maja 2023.god. )
+          ( Kad odaberete oblik, kliknite na "Sledeći korak" da odaberete boju )
         </p>
       </div>
 
