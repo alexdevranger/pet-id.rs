@@ -12,6 +12,7 @@ import Elisa from "../assets/galerija/Elisa_optimized.webp";
 import Billy from "../assets/galerija/Billy_optimized.webp";
 import Indi from "../assets/galerija/indi_optimized.webp";
 import Keks from "../assets/galerija/keks_optimized.webp";
+import Gara from "../assets/galerija/gara_optimized.webp";
 import Kim from "../assets/galerija/kim_optimized.webp";
 import Kurdo from "../assets/galerija/kurdo_optimized.webp";
 import Luna from "../assets/galerija/luna_optimized.webp";
@@ -96,6 +97,20 @@ function Galerija() {
           <figcaption>
             <div>
               <h4>Zoi</h4>
+            </div>
+          </figcaption>
+        </figure>
+        <figure className="snip1426">
+          <LazyLoadImage
+            effect="blur"
+            src={Gara}
+            loading="lazy"
+            decoding="async"
+            alt="Gara"
+          />
+          <figcaption>
+            <div>
+              <h4>Gara</h4>
             </div>
           </figcaption>
         </figure>
