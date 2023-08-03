@@ -2223,6 +2223,12 @@ padding-top:10px;
   display: table;
   clear: both;
 }
+.video-responsive {
+ 
+}
+.video-responsive iframe {
+
+}
 
 
  

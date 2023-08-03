@@ -33,6 +33,7 @@ import KrugRo from "../assets/krugRo_optimized.webp";
 import KrugOr from "../assets/krugOr_optimized.webp";
 import KrugBlue from "../assets/krugBlue_optimized.webp";
 import KrugZl from "../assets/krugZl_optimized.webp";
+import YoutubeEmbed from "./YoutubeEmbed";
 //import JSConfetti from "js-confetti";
 
 const Main1 = () => {
@@ -66,7 +67,7 @@ const Main1 = () => {
         {/* Glavna */}
         {/* +` ++-<canvas id="canva"></canvas> */}
         <div className="flex pt-12 sm:pt-28 flex-col sm:flex-row">
-          <div className="lg:ml-16 xl:pl-22 sm:w-[50%] lg:w-[50%] xl:w-[60%] 2xl:w-[80%]">
+          <div className="lg:ml-16 xl:pl-22 sm:w-[50%] lg:w-[50%] xl:w-[60%] 2xl:w-[60%]">
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-center sm:text-left px-3 sm:pl-6 md:pl-6 md:mt-6 lg:mt-9 xl:mt-12 2xl:pb-8">
               Želiš svog ljubimca nazad ako se izgubi?
             </h1>
@@ -125,14 +126,15 @@ const Main1 = () => {
               </div>
             </div>
           </div>
-          <div className="">
-            <LazyLoadImage
+          <div className="mt-8 w-full sm:w-[50%] lg:w-[50%] xl:w-[40%] 2xl:w-[40%]">
+            {/* <LazyLoadImage
               effect="blur"
               alt="Pet"
               src={Pet}
               className="mt-12 sm:mt-0 lg:w-full m-auto sm:block 2xl:pl-48"
               style={{ zIndex: "1" }}
-            />
+            /> */}
+            <YoutubeEmbed />
           </div>
         </div>
         {showModalTags ? (
