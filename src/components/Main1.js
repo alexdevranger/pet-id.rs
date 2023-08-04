@@ -126,7 +126,7 @@ const Main1 = () => {
               </div>
             </div>
           </div>
-          <div className="mt-8 w-full sm:w-[50%] lg:w-[50%] xl:w-[40%] 2xl:w-[40%]">
+          <div className="mt-8 w-full sm:w-[50%] lg:w-[50%] xl:w-[40%] 2xl:w-[40%] min-[961px]:mt-2 lg:mt-8">
             {/* <LazyLoadImage
               effect="blur"
               alt="Pet"
