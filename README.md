@@ -17,7 +17,7 @@ Super cute website for ID PROTECT company for PET funs. Production of PET tags w
 
 ## PACKAGE
 
-![pidextra2](https://kroki.s3.us-west-2.amazonaws.com/pid11.png)
+![pidextra2](https://kroki.s3.us-west-2.amazonaws.com/pid11_optimized.png)
 
 #### img 1
 
