@@ -210,7 +210,9 @@ figure:hover img{
     overflow: visible;
     z-index: 2;
 }
- 
+.svgholder svg {
+  width: 100px;
+}
 .show {
   display: block;
 }
