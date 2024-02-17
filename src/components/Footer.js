@@ -246,7 +246,7 @@ const Footer = () => {
       </div>
       <div className="bg-[#323232] h-[30px] w-full pt-3 pb-3 flex items-center justify-center absolute mt-[10px] border-t border-gray-200">
         <p className="text-[16px] text-[#787878]">
-          Sva prava zadržana © 2023 Pet ID
+          Sva prava zadržana © 2024 Pet ID
         </p>
       </div>
     </footer>
