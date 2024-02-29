@@ -93,8 +93,8 @@ const MojLjubimac = () => {
       formData1.append("document", JSON.stringify(data));
       axios({
         method: "post",
-        // url: "https://getform.io/f/6863145f-a7b2-4e6f-93f5-40dc45c8c73c",
-        url: "https://formsubmit.co/ajax/05d192373837811cb46c4f0d3b4b936d",
+        url: "https://getform.io/f/6863145f-a7b2-4e6f-93f5-40dc45c8c73c",
+        // url: "https://formsubmit.co/ajax/05d192373837811cb46c4f0d3b4b936d",
         data: formData1,
         header: {
           Accept: "application/json",
