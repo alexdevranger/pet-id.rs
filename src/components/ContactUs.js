@@ -47,7 +47,7 @@ const ContactUs = () => {
       axios({
         method: "post",
         // url: "https://getform.io/f/552ceace-932e-49b8-b671-fd22631c63b0",
-        url: "https://formsubmit.co/ajax/saleabrakadabra8@gmail.com",
+        url: "https://formsubmit.co/ajax/05d192373837811cb46c4f0d3b4b936d",
         data: formData,
         header: {
           Accept: "application/json",
