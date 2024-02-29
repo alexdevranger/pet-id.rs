@@ -49,7 +49,8 @@ function Veleprodaja() {
       formData.append("document", JSON.stringify(data));
       axios({
         method: "post",
-        url: "https://getform.io/f/9ed2cf9e-330e-4f44-bfed-2afb3c202a66",
+        // url: "https://getform.io/f/9ed2cf9e-330e-4f44-bfed-2afb3c202a66",
+        url: "https://formsubmit.co/ajax/05d192373837811cb46c4f0d3b4b936d",
         data: formData,
         header: {
           Accept: "application/json",
