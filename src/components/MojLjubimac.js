@@ -449,7 +449,8 @@ const MojLjubimac = () => {
                           message: "Ovo polje je obavezno.",
                         },
                         pattern: {
-                          value: /^[a-zA-Z0-9 ]{2,30}$/,
+                          value:
+                            /^[a-zA-Z0-9a-яА-ЯčćžšđљњђћџнјČĆŽŠĐЉЊЂЋЏНЈ ]{2,30}$/,
                           message:
                             "Može sadržati samo slova, brojeve i razmak i min. 2 karaktera",
                         },
@@ -556,7 +557,8 @@ const MojLjubimac = () => {
                         message: "Ovo polje je obavezno.",
                       },
                       pattern: {
-                        value: /^[a-zA-Z0-9 ]{2,30}$/,
+                        value:
+                          /^[a-zA-Z0-9a-яА-ЯčćžšđљњђћџнјČĆŽŠĐЉЊЂЋЏНЈ ]{2,30}$/,
                         message:
                           "Može sadržati samo slova, brojeve i razmak i min. 2 karaktera",
                       },
@@ -584,7 +586,8 @@ const MojLjubimac = () => {
                     type="text"
                     {...register("starost", {
                       pattern: {
-                        value: /^[a-zA-Z0-9 ]{2,30}$/,
+                        value:
+                          /^[a-zA-Z0-9a-яА-ЯčćžšđљњђћџнјČĆŽŠĐЉЊЂЋЏНЈ ]{2,30}$/,
                         message:
                           "Može sadržati samo slova, brojeve i razmak i min. 2 karaktera",
                       },
@@ -685,17 +688,6 @@ const MojLjubimac = () => {
                   backgroundSize: "cover",
                 }}
               >
-                {/* Podaci o vlasniku */}
-                {/* <div className="md:flex md:justify-center w-full absolute top-[-120px] min-[450px]:top-[-165px] sm:top-[-244px] md:top-[-247px] lg:top-[-145px] xl:top-[-223px]">
-                  <LazyLoadImage
-                    effect="blur"
-                    src={s6}
-                    className="w-full"
-                    loading="lazy"
-                    decoding="async"
-                    alt="s6"
-                  />
-                </div> */}
                 <div className="w-full mt-2 flex justify-around">
                   <div className="items-center flex flex-col w-[240px] min-[450px]:w-[350px] sm:w-[350px] md:w-[500px] lg:w-[300px] xl:w-[350px] relative">
                     <div className="md:flex md:justify-center w-full md:w-full absolute top-[-107px]  min-[450px]:top-[-157px] min-[550px]:top-[-153px] sm:top-[-153px] md:top-[-207px] lg:top-[-130px] xl:top-[-153px]">
@@ -731,7 +723,8 @@ const MojLjubimac = () => {
                         message: "Ovo polje je obavezno.",
                       },
                       pattern: {
-                        value: /^[a-zA-Z0-9 ]{2,30}$/,
+                        value:
+                          /^[a-zA-Z0-9a-яА-ЯčćžšđљњђћџнјČĆŽŠĐЉЊЂЋЏНЈ ]{2,30}$/,
                         message:
                           "Može sadržati samo slova, brojeve i razmak i min. 2 karaktera",
                       },
@@ -845,7 +838,7 @@ const MojLjubimac = () => {
                     id="adresaVlasnika"
                     {...register("adresaVlasnika", {
                       pattern: {
-                        value: /^[a-zA-Z0-9/\-\s]{2,30}$/,
+                        value: /^[a-zA-Z0-9čćžđš/\-\s]{2,30}$/,
                         message:
                           "Može sadržati samo slova, brojeve, razmak, kosu crtu, srednju crtu i min. 2 slova.",
                       },
