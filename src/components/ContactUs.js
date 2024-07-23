@@ -109,7 +109,7 @@ const ContactUs = () => {
                 <p className="pb-4">petiddigital@gmail.com</p>
                 <p>ID PROTECT PR ALEKSANDAR MILIVOJEVIĆ</p>
                 <p>računarsko programiranje</p>
-                <p>Branka Radičevića 14 19350 Knjaževac</p>
+                <p>Aleksandra Belića 15, 11160 Beograd</p>
                 <p>Matični broj: 66930815</p>
                 <p>PIB 113585474</p>
               </div>

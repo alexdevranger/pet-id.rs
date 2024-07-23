@@ -214,7 +214,7 @@ const Footer = () => {
           </div>
           <div className="text-center md:text-left md:col-span-1 h-full flex flex-col items-center justify-center">
             <p>ID PROTECT PR ALEKSANDAR MILIVOJEVIĆ</p>
-            <p>Branka Radičevića 14 19350 Knjaževac</p>
+            <p>Aleksandra Belića 15, 11160 Beograd</p>
             <p>Matični broj: 66930815</p>
             <p>PIB 113585474</p>
           </div>

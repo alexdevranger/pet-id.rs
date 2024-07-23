@@ -53,9 +53,9 @@ function ProbaScenera() {
                   fontSize: "16px",
                 }}
               >
-                ID PROTECT PR KNJAŽEVAC
+                ID PROTECT PR Beograd
                 <br />
-                Branka Radičevića 14
+                Aleksandra Belića 15
               </span>
             </div>
           </div>
